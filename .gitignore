@@ -3,3 +3,4 @@ node_modules
 *.mjs
 *.map
 *.tsbuildinfo
+package-lock.json
