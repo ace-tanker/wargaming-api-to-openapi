@@ -1,0 +1,32 @@
+{
+  "name": "wargaming-openapi",
+  "version": "1.0.0",
+  "description": "OpenAPI specification for the Wargaming.net Public API.",
+  "keywords": [ "Wargaming.net", "OpenAPI" ],
+  "homepage": "https://github.com/ace-tanker/wargaming-openapi",
+  "bugs": {
+    "url": "https://github.com/ace-tanker/wargaming-openapi/issues",
+    "email": "contact@ace-tanker.net"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Adrien Simonnet",
+    "email": "adrien.simonnet@ace-tanker.net",
+    "url": "https://github.com/adrien-simonnet"
+  },
+  "main": "src/app.mjs",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ace-tanker/wargaming-openapi"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.3"
+  }
+}
