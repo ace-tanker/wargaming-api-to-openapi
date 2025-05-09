@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "522838801": {
+      "clan": {
+        "members_count": 93,
+        "name": "République française",
+        "color": "#0076BE",
+        "created_at": 1571926506,
+        "tag": "14JUI",
+        "emblems": {
+          "x32": {
+            "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_733\/500181733\/emblem_32x32.png"
+          },
+          "x24": {
+            "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_733\/500181733\/emblem_24x24.png"
+          },
+          "x256": {
+            "wowp": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_733\/500181733\/emblem_256x256.png"
+          },
+          "x64": {
+            "wot": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_733\/500181733\/emblem_64x64_tank.png",
+            "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_733\/500181733\/emblem_64x64.png"
+          },
+          "x195": {
+            "portal": "https:\/\/eu.wargaming.net\/clans\/media\/clans\/emblems\/cl_733\/500181733\/emblem_195x195.png"
+          }
+        },
+        "clan_id": 500181733
+      },
+      "account_id": 522838801,
+      "role_i18n": "Commander",
+      "joined_at": 1571926508,
+      "role": "commander",
+      "account_name": "Adrie_l4_BaGueTTe"
+    }
+  }
+}

@@ -1,0 +1,1024 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 11
+  },
+  "data": [
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1703
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1120
+      },
+      "exclude_reasons": {
+        "fort_elo_rating_6": "limits",
+        "fort_elo_rating_8": "inactivity",
+        "gm_elo_rating_8": "limits",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "gm_elo_rating_10": "limits"
+      },
+      "efficiency": {
+        "rank_delta": 19,
+        "rank": 190,
+        "value": 10673
+      },
+      "rating_fort": {
+        "rank_delta": -2,
+        "rank": 10,
+        "value": 3910.87
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 0,
+        "rank": 24,
+        "value": 1432
+      },
+      "clan_tag": "DYPKA",
+      "battles_count_avg_daily": {
+        "rank_delta": -56,
+        "rank": 491,
+        "value": 11.22
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": 344,
+        "rank": 1905,
+        "value": 4489.72
+      },
+      "clan_id": 500266558,
+      "fb_elo_rating": {
+        "rank_delta": -1,
+        "rank": 9,
+        "value": 2148.0
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": -1,
+        "rank": 42,
+        "value": 57.65
+      },
+      "clan_name": "DYRKA | 2rd psychiatric department",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": -314,
+        "rank": 1958,
+        "value": 33165.86
+      },
+      "v10l_avg": {
+        "rank_delta": -79,
+        "rank": 416,
+        "value": 37.84
+      },
+      "global_rating_avg": {
+        "rank_delta": -6,
+        "rank": 58,
+        "value": 8979.44
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1052
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 890
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": 18,
+        "rank": 1022,
+        "value": 994
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 949
+      },
+      "exclude_reasons": {
+        "gm_elo_rating_8": "inactivity",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "fort_elo_rating_6": "inactivity",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": -1,
+        "rank": 191,
+        "value": 10667
+      },
+      "rating_fort": {
+        "rank_delta": 7,
+        "rank": 471,
+        "value": 3023.0
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 7,
+        "rank": 569,
+        "value": 1028
+      },
+      "clan_tag": "B_BOY",
+      "battles_count_avg_daily": {
+        "rank_delta": 0,
+        "rank": 16,
+        "value": 15.07
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": 7,
+        "rank": 1907,
+        "value": 4488.25
+      },
+      "clan_id": 500151437,
+      "fb_elo_rating": {
+        "rank_delta": 12,
+        "rank": 627,
+        "value": 1400.73
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 96,
+        "rank": 3926,
+        "value": 49.39
+      },
+      "clan_name": "BAD BOYS BALKAN",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 0,
+        "rank": 18,
+        "value": 55951.37
+      },
+      "v10l_avg": {
+        "rank_delta": 1,
+        "rank": 118,
+        "value": 44.76
+      },
+      "global_rating_avg": {
+        "rank_delta": 6,
+        "rank": 2878,
+        "value": 5984.33
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1250
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1175
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": 8,
+        "rank": 429,
+        "value": 1130
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1296
+      },
+      "exclude_reasons": {
+        "gm_elo_rating_8": "inactivity",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "fort_elo_rating_6": "inactivity",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": -10,
+        "rank": 192,
+        "value": 10667
+      },
+      "rating_fort": {
+        "rank_delta": -13,
+        "rank": 284,
+        "value": 3260.83
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": -11,
+        "rank": 293,
+        "value": 1150
+      },
+      "clan_tag": "BETA2",
+      "battles_count_avg_daily": {
+        "rank_delta": 213,
+        "rank": 1416,
+        "value": 9.94
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": -58,
+        "rank": 550,
+        "value": 6072.97
+      },
+      "clan_id": 500146077,
+      "fb_elo_rating": {
+        "rank_delta": -15,
+        "rank": 370,
+        "value": 1558.11
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 44,
+        "rank": 1585,
+        "value": 51.16
+      },
+      "clan_name": "BETA Impact 2",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 91,
+        "rank": 1160,
+        "value": 36351.91
+      },
+      "v10l_avg": {
+        "rank_delta": 29,
+        "rank": 446,
+        "value": 37.42
+      },
+      "global_rating_avg": {
+        "rank_delta": 16,
+        "rank": 2124,
+        "value": 6260.79
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 806
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 774
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": 7,
+        "rank": 195,
+        "value": 1241
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 832
+      },
+      "exclude_reasons": {
+        "gm_elo_rating_8": "inactivity",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "inactivity",
+        "fort_elo_rating_6": "inactivity",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": 0,
+        "rank": 193,
+        "value": 10659
+      },
+      "rating_fort": {
+        "rank_delta": 6,
+        "rank": 467,
+        "value": 3028.88
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 5,
+        "rank": 359,
+        "value": 1114
+      },
+      "clan_tag": "RA-TA",
+      "battles_count_avg_daily": {
+        "rank_delta": 4,
+        "rank": 895,
+        "value": 10.53
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": -2,
+        "rank": 399,
+        "value": 6423.26
+      },
+      "clan_id": 500073535,
+      "fb_elo_rating": {
+        "rank_delta": 12,
+        "rank": 618,
+        "value": 1404.44
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 916
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 47,
+        "rank": 1925,
+        "value": 50.8
+      },
+      "clan_name": "Raittius- ja Tankkipeliseura",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": -2,
+        "rank": 338,
+        "value": 42815.94
+      },
+      "v10l_avg": {
+        "rank_delta": -1,
+        "rank": 168,
+        "value": 43.04
+      },
+      "global_rating_avg": {
+        "rank_delta": -4,
+        "rank": 1764,
+        "value": 6423.26
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1060
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1180
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": 0,
+        "rank": 101,
+        "value": 1198
+      },
+      "exclude_reasons": {
+        "fort_elo_rating_8": "inactivity",
+        "gm_elo_rating_8": "limits",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": 0,
+        "rank": 194,
+        "value": 10659
+      },
+      "rating_fort": {
+        "rank_delta": -1,
+        "rank": 174,
+        "value": 3412.58
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 2,
+        "rank": 319,
+        "value": 1138
+      },
+      "clan_tag": "GALIA",
+      "battles_count_avg_daily": {
+        "rank_delta": 0,
+        "rank": 2520,
+        "value": 9.11
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": -2,
+        "rank": 445,
+        "value": 6320.36
+      },
+      "clan_id": 500214816,
+      "fb_elo_rating": {
+        "rank_delta": 1,
+        "rank": 230,
+        "value": 1667.62
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 17,
+        "rank": 837,
+        "value": 52.34
+      },
+      "clan_name": "Asterix i Obelix",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 0,
+        "rank": 2470,
+        "value": 31611.02
+      },
+      "v10l_avg": {
+        "rank_delta": -1,
+        "rank": 758,
+        "value": 33.69
+      },
+      "global_rating_avg": {
+        "rank_delta": -1,
+        "rank": 709,
+        "value": 7264.78
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 952
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1071
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1018
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1122
+      },
+      "exclude_reasons": {
+        "fort_elo_rating_6": "inactivity",
+        "fort_elo_rating_8": "inactivity",
+        "gm_elo_rating_8": "inactivity",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": 0,
+        "rank": 195,
+        "value": 10658
+      },
+      "rating_fort": {
+        "rank_delta": 1,
+        "rank": 63,
+        "value": 3670.36
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 6,
+        "rank": 152,
+        "value": 1250
+      },
+      "clan_tag": "14JUI",
+      "battles_count_avg_daily": {
+        "rank_delta": 1,
+        "rank": 3919,
+        "value": 8.4
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": 2,
+        "rank": 690,
+        "value": 5771.51
+      },
+      "clan_id": 500181733,
+      "fb_elo_rating": {
+        "rank_delta": 2,
+        "rank": 85,
+        "value": 1875.0
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 57,
+        "rank": 2347,
+        "value": 50.42
+      },
+      "clan_name": "République française",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 3,
+        "rank": 2226,
+        "value": 32347.63
+      },
+      "v10l_avg": {
+        "rank_delta": 2,
+        "rank": 1254,
+        "value": 29.53
+      },
+      "global_rating_avg": {
+        "rank_delta": 10,
+        "rank": 2246,
+        "value": 6205.92
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 973
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1110
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 956
+      },
+      "exclude_reasons": {
+        "fort_elo_rating_6": "limits",
+        "fort_elo_rating_8": "inactivity",
+        "gm_elo_rating_8": "limits",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": 0,
+        "rank": 196,
+        "value": 10656
+      },
+      "rating_fort": {
+        "rank_delta": -1,
+        "rank": 94,
+        "value": 3576.62
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 0,
+        "rank": 106,
+        "value": 1293
+      },
+      "clan_tag": "WKING",
+      "battles_count_avg_daily": {
+        "rank_delta": 0,
+        "rank": 2707,
+        "value": 8.99
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": 3,
+        "rank": 645,
+        "value": 5836.16
+      },
+      "clan_id": 500223807,
+      "fb_elo_rating": {
+        "rank_delta": 1,
+        "rank": 57,
+        "value": 1939.5
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 35,
+        "rank": 1725,
+        "value": 51.01
+      },
+      "clan_name": "Clan of the White Kings",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 8,
+        "rank": 1067,
+        "value": 36789.83
+      },
+      "v10l_avg": {
+        "rank_delta": 0,
+        "rank": 1250,
+        "value": 29.55
+      },
+      "global_rating_avg": {
+        "rank_delta": 10,
+        "rank": 2238,
+        "value": 6208.68
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1108
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": 2,
+        "rank": 255,
+        "value": 1211
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1201
+      },
+      "exclude_reasons": {
+        "gm_elo_rating_8": "limits",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "fort_elo_rating_6": "inactivity",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": -14,
+        "rank": 197,
+        "value": 10650
+      },
+      "rating_fort": {
+        "rank_delta": -8,
+        "rank": 247,
+        "value": 3305.31
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": -18,
+        "rank": 290,
+        "value": 1153
+      },
+      "clan_tag": "XOPT",
+      "battles_count_avg_daily": {
+        "rank_delta": 106,
+        "rank": 745,
+        "value": 10.77
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": -68,
+        "rank": 662,
+        "value": 5810.18
+      },
+      "clan_id": 500241047,
+      "fb_elo_rating": {
+        "rank_delta": -8,
+        "rank": 317,
+        "value": 1589.4
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 24,
+        "rank": 1036,
+        "value": 51.98
+      },
+      "clan_name": "\"KHORTYTSYA\"",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 76,
+        "rank": 862,
+        "value": 37932.01
+      },
+      "v10l_avg": {
+        "rank_delta": 47,
+        "rank": 400,
+        "value": 38.01
+      },
+      "global_rating_avg": {
+        "rank_delta": -6,
+        "rank": 631,
+        "value": 7354.66
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": 3,
+        "rank": 85,
+        "value": 1338
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1142
+      },
+      "exclude_reasons": {
+        "gm_elo_rating_8": "limits",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "fort_elo_rating_6": "inactivity",
+        "gm_elo_rating_10": "limits"
+      },
+      "efficiency": {
+        "rank_delta": -9,
+        "rank": 198,
+        "value": 10649
+      },
+      "rating_fort": {
+        "rank_delta": 3,
+        "rank": 243,
+        "value": 3306.6
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 1,
+        "rank": 124,
+        "value": 1276
+      },
+      "clan_tag": "V1S",
+      "battles_count_avg_daily": {
+        "rank_delta": -1,
+        "rank": 124,
+        "value": 12.61
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": -60,
+        "rank": 1063,
+        "value": 5229.0
+      },
+      "clan_id": 500310518,
+      "fb_elo_rating": {
+        "rank_delta": -3,
+        "rank": 177,
+        "value": 1735.47
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 5,
+        "rank": 324,
+        "value": 54.03
+      },
+      "clan_name": "-=VICIOUS=-",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 35,
+        "rank": 201,
+        "value": 44869.72
+      },
+      "v10l_avg": {
+        "rank_delta": 25,
+        "rank": 146,
+        "value": 43.57
+      },
+      "global_rating_avg": {
+        "rank_delta": 9,
+        "rank": 258,
+        "value": 8044.62
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1169
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1079
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": 2,
+        "rank": 397,
+        "value": 1144
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1050
+      },
+      "exclude_reasons": {
+        "gm_elo_rating_8": "inactivity",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "inactivity",
+        "fort_elo_rating_6": "inactivity",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": -11,
+        "rank": 199,
+        "value": 10649
+      },
+      "rating_fort": {
+        "rank_delta": 5,
+        "rank": 455,
+        "value": 3044.03
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 11,
+        "rank": 582,
+        "value": 1025
+      },
+      "clan_tag": "RW_GO",
+      "battles_count_avg_daily": {
+        "rank_delta": -2,
+        "rank": 918,
+        "value": 10.5
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": -27,
+        "rank": 375,
+        "value": 6498.39
+      },
+      "clan_id": 500061671,
+      "fb_elo_rating": {
+        "rank_delta": 7,
+        "rank": 597,
+        "value": 1414.04
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 988
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 31,
+        "rank": 1450,
+        "value": 51.31
+      },
+      "clan_name": "GOLDEN_WOLVES",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": -16,
+        "rank": 1047,
+        "value": 36923.71
+      },
+      "v10l_avg": {
+        "rank_delta": -8,
+        "rank": 245,
+        "value": 40.93
+      },
+      "global_rating_avg": {
+        "rank_delta": -20,
+        "rank": 1211,
+        "value": 6769.16
+      }
+    },
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1248
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": 6,
+        "rank": 184,
+        "value": 1249
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1119
+      },
+      "exclude_reasons": {
+        "fort_elo_rating_6": "inactivity",
+        "fort_elo_rating_10": "inactivity",
+        "gm_elo_rating_8": "limits",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "inactivity",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": 1,
+        "rank": 200,
+        "value": 10647
+      },
+      "rating_fort": {
+        "rank_delta": 3,
+        "rank": 700,
+        "value": 2771.27
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1203
+      },
+      "clan_tag": "1453",
+      "battles_count_avg_daily": {
+        "rank_delta": -14,
+        "rank": 1269,
+        "value": 10.08
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": 0,
+        "rank": 138,
+        "value": 7481.38
+      },
+      "clan_id": 500005725,
+      "fb_elo_rating": {
+        "rank_delta": 3,
+        "rank": 928,
+        "value": 1249.0
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1055
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 5,
+        "rank": 351,
+        "value": 53.86
+      },
+      "clan_name": "Elite Turkish Forces",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 3,
+        "rank": 2287,
+        "value": 32137.96
+      },
+      "v10l_avg": {
+        "rank_delta": 0,
+        "rank": 290,
+        "value": 40.02
+      },
+      "global_rating_avg": {
+        "rank_delta": 0,
+        "rank": 327,
+        "value": 7875.14
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "500158231": {
+      "leader_id": 0,
+      "color": "#FFFFFF",
+      "updated_at": 1677641760,
+      "private": null,
+      "tag": "",
+      "members_count": 0,
+      "description_html": "",
+      "creator_id": 0,
+      "leader_name": "",
+      "emblems": null,
+      "clan_id": 500158231,
+      "renamed_at": 0,
+      "old_tag": "",
+      "description": "",
+      "members": null,
+      "old_name": "",
+      "is_clan_disbanded": true,
+      "motto": "",
+      "name": "",
+      "creator_name": "",
+      "created_at": 0,
+      "accepts_join_requests": false
+    }
+  }
+}

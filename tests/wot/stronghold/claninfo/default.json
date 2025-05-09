@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "500181733": {
+      "command_center_arena_id": "06_ensk",
+      "stronghold_buildings_level": 80,
+      "skirmish_statistics": {
+        "win_10": 3228,
+        "total_6": 3228,
+        "total_10": 5850,
+        "win_6": 1925,
+        "total_10_in_28d": 18,
+        "win_8_in_28d": 0,
+        "lose_8": 3106,
+        "lose_6": 1261,
+        "total_8": 6403,
+        "last_time_6": 1718146500,
+        "last_time_10": 1745096991,
+        "lose_10": 2577,
+        "total_6_in_28d": 0,
+        "total_8_in_28d": 0,
+        "win_6_in_28d": 0,
+        "win_10_in_28d": 7,
+        "last_time_8": 1733007832,
+        "win_8": 3114
+      },
+      "battles_series_for_strongholds_statistics": {
+        "win_10": 40,
+        "total_10": 176,
+        "total_10_in_28d": 0,
+        "win_10_in_28d": 0,
+        "lose_10": 113
+      },
+      "clan_name": "République française",
+      "stronghold_level": 10,
+      "clan_id": 500181733,
+      "battles_for_strongholds_statistics": {
+        "win_10": 319,
+        "total_10": 874,
+        "total_10_in_28d": 0,
+        "win_10_in_28d": 0,
+        "last_time_10": 1734899408,
+        "lose_10": 549
+      },
+      "building_slots": [
+        {
+          "direction": "A",
+          "arena_id": "01_karelia",
+          "reserve_title": "ADDITIONAL_BRIEFING",
+          "building_level": 10,
+          "position": "1",
+          "building_title": "Training Unit"
+        },
+        {
+          "direction": "A",
+          "arena_id": "45_north_america",
+          "reserve_title": "MILITARY_MANEUVERS",
+          "building_level": 10,
+          "position": "2",
+          "building_title": "Military School"
+        },
+        {
+          "direction": "B",
+          "arena_id": "99_poland",
+          "reserve_title": "BATTLE_PAYMENTS",
+          "building_level": 10,
+          "position": "1",
+          "building_title": "Financial Unit"
+        },
+        {
+          "direction": "B",
+          "arena_id": "36_fishing_bay",
+          "reserve_title": "TACTICAL_TRAINING",
+          "building_level": 10,
+          "position": "2",
+          "building_title": "Tankodrome"
+        },
+        {
+          "direction": "C",
+          "arena_id": "04_himmelsdorf",
+          "reserve_title": "INSPIRATION",
+          "building_level": 10,
+          "position": "1",
+          "building_title": "Logistical Service"
+        },
+        {
+          "direction": "C",
+          "arena_id": "35_steppes",
+          "reserve_title": "ARTILLERY_STRIKE",
+          "building_level": 10,
+          "position": "2",
+          "building_title": "Artillery Battalion"
+        },
+        {
+          "direction": "D",
+          "arena_id": "05_prohorovka",
+          "reserve_title": "REQUISITION",
+          "building_level": 10,
+          "position": "1",
+          "building_title": "Trophy Brigade"
+        },
+        {
+          "direction": "D",
+          "arena_id": "18_cliff",
+          "reserve_title": "HIGH_CAPACITY_TRANSPORT",
+          "building_level": 10,
+          "position": "2",
+          "building_title": "Transportation Unit"
+        }
+      ],
+      "clan_tag": "14JUI"
+    }
+  }
+}

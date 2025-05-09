@@ -1,0 +1,394 @@
+{
+  "status": "ok",
+  "meta": { "count": 97 },
+  "data": [
+    {
+      "nickname": "abc",
+      "account_id": 501690355
+    },
+    {
+      "nickname": "ABC0000",
+      "account_id": 551208035
+    },
+    {
+      "nickname": "abc0001",
+      "account_id": 548275847
+    },
+    {
+      "nickname": "abc000_2015",
+      "account_id": 527691498
+    },
+    {
+      "nickname": "abc001",
+      "account_id": 501019860
+    },
+    {
+      "nickname": "abc002",
+      "account_id": 501960334
+    },
+    {
+      "nickname": "abC006",
+      "account_id": 604671414
+    },
+    {
+      "nickname": "abc007",
+      "account_id": 505218742
+    },
+    {
+      "nickname": "abc00700",
+      "account_id": 598464142
+    },
+    {
+      "nickname": "abc008",
+      "account_id": 576335746
+    },
+    {
+      "nickname": "abc01",
+      "account_id": 509255382
+    },
+    {
+      "nickname": "Abc0100",
+      "account_id": 508304305
+    },
+    {
+      "nickname": "abc01010",
+      "account_id": 618455954
+    },
+    {
+      "nickname": "abc012",
+      "account_id": 511402710
+    },
+    {
+      "nickname": "abc012345678",
+      "account_id": 680459176
+    },
+    {
+      "nickname": "abc0123456789",
+      "account_id": 513074703
+    },
+    {
+      "nickname": "ABC02",
+      "account_id": 501904227
+    },
+    {
+      "nickname": "abc020",
+      "account_id": 520212718
+    },
+    {
+      "nickname": "abc021275",
+      "account_id": 557055081
+    },
+    {
+      "nickname": "abc0212_19559333",
+      "account_id": 624430022
+    },
+    {
+      "nickname": "Abc022",
+      "account_id": 538277183
+    },
+    {
+      "nickname": "abc02_67227798",
+      "account_id": 607394725
+    },
+    {
+      "nickname": "abc03",
+      "account_id": 504940759
+    },
+    {
+      "nickname": "abc034",
+      "account_id": 514126464
+    },
+    {
+      "nickname": "abc03572",
+      "account_id": 505193694
+    },
+    {
+      "nickname": "Abc04",
+      "account_id": 508444356
+    },
+    {
+      "nickname": "abc040183",
+      "account_id": 595485591
+    },
+    {
+      "nickname": "abc0411",
+      "account_id": 514185870
+    },
+    {
+      "nickname": "Abc044",
+      "account_id": 519537860
+    },
+    {
+      "nickname": "abc045",
+      "account_id": 507428969
+    },
+    {
+      "nickname": "ABC0456_1",
+      "account_id": 533869214
+    },
+    {
+      "nickname": "ABC04_1",
+      "account_id": 535414848
+    },
+    {
+      "nickname": "abc05_1",
+      "account_id": 673724085
+    },
+    {
+      "nickname": "ABC06",
+      "account_id": 500921927
+    },
+    {
+      "nickname": "abc0630",
+      "account_id": 541817173
+    },
+    {
+      "nickname": "abc07",
+      "account_id": 511266167
+    },
+    {
+      "nickname": "abc077",
+      "account_id": 514895784
+    },
+    {
+      "nickname": "abc07_1384069",
+      "account_id": 596209176
+    },
+    {
+      "nickname": "abc08",
+      "account_id": 503604247
+    },
+    {
+      "nickname": "abc08072002",
+      "account_id": 537856593
+    },
+    {
+      "nickname": "abc09",
+      "account_id": 510922523
+    },
+    {
+      "nickname": "ABC09379749683",
+      "account_id": 512506882
+    },
+    {
+      "nickname": "abc098",
+      "account_id": 513425320
+    },
+    {
+      "nickname": "abc0_2020",
+      "account_id": 568597337
+    },
+    {
+      "nickname": "Abc0JII0THbInCTpaX",
+      "account_id": 635817975
+    },
+    {
+      "nickname": "AbC0LUTH0_bE3_D0HATA_",
+      "account_id": 594797968
+    },
+    {
+      "nickname": "abc1",
+      "account_id": 500477910
+    },
+    {
+      "nickname": "abc10",
+      "account_id": 513377526
+    },
+    {
+      "nickname": "abc100",
+      "account_id": 506751428
+    },
+    {
+      "nickname": "abc1000",
+      "account_id": 503266602
+    },
+    {
+      "nickname": "abc1000xyz",
+      "account_id": 519412490
+    },
+    {
+      "nickname": "abc1011",
+      "account_id": 563710211
+    },
+    {
+      "nickname": "abc10123",
+      "account_id": 518283145
+    },
+    {
+      "nickname": "abc102030",
+      "account_id": 513871711
+    },
+    {
+      "nickname": "abc104",
+      "account_id": 524471236
+    },
+    {
+      "nickname": "ABC108",
+      "account_id": 524894160
+    },
+    {
+      "nickname": "ABC1098",
+      "account_id": 519514609
+    },
+    {
+      "nickname": "abc11",
+      "account_id": 503176610
+    },
+    {
+      "nickname": "abc110119",
+      "account_id": 635756993
+    },
+    {
+      "nickname": "abc110_6578560",
+      "account_id": 604237126
+    },
+    {
+      "nickname": "abc111",
+      "account_id": 501405465
+    },
+    {
+      "nickname": "abc1111",
+      "account_id": 505475247
+    },
+    {
+      "nickname": "abc111111",
+      "account_id": 516928325
+    },
+    {
+      "nickname": "ABC11112",
+      "account_id": 684366862
+    },
+    {
+      "nickname": "ABC1111V",
+      "account_id": 523690289
+    },
+    {
+      "nickname": "Abc111272",
+      "account_id": 515319736
+    },
+    {
+      "nickname": "abc111333",
+      "account_id": 540524048
+    },
+    {
+      "nickname": "abc111af",
+      "account_id": 655746391
+    },
+    {
+      "nickname": "ABC111DEF123",
+      "account_id": 566674152
+    },
+    {
+      "nickname": "Abc112",
+      "account_id": 511193622
+    },
+    {
+      "nickname": "ABC1122",
+      "account_id": 511472168
+    },
+    {
+      "nickname": "abc112304",
+      "account_id": 510577553
+    },
+    {
+      "nickname": "abc112_1",
+      "account_id": 569960930
+    },
+    {
+      "nickname": "abc113",
+      "account_id": 515142069
+    },
+    {
+      "nickname": "ABC11_128629507",
+      "account_id": 615636454
+    },
+    {
+      "nickname": "abc11_5",
+      "account_id": 552057945
+    },
+    {
+      "nickname": "Abc120_fighter",
+      "account_id": 561799495
+    },
+    {
+      "nickname": "abc12125",
+      "account_id": 501161982
+    },
+    {
+      "nickname": "ABC1213",
+      "account_id": 525246868
+    },
+    {
+      "nickname": "ABC121_34920449",
+      "account_id": 596725848
+    },
+    {
+      "nickname": "abc122412",
+      "account_id": 687298354
+    },
+    {
+      "nickname": "abc122_130077724",
+      "account_id": 667554069
+    },
+    {
+      "nickname": "abc123123",
+      "account_id": 505507089
+    },
+    {
+      "nickname": "abc1231231",
+      "account_id": 557277852
+    },
+    {
+      "nickname": "abc123123123",
+      "account_id": 504858178
+    },
+    {
+      "nickname": "abc12321",
+      "account_id": 508501598
+    },
+    {
+      "nickname": "abc12323",
+      "account_id": 502658464
+    },
+    {
+      "nickname": "abc123321",
+      "account_id": 501421912
+    },
+    {
+      "nickname": "abc123321_Cccc",
+      "account_id": 553638992
+    },
+    {
+      "nickname": "abc12333",
+      "account_id": 513763216
+    },
+    {
+      "nickname": "abc12334",
+      "account_id": 504440522
+    },
+    {
+      "nickname": "abc12334443",
+      "account_id": 509965223
+    },
+    {
+      "nickname": "ABC1234",
+      "account_id": 500691348
+    },
+    {
+      "nickname": "abc123444",
+      "account_id": 502522661
+    },
+    {
+      "nickname": "abc1234456",
+      "account_id": 503700301
+    },
+    {
+      "nickname": "abc12345",
+      "account_id": 501931663
+    },
+    {
+      "nickname": "abc123456",
+      "account_id": 503562795
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 8
+  },
+  "data": [
+    {
+      "name": "Additional Briefing",
+      "bonus_type": "to Crew Experience earned",
+      "disposable": false,
+      "in_stock": [
+        {
+          "status": "cannot_be_activated",
+          "action_time": 3600,
+          "active_till": null,
+          "level": 1,
+          "activated_at": null,
+          "amount": 54,
+          "bonus_values": [
+            {
+              "value": 0.5,
+              "battle_type": "Clan Battles and Tournaments"
+            },
+            {
+              "value": 0.25,
+              "battle_type": "Random Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 10,
+          "bonus_values": [
+            {
+              "value": 2.0,
+              "battle_type": "Clan Battles and Tournaments"
+            },
+            {
+              "value": 1.5,
+              "battle_type": "Random Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 11,
+          "activated_at": null,
+          "amount": 4,
+          "bonus_values": [
+            {
+              "value": 3.0,
+              "battle_type": "Clan Battles and Tournaments"
+            },
+            {
+              "value": 2.0,
+              "battle_type": "Random Battles"
+            }
+          ],
+          "x_level_only": true
+        }
+      ],
+      "type": "ADDITIONAL_BRIEFING",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/additional-briefing.png"
+    },
+    {
+      "name": "Artillery Strike",
+      "bonus_type": "to Industrial Resource earned",
+      "disposable": true,
+      "in_stock": [
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 50,
+          "bonus_values": [
+            {
+              "value": 0.3,
+              "battle_type": "Skirmishes and Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 11,
+          "activated_at": null,
+          "amount": 1,
+          "bonus_values": [
+            {
+              "value": 0.5,
+              "battle_type": "Skirmishes and Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        }
+      ],
+      "type": "ARTILLERY_STRIKE",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/artillery-strike.png"
+    },
+    {
+      "name": "Battle Payments",
+      "bonus_type": "to credits earned",
+      "disposable": false,
+      "in_stock": [
+        {
+          "status": "active",
+          "action_time": 3600,
+          "active_till": 1746483836,
+          "level": 1,
+          "activated_at": 1746480236,
+          "amount": 43,
+          "bonus_values": [
+            {
+              "value": 0.1,
+              "battle_type": "Clan Battles and Tournaments"
+            },
+            {
+              "value": 0.05,
+              "battle_type": "Random Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 24,
+          "bonus_values": [
+            {
+              "value": 0.75,
+              "battle_type": "Clan Battles and Tournaments"
+            },
+            {
+              "value": 0.3,
+              "battle_type": "Random Battles"
+            }
+          ],
+          "x_level_only": false
+        }
+      ],
+      "type": "BATTLE_PAYMENTS",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/battle-payments.png"
+    },
+    {
+      "name": "High-Capacity Transport",
+      "bonus_type": "to Industrial Resource earned",
+      "disposable": true,
+      "in_stock": [
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 25,
+          "bonus_values": [
+            {
+              "value": 0.6,
+              "battle_type": "Skirmishes and Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 11,
+          "activated_at": null,
+          "amount": 3,
+          "bonus_values": [
+            {
+              "value": 1.0,
+              "battle_type": "Skirmishes and Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 12,
+          "activated_at": null,
+          "amount": 1,
+          "bonus_values": [
+            {
+              "value": 2.0,
+              "battle_type": "Skirmishes and Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        }
+      ],
+      "type": "HIGH_CAPACITY_TRANSPORT",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/high-capacity-transport.png"
+    },
+    {
+      "name": "Inspire",
+      "bonus_type": "to Industrial Resource earned",
+      "disposable": true,
+      "in_stock": [
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 30,
+          "bonus_values": [
+            {
+              "value": 0.3,
+              "battle_type": "Skirmishes and Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 11,
+          "activated_at": null,
+          "amount": 1,
+          "bonus_values": [
+            {
+              "value": 0.5,
+              "battle_type": "Skirmishes and Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        }
+      ],
+      "type": "INSPIRATION",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/inspiration.png"
+    },
+    {
+      "name": "Military Maneuvers",
+      "bonus_type": "to Free Experience earned",
+      "disposable": false,
+      "in_stock": [
+        {
+          "status": "active",
+          "action_time": 3600,
+          "active_till": 1746483836,
+          "level": 1,
+          "activated_at": 1746480236,
+          "amount": 80,
+          "bonus_values": [
+            {
+              "value": 0.5,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 9,
+          "bonus_values": [
+            {
+              "value": 2.5,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 11,
+          "activated_at": null,
+          "amount": 19,
+          "bonus_values": [
+            {
+              "value": 3.0,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 12,
+          "activated_at": null,
+          "amount": 32,
+          "bonus_values": [
+            {
+              "value": 5.0,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        }
+      ],
+      "type": "MILITARY_MANEUVERS",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/military-maneuvers.png"
+    },
+    {
+      "name": "Requisition",
+      "bonus_type": "to Industrial Resource earned",
+      "disposable": true,
+      "in_stock": [
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 6,
+          "bonus_values": [
+            {
+              "value": 0.6,
+              "battle_type": "Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": null,
+          "action_time": null,
+          "active_till": null,
+          "level": 11,
+          "activated_at": null,
+          "amount": 2,
+          "bonus_values": [
+            {
+              "value": 1.0,
+              "battle_type": "Battles for Stronghold"
+            }
+          ],
+          "x_level_only": false
+        }
+      ],
+      "type": "REQUISITION",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/requisition.png"
+    },
+    {
+      "name": "Tactical Training",
+      "bonus_type": "to Combat Experience earned",
+      "disposable": false,
+      "in_stock": [
+        {
+          "status": "cannot_be_activated",
+          "action_time": 3600,
+          "active_till": null,
+          "level": 1,
+          "activated_at": null,
+          "amount": 56,
+          "bonus_values": [
+            {
+              "value": 0.05,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 10,
+          "activated_at": null,
+          "amount": 34,
+          "bonus_values": [
+            {
+              "value": 0.5,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 11,
+          "activated_at": null,
+          "amount": 43,
+          "bonus_values": [
+            {
+              "value": 0.75,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        },
+        {
+          "status": "cannot_be_activated",
+          "action_time": 7200,
+          "active_till": null,
+          "level": 12,
+          "activated_at": null,
+          "amount": 30,
+          "bonus_values": [
+            {
+              "value": 1.0,
+              "battle_type": "All Battles"
+            }
+          ],
+          "x_level_only": false
+        }
+      ],
+      "type": "TACTICAL_TRAINING",
+      "icon": "https:\/\/wgsh-woteu-static.wgcdn.co\/cdn_static\/reserves\/tactical-training.png"
+    }
+  ]
+}

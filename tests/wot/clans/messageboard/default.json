@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "500181733": [
+      {
+        "created_at": 1744046715,
+        "updated_at": 1744046731,
+        "is_read": true,
+        "author_id": 522838801,
+        "editor_id": 522838801,
+        "message": "message_1"
+      },
+      {
+        "created_at": 1729693078,
+        "updated_at": 1729693078,
+        "is_read": true,
+        "author_id": 522838801,
+        "editor_id": 522838801,
+        "message": "message_2"
+      },
+      {
+        "created_at": 1717716685,
+        "updated_at": null,
+        "is_read": true,
+        "author_id": 522838801,
+        "editor_id": 0,
+        "message": "message_3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "500337789": {
+      "command_center_arena_id": "36_fishing_bay",
+      "stronghold_buildings_level": 0,
+      "skirmish_statistics": {
+        "win_10": 0,
+        "total_6": 0,
+        "total_10": 0,
+        "win_6": 0,
+        "total_10_in_28d": 0,
+        "win_8_in_28d": 0,
+        "lose_8": 0,
+        "lose_6": 0,
+        "total_8": 0,
+        "last_time_6": 0,
+        "last_time_10": 0,
+        "lose_10": 0,
+        "total_6_in_28d": 0,
+        "total_8_in_28d": 0,
+        "win_6_in_28d": 0,
+        "win_10_in_28d": 0,
+        "last_time_8": 0,
+        "win_8": 0
+      },
+      "battles_series_for_strongholds_statistics": {
+        "win_10": 0,
+        "total_10": 0,
+        "total_10_in_28d": 0,
+        "win_10_in_28d": 0,
+        "lose_10": 0
+      },
+      "clan_name": "clan_name",
+      "stronghold_level": 1,
+      "clan_id": 500000000,
+      "battles_for_strongholds_statistics": {
+        "win_10": 0,
+        "total_10": 0,
+        "total_10_in_28d": 0,
+        "win_10_in_28d": 0,
+        "last_time_10": 0,
+        "lose_10": 0
+      },
+      "building_slots": [
+        {
+          "direction": "A",
+          "arena_id": "114_czech",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "1",
+          "building_title": null
+        },
+        {
+          "direction": "A",
+          "arena_id": "28_desert",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "2",
+          "building_title": null
+        },
+        {
+          "direction": "B",
+          "arena_id": "05_prohorovka",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "1",
+          "building_title": null
+        },
+        {
+          "direction": "B",
+          "arena_id": "11_murovanka",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "2",
+          "building_title": null
+        },
+        {
+          "direction": "C",
+          "arena_id": "01_karelia",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "1",
+          "building_title": null
+        },
+        {
+          "direction": "C",
+          "arena_id": "18_cliff",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "2",
+          "building_title": null
+        },
+        {
+          "direction": "D",
+          "arena_id": "99_poland",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "1",
+          "building_title": null
+        },
+        {
+          "direction": "D",
+          "arena_id": "45_north_america",
+          "reserve_title": null,
+          "building_level": null,
+          "position": "2",
+          "building_title": null
+        }
+      ],
+      "clan_tag": "tag"
+    }
+  }
+}

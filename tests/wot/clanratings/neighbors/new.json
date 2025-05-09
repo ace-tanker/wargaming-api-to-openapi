@@ -1,0 +1,111 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": [
+    {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "exclude_reasons": {
+        "fort_elo_rating_6": "newbies_measure",
+        "efficiency": "newbies_measure",
+        "fort_elo_rating_8": "newbies_measure",
+        "fort_rating": "newbies_measure",
+        "fort_elo_rating": "newbies_measure",
+        "fort_elo_rating_10": "newbies_measure",
+        "battles_count_avg": "newbies_measure",
+        "battles_count_avg_daily": "newbies_measure",
+        "global_rating_weighted_avg": "newbies_measure",
+        "gm_elo_rating_8": "newbies_measure",
+        "wins_ratio_avg": "newbies_measure",
+        "gm_elo_rating_10": "newbies_measure",
+        "gm_elo_rating": "newbies_measure",
+        "gm_elo_rating_6": "newbies_measure",
+        "v10l_avg": "newbies_measure",
+        "global_rating_avg": "newbies_measure"
+      },
+      "efficiency": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 890
+      },
+      "rating_fort": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "clan_tag": "tag",
+      "battles_count_avg_daily": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 3.58
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 53.61
+      },
+      "clan_id": 500000000,
+      "fb_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 51.37
+      },
+      "clan_name": "clan_name",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 10271.0
+      },
+      "v10l_avg": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 2.0
+      },
+      "global_rating_avg": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 5361.0
+      }
+    }
+  ]
+}

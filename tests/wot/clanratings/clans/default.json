@@ -1,0 +1,101 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "500181733": {
+      "gm_elo_rating_10": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 952
+      },
+      "gm_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1071
+      },
+      "fb_elo_rating_8": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1018
+      },
+      "fb_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1122
+      },
+      "exclude_reasons": {
+        "fort_elo_rating_6": "inactivity",
+        "fort_elo_rating_8": "inactivity",
+        "gm_elo_rating_8": "inactivity",
+        "gm_elo_rating": "limits",
+        "gm_elo_rating_6": "limits",
+        "gm_elo_rating_10": "inactivity"
+      },
+      "efficiency": {
+        "rank_delta": 0,
+        "rank": 195,
+        "value": 10658
+      },
+      "rating_fort": {
+        "rank_delta": 1,
+        "rank": 63,
+        "value": 3670.36
+      },
+      "fb_elo_rating_10": {
+        "rank_delta": 6,
+        "rank": 152,
+        "value": 1250
+      },
+      "clan_tag": "14JUI",
+      "battles_count_avg_daily": {
+        "rank_delta": 1,
+        "rank": 3919,
+        "value": 8.4
+      },
+      "global_rating_weighted_avg": {
+        "rank_delta": 2,
+        "rank": 690,
+        "value": 5771.51
+      },
+      "clan_id": 500181733,
+      "fb_elo_rating": {
+        "rank_delta": 2,
+        "rank": 85,
+        "value": 1875.0
+      },
+      "gm_elo_rating_6": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 1000
+      },
+      "wins_ratio_avg": {
+        "rank_delta": 57,
+        "rank": 2347,
+        "value": 50.42
+      },
+      "clan_name": "République française",
+      "gm_elo_rating": {
+        "rank_delta": null,
+        "rank": null,
+        "value": 0.0
+      },
+      "battles_count_avg": {
+        "rank_delta": 3,
+        "rank": 2226,
+        "value": 32347.63
+      },
+      "v10l_avg": {
+        "rank_delta": 2,
+        "rank": 1254,
+        "value": 29.53
+      },
+      "global_rating_avg": {
+        "rank_delta": 10,
+        "rank": 2246,
+        "value": 6205.92
+      }
+    }
+  }
+}

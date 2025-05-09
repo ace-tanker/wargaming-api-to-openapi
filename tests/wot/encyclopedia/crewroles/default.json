@@ -1,0 +1,84 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 5
+  },
+  "data": {
+    "commander": {
+      "skills": [
+        "repair",
+        "camouflage",
+        "brotherhood",
+        "commander_tutor",
+        "commander_eagleEye",
+        "commander_sixthSense",
+        "commander_enemyShotPredictor",
+        "commander_practical",
+        "commander_emergency",
+        "commander_coordination"
+      ],
+      "role": "commander",
+      "name": "Commander"
+    },
+    "radioman": {
+      "skills": [
+        "repair",
+        "fireFighting",
+        "camouflage",
+        "brotherhood",
+        "radioman_finder",
+        "radioman_interference",
+        "radioman_signalInterception",
+        "radioman_sideBySide",
+        "radioman_expert"
+      ],
+      "role": "radioman",
+      "name": "Radio Operator"
+    },
+    "driver": {
+      "skills": [
+        "repair",
+        "camouflage",
+        "brotherhood",
+        "driver_virtuoso",
+        "driver_smoothDriving",
+        "driver_badRoadsKing",
+        "driver_rammingMaster",
+        "driver_motorExpert",
+        "driver_reliablePlacement"
+      ],
+      "role": "driver",
+      "name": "Driver"
+    },
+    "gunner": {
+      "skills": [
+        "repair",
+        "camouflage",
+        "brotherhood",
+        "gunner_sniper",
+        "gunner_smoothTurret",
+        "gunner_rancorous",
+        "gunner_focus",
+        "gunner_quickAiming",
+        "gunner_armorer"
+      ],
+      "role": "gunner",
+      "name": "Gunner"
+    },
+    "loader": {
+      "skills": [
+        "repair",
+        "camouflage",
+        "brotherhood",
+        "loader_pedant",
+        "loader_desperado",
+        "loader_intuition",
+        "loader_perfectCharge",
+        "loader_ammunitionImprove",
+        "loader_melee"
+      ],
+      "role": "loader",
+      "name": "Loader"
+    }
+  }
+}

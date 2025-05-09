@@ -1,0 +1,146 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "273": {
+      "engine": {
+        "name": "Maybach HL 108 TR R",
+        "power": 250,
+        "weight": 850,
+        "tag": "Maybach_HL_108_TR_R",
+        "fire_chance": 0.2,
+        "tier": 4
+      },
+      "siege": null,
+      "max_ammo": 27,
+      "suspension": {
+        "name": "Hummel",
+        "weight": 10000,
+        "load_limit": 23000,
+        "tag": "Hummel_Ausf_1943",
+        "traverse_speed": 24,
+        "tier": 5,
+        "steering_lock_angle": 0
+      },
+      "weight": 22150,
+      "armor": {
+        "turret": null,
+        "hull": {
+          "front": 30,
+          "sides": 20,
+          "rear": 20
+        }
+      },
+      "hp": 335,
+      "profile_id": "530-535-1556-21013",
+      "modules": {
+        "gun_id": 1556,
+        "suspension_id": 530,
+        "turret_id": null,
+        "radio_id": 535,
+        "engine_id": 21013
+      },
+      "gun": {
+        "move_down_arc": 3,
+        "caliber": 150,
+        "name": "15 cm s.F.H. 13 L\/17",
+        "weight": 1200,
+        "move_up_arc": 42,
+        "fire_rate": 2.27,
+        "dispersion": 0.7,
+        "tag": "_150mm_sFH13_L17",
+        "traverse_speed": 24,
+        "reload_time": 26.4,
+        "tier": 5,
+        "aim_time": 4.9
+      },
+      "is_default": true,
+      "turret": {
+        "name": "Hummel",
+        "weight": 100,
+        "view_range": 265,
+        "hp": 67,
+        "tag": "Hummel_0",
+        "traverse_speed": null,
+        "traverse_right_arc": 15,
+        "tier": 6,
+        "traverse_left_arc": 15
+      },
+      "hull_weight": 9700,
+      "radio": {
+        "tier": 3,
+        "signal_range": 310,
+        "tag": "FuG5",
+        "name": "FuG 5",
+        "weight": 50
+      },
+      "rapid": null,
+      "speed_forward": 42,
+      "hull_hp": 268,
+      "speed_backward": 10,
+      "tank_id": 273,
+      "ammo": [
+        {
+          "penetration": [
+            29,
+            38,
+            48
+          ],
+          "stun": {
+            "duration": [
+              6.3,
+              10.5
+            ]
+          },
+          "type": "HIGH_EXPLOSIVE",
+          "damage": [
+            360,
+            480,
+            600
+          ]
+        },
+        {
+          "penetration": [
+            36,
+            48,
+            60
+          ],
+          "stun": {
+            "duration": [
+              0.0,
+              0.0
+            ]
+          },
+          "type": "HIGH_EXPLOSIVE",
+          "damage": [
+            435,
+            580,
+            725
+          ]
+        },
+        {
+          "penetration": [
+            116,
+            154,
+            193
+          ],
+          "stun": {
+            "duration": [
+              0.0,
+              0.0
+            ]
+          },
+          "type": "HOLLOW_CHARGE",
+          "damage": [
+            255,
+            340,
+            425
+          ]
+        }
+      ],
+      "max_weight": 23000
+    }
+  }
+}

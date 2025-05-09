@@ -1,0 +1,348 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 34
+  },
+  "data": {
+    "repair": {
+      "is_perk": false,
+      "skill": "repair",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/repair.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/repair.png"
+      },
+      "name": "Repairs",
+      "description": "Increases the repair speed of damaged modules."
+    },
+    "driver_badRoadsKing": {
+      "is_perk": false,
+      "skill": "driver_badRoadsKing",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/driver_badRoadsKing.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/driver_badRoadsKing.png"
+      },
+      "name": "Off-Road Driving",
+      "description": null
+    },
+    "driver_smoothDriving": {
+      "is_perk": false,
+      "skill": "driver_smoothDriving",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/driver_smoothDriving.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/driver_smoothDriving.png"
+      },
+      "name": "Smooth Ride",
+      "description": "Improves accuracy when firing on the move."
+    },
+    "gunner_focus": {
+      "is_perk": false,
+      "skill": "gunner_focus",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/gunner_focus.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/gunner_focus.png"
+      },
+      "name": "Concentration",
+      "description": "Decreases the gun dispersion of a stationary vehicle."
+    },
+    "commander_practical": {
+      "is_perk": false,
+      "skill": "commander_practical",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/commander_practical.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/commander_practical.png"
+      },
+      "name": "Practicality",
+      "description": "Decreases consumable cooldown time."
+    },
+    "gunner_armorer": {
+      "is_perk": false,
+      "skill": "gunner_armorer",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/gunner_armorer.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/gunner_armorer.png"
+      },
+      "name": "Armorer",
+      "description": null
+    },
+    "loader_desperado": {
+      "is_perk": false,
+      "skill": "loader_desperado",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/loader_desperado.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/loader_desperado.png"
+      },
+      "name": "Adrenaline Rush",
+      "description": "Accelerates gun loading if the vehicle has under 25% of its hit points left."
+    },
+    "driver_reliablePlacement": {
+      "is_perk": false,
+      "skill": "driver_reliablePlacement",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/driver_reliablePlacement.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/driver_reliablePlacement.png"
+      },
+      "name": "Reliable Placement",
+      "description": null
+    },
+    "driver_virtuoso": {
+      "is_perk": false,
+      "skill": "driver_virtuoso",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/driver_virtuoso.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/driver_virtuoso.png"
+      },
+      "name": "Clutch Braking",
+      "description": "Increases hull traverse speed."
+    },
+    "commander_tutor": {
+      "is_perk": false,
+      "skill": "commander_tutor",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/commander_tutor.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/commander_tutor.png"
+      },
+      "name": "Mentor",
+      "description": "Knocked-out crew member is replaced by commander."
+    },
+    "commander_enemyShotPredictor": {
+      "is_perk": false,
+      "skill": "commander_enemyShotPredictor",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/commander_enemyShotPredictor.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/commander_enemyShotPredictor.png"
+      },
+      "name": "Sound Detection",
+      "description": "Indicates an enemy SPG shot."
+    },
+    "gunner_rancorous": {
+      "is_perk": false,
+      "skill": "gunner_rancorous",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/gunner_rancorous.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/gunner_rancorous.png"
+      },
+      "name": "Designated Target",
+      "description": "Increases the time before an enemy vehicle is no longer visible inside the Gunner's viewing area. Enables the identification of damaged modules."
+    },
+    "loader_perfectCharge": {
+      "is_perk": false,
+      "skill": "loader_perfectCharge",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/loader_perfectCharge.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/loader_perfectCharge.png"
+      },
+      "name": "Perfect Charge",
+      "description": null
+    },
+    "fireFighting": {
+      "is_perk": false,
+      "skill": "fireFighting",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/fireFighting.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/fireFighting.png"
+      },
+      "name": null,
+      "description": null
+    },
+    "radioman_interference": {
+      "is_perk": false,
+      "skill": "radioman_interference",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/radioman_interference.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/radioman_interference.png"
+      },
+      "name": "Jamming",
+      "description": "Decreases the time your vehicle is visible to the enemy."
+    },
+    "driver_motorExpert": {
+      "is_perk": false,
+      "skill": "driver_motorExpert",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/driver_motorExpert.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/driver_motorExpert.png"
+      },
+      "name": "Engineer",
+      "description": "The penalty to a damaged engine is reduced."
+    },
+    "loader_ammunitionImprove": {
+      "is_perk": false,
+      "skill": "loader_ammunitionImprove",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/loader_ammunitionImprove.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/loader_ammunitionImprove.png"
+      },
+      "name": "Ammo Tuning",
+      "description": "Increases average damage and penetration values."
+    },
+    "camouflage": {
+      "is_perk": false,
+      "skill": "camouflage",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/camouflage.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/camouflage.png"
+      },
+      "name": "Concealment",
+      "description": "Increases base vehicle concealment."
+    },
+    "commander_sixthSense": {
+      "is_perk": false,
+      "skill": "commander_sixthSense",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/commander_sixthSense.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/commander_sixthSense.png"
+      },
+      "name": "Sixth Sense",
+      "description": "Enables the Commander to identify whether their vehicle has been spotted by the enemy."
+    },
+    "radioman_sideBySide": {
+      "is_perk": false,
+      "skill": "radioman_sideBySide",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/radioman_sideBySide.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/radioman_sideBySide.png"
+      },
+      "name": "Side By Side",
+      "description": "Improved crew performance."
+    },
+    "loader_pedant": {
+      "is_perk": false,
+      "skill": "loader_pedant",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/loader_pedant.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/loader_pedant.png"
+      },
+      "name": "Safe Stowage",
+      "description": "Increases ammo rack durability."
+    },
+    "radioman_finder": {
+      "is_perk": false,
+      "skill": "radioman_finder",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/radioman_finder.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/radioman_finder.png"
+      },
+      "name": "Situational Awareness",
+      "description": "Increases view range."
+    },
+    "driver_rammingMaster": {
+      "is_perk": false,
+      "skill": "driver_rammingMaster",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/driver_rammingMaster.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/driver_rammingMaster.png"
+      },
+      "name": "Controlled Impact",
+      "description": "Decreases ramming damage to your vehicle and increases ramming damage to an enemy vehicle."
+    },
+    "loader_intuition": {
+      "is_perk": false,
+      "skill": "loader_intuition",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/loader_intuition.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/loader_intuition.png"
+      },
+      "name": "Intuition",
+      "description": "Significantly increases the speed of changing shell types in a loaded gun."
+    },
+    "brotherhood": {
+      "is_perk": false,
+      "skill": "brotherhood",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/brotherhood.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/brotherhood.png"
+      },
+      "name": "Brothers in Arms",
+      "description": "Increases general crew performance."
+    },
+    "radioman_expert": {
+      "is_perk": false,
+      "skill": "radioman_expert",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/radioman_expert.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/radioman_expert.png"
+      },
+      "name": "Communications Expert",
+      "description": "Improved crew performance."
+    },
+    "commander_eagleEye": {
+      "is_perk": false,
+      "skill": "commander_eagleEye",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/commander_eagleEye.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/commander_eagleEye.png"
+      },
+      "name": "Recon",
+      "description": "Increases the view range, especially when the observation devices are damaged."
+    },
+    "commander_emergency": {
+      "is_perk": false,
+      "skill": "commander_emergency",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/commander_emergency.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/commander_emergency.png"
+      },
+      "name": "Emergency",
+      "description": "The crew efficiency bonus is increased."
+    },
+    "commander_coordination": {
+      "is_perk": false,
+      "skill": "commander_coordination",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/commander_coordination.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/commander_coordination.png"
+      },
+      "name": "Coordination",
+      "description": "Aiming speed is increased."
+    },
+    "gunner_sniper": {
+      "is_perk": false,
+      "skill": "gunner_sniper",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/gunner_sniper.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/gunner_sniper.png"
+      },
+      "name": "Deadeye",
+      "description": null
+    },
+    "loader_melee": {
+      "is_perk": false,
+      "skill": "loader_melee",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/loader_melee.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/loader_melee.png"
+      },
+      "name": "Close Combat",
+      "description": "Accelerates gun loading in close combat."
+    },
+    "radioman_signalInterception": {
+      "is_perk": false,
+      "skill": "radioman_signalInterception",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/radioman_signalInterception.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/radioman_signalInterception.png"
+      },
+      "name": "Signal Interception",
+      "description": null
+    },
+    "gunner_quickAiming": {
+      "is_perk": false,
+      "skill": "gunner_quickAiming",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/gunner_quickAiming.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/gunner_quickAiming.png"
+      },
+      "name": "Quick Aiming",
+      "description": "Aiming speed is increased."
+    },
+    "gunner_smoothTurret": {
+      "is_perk": false,
+      "skill": "gunner_smoothTurret",
+      "image_url": {
+        "small_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/small\/gunner_smoothTurret.png",
+        "big_icon": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/tankmen\/skills\/big\/gunner_smoothTurret.png"
+      },
+      "name": "Snap Shot",
+      "description": "Decreases gun dispersion during turret rotation."
+    }
+  }
+}

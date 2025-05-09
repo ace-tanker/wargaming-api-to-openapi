@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "522838801": [
+      {
+        "role": "recruit",
+        "left_at": 1571673710,
+        "clan_id": 500180968,
+        "joined_at": 1570551992,
+        "account_id": 522838801
+      },
+      {
+        "role": "executive_officer",
+        "left_at": 1562260800,
+        "clan_id": 500158231,
+        "joined_at": 1560599332,
+        "account_id": 522838801
+      },
+      {
+        "role": "executive_officer",
+        "left_at": 1553969632,
+        "clan_id": 500158231,
+        "joined_at": 1517602281,
+        "account_id": 522838801
+      },
+      {
+        "role": "private",
+        "left_at": 1486827962,
+        "clan_id": 500015403,
+        "joined_at": 1456338918,
+        "account_id": 522838801
+      },
+      {
+        "role": "recruit",
+        "left_at": 1440127545,
+        "clan_id": 500050063,
+        "joined_at": 1435692243,
+        "account_id": 522838801
+      },
+      {
+        "role": "recruit",
+        "left_at": 1424528884,
+        "clan_id": 500035298,
+        "joined_at": 1423917056,
+        "account_id": 522838801
+      }
+    ]
+  }
+}

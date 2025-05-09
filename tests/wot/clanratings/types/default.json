@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "meta": { "count": 1 },
+  "data": {
+    "all": {
+      "type": "all",
+      "rank_fields": [ "fort_elo_rating_6", "fort_elo_rating_8", "battles_count_avg_daily", "global_rating_weighted_avg", "gm_elo_rating_10", "wins_ratio_avg", "v10l_avg", "fort_rating", "efficiency", "gm_elo_rating_8", "gm_elo_rating_6", "fort_elo_rating_10", "fort_elo_rating", "gm_elo_rating", "battles_count_avg", "global_rating_avg" ]
+    }
+  }
+}

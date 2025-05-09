@@ -1,0 +1,141 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "19009": {
+      "engine": {
+        "name": "Panhard 12H 6000 X",
+        "power": 720,
+        "weight": 279,
+        "tag": "Panhard_12H_6000_X",
+        "fire_chance": 0.15,
+        "tier": 10
+      },
+      "siege": null,
+      "max_ammo": 36,
+      "suspension": {
+        "name": "Panhard EBR 105",
+        "weight": 3000,
+        "load_limit": 20000,
+        "tag": "Chassis_F108_Panhard_EBR_105",
+        "traverse_speed": 0,
+        "tier": 10,
+        "steering_lock_angle": 33
+      },
+      "weight": 17000,
+      "armor": {
+        "turret": {
+          "front": 15,
+          "sides": 10,
+          "rear": 10
+        },
+        "hull": {
+          "front": 40,
+          "sides": 16,
+          "rear": 40
+        }
+      },
+      "hp": 1300,
+      "profile_id": "8775-25412-25925-33347-40258",
+      "modules": {
+        "gun_id": 25412,
+        "suspension_id": 40258,
+        "turret_id": 33347,
+        "radio_id": 8775,
+        "engine_id": 25925
+      },
+      "gun": {
+        "move_down_arc": 7,
+        "caliber": 105,
+        "name": "105 mm D. 1504 (EBR)",
+        "weight": 1210,
+        "move_up_arc": 15,
+        "fire_rate": 5.0,
+        "dispersion": 0.38,
+        "tag": "_105mm_D_1504_EBR",
+        "traverse_speed": 26,
+        "reload_time": 12.0,
+        "tier": 10,
+        "aim_time": 1.4
+      },
+      "is_default": true,
+      "turret": {
+        "name": "Panhard EBR 105",
+        "weight": 4000,
+        "view_range": 340,
+        "hp": 260,
+        "tag": "Turret_1_F108_Panhard_EBR_105",
+        "traverse_speed": 66,
+        "traverse_right_arc": 180,
+        "tier": 10,
+        "traverse_left_arc": 180
+      },
+      "hull_weight": 8131,
+      "radio": {
+        "tier": 10,
+        "signal_range": 750,
+        "tag": "SCR_528_Fr",
+        "name": "SCR-528 Fr",
+        "weight": 80
+      },
+      "rapid": {
+        "speed_backward": 65,
+        "switch_off_time": 0.0,
+        "switch_on_time": 0.0,
+        "speed_forward": 91,
+        "suspension_steering_lock_angle": 15
+      },
+      "speed_forward": 70,
+      "hull_hp": 1040,
+      "speed_backward": 50,
+      "tank_id": 19009,
+      "ammo": [
+        {
+          "penetration": [
+            143,
+            190,
+            238
+          ],
+          "stun": null,
+          "type": "ARMOR_PIERCING_CR",
+          "damage": [
+            293,
+            390,
+            488
+          ]
+        },
+        {
+          "penetration": [
+            180,
+            240,
+            300
+          ],
+          "stun": null,
+          "type": "HOLLOW_CHARGE",
+          "damage": [
+            293,
+            390,
+            488
+          ]
+        },
+        {
+          "penetration": [
+            56,
+            75,
+            94
+          ],
+          "stun": null,
+          "type": "HIGH_EXPLOSIVE",
+          "damage": [
+            375,
+            500,
+            625
+          ]
+        }
+      ],
+      "max_weight": 20000
+    }
+  }
+}

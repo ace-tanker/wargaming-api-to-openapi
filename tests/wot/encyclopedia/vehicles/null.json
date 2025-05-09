@@ -1,0 +1,13 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1,
+    "page_total": null,
+    "total": null,
+    "limit": null,
+    "page": null
+  },
+  "data": {
+    "0": null
+  }
+}

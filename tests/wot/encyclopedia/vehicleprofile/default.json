@@ -1,0 +1,135 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "1": {
+      "engine": {
+        "name": "V-2",
+        "power": 480,
+        "weight": 750,
+        "tag": "V-2",
+        "fire_chance": 0.15,
+        "tier": 5
+      },
+      "siege": null,
+      "max_ammo": 90,
+      "suspension": {
+        "name": "T-34 mod. 1941",
+        "weight": 8000,
+        "load_limit": 30000,
+        "tag": "T-34_mod_1941",
+        "traverse_speed": 37,
+        "tier": 4,
+        "steering_lock_angle": 0
+      },
+      "weight": 27940,
+      "armor": {
+        "turret": {
+          "front": 45,
+          "sides": 45,
+          "rear": 45
+        },
+        "hull": {
+          "front": 45,
+          "sides": 45,
+          "rear": 40
+        }
+      },
+      "hp": 560,
+      "profile_id": "2-3-4-5-775",
+      "modules": {
+        "gun_id": 4,
+        "suspension_id": 2,
+        "turret_id": 3,
+        "radio_id": 775,
+        "engine_id": 5
+      },
+      "gun": {
+        "move_down_arc": 6,
+        "caliber": 76,
+        "name": "76 mm L-11",
+        "weight": 660,
+        "move_up_arc": 17,
+        "fire_rate": 10.0,
+        "dispersion": 0.51,
+        "tag": "_76mm_L-11",
+        "traverse_speed": 39,
+        "reload_time": 6.0,
+        "tier": 4,
+        "aim_time": 2.9
+      },
+      "is_default": true,
+      "turret": {
+        "name": "T-34 mod. 1940",
+        "weight": 3200,
+        "view_range": 320,
+        "hp": 88,
+        "tag": "T-34_mod_1940",
+        "traverse_speed": 40,
+        "traverse_right_arc": 180,
+        "tier": 4,
+        "traverse_left_arc": 180
+      },
+      "hull_weight": 15000,
+      "radio": {
+        "tier": 4,
+        "signal_range": 325,
+        "tag": "_9R",
+        "name": "9R",
+        "weight": 80
+      },
+      "rapid": null,
+      "speed_forward": 56,
+      "hull_hp": 472,
+      "speed_backward": 20,
+      "tank_id": 1,
+      "ammo": [
+        {
+          "penetration": [
+            51,
+            68,
+            85
+          ],
+          "stun": null,
+          "type": "ARMOR_PIERCING",
+          "damage": [
+            83,
+            110,
+            138
+          ]
+        },
+        {
+          "penetration": [
+            56,
+            75,
+            94
+          ],
+          "stun": null,
+          "type": "HOLLOW_CHARGE",
+          "damage": [
+            83,
+            110,
+            138
+          ]
+        },
+        {
+          "penetration": [
+            29,
+            38,
+            48
+          ],
+          "stun": null,
+          "type": "HIGH_EXPLOSIVE",
+          "damage": [
+            117,
+            156,
+            195
+          ]
+        }
+      ],
+      "max_weight": 30000
+    }
+  }
+}

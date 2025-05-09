@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "meta": { "count": 3 },
+  "data": {
+    "access_token": "123456789",
+    "account_id": 522838801,
+    "expires_at": 1747690351
+  }
+}

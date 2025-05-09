@@ -1,0 +1,346 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "1": [
+      {
+        "is_default": true,
+        "profile_id": "2-3-4-5-775",
+        "price_credit": 53380,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-4-5-1287",
+        "price_credit": 75640,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-4-261-775",
+        "price_credit": 62490,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-4-261-1287",
+        "price_credit": 84750,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-5-516-775",
+        "price_credit": 57940,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-5-516-1287",
+        "price_credit": 80200,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-5-775-1284",
+        "price_credit": 68870,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-5-1284-1287",
+        "price_credit": 91130,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-261-516-775",
+        "price_credit": 67050,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-261-516-1287",
+        "price_credit": 89310,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-261-775-1284",
+        "price_credit": 77980,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-3-261-1284-1287",
+        "price_credit": 100240,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-4-5-259-775",
+        "price_credit": 59400,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-4-5-259-1287",
+        "price_credit": 81660,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-4-259-261-775",
+        "price_credit": 68510,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-4-259-261-1287",
+        "price_credit": 90770,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-5-259-516-775",
+        "price_credit": 63960,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-5-259-516-1287",
+        "price_credit": 86220,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-5-259-775-1284",
+        "price_credit": 74890,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-5-259-775-1540",
+        "price_credit": 73540,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-5-259-1284-1287",
+        "price_credit": 97150,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-5-259-1287-1540",
+        "price_credit": 95800,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-259-261-516-775",
+        "price_credit": 73070,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-259-261-516-1287",
+        "price_credit": 95330,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-259-261-775-1284",
+        "price_credit": 84000,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-259-261-775-1540",
+        "price_credit": 82650,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-259-261-1284-1287",
+        "price_credit": 106260,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "2-259-261-1287-1540",
+        "price_credit": 104910,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-4-5-258-775",
+        "price_credit": 58660,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-4-5-258-1287",
+        "price_credit": 80920,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-4-258-261-775",
+        "price_credit": 67770,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-4-258-261-1287",
+        "price_credit": 90030,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-5-258-516-775",
+        "price_credit": 63220,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-5-258-516-1287",
+        "price_credit": 85480,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-5-258-775-1284",
+        "price_credit": 74150,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-5-258-1284-1287",
+        "price_credit": 96410,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-258-261-516-775",
+        "price_credit": 72330,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-258-261-516-1287",
+        "price_credit": 94590,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-258-261-775-1284",
+        "price_credit": 83260,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "3-258-261-1284-1287",
+        "price_credit": 105520,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "4-5-258-259-775",
+        "price_credit": 64680,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "4-5-258-259-1287",
+        "price_credit": 86940,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "4-258-259-261-775",
+        "price_credit": 73790,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "4-258-259-261-1287",
+        "price_credit": 96050,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "5-258-259-516-775",
+        "price_credit": 69240,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "5-258-259-516-1287",
+        "price_credit": 91500,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "5-258-259-775-1284",
+        "price_credit": 80170,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "5-258-259-775-1540",
+        "price_credit": 78820,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "5-258-259-1284-1287",
+        "price_credit": 102430,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "5-258-259-1287-1540",
+        "price_credit": 101080,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "258-259-261-516-775",
+        "price_credit": 78350,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "258-259-261-516-1287",
+        "price_credit": 100610,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "258-259-261-775-1284",
+        "price_credit": 89280,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "258-259-261-775-1540",
+        "price_credit": 87930,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "258-259-261-1284-1287",
+        "price_credit": 111540,
+        "tank_id": 1
+      },
+      {
+        "is_default": false,
+        "profile_id": "258-259-261-1287-1540",
+        "price_credit": 110190,
+        "tank_id": 1
+      }
+    ]
+  }
+}
