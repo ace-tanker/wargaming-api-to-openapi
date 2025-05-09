@@ -1,0 +1,4 @@
+* text=auto
+*.json text working-tree-encoding=UTF-8
+*.mts text working-tree-encoding=UTF-8
+*.html text working-tree-encoding=UTF-8
