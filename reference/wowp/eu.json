@@ -1,0 +1,5354 @@
+{
+  "long_name": "World of Warplanes", 
+  "category_names": {
+    "ratings": "Player ratings", 
+    "account": "Account", 
+    "encyclopedia": "Encyclopedia", 
+    "clans": "Clans", 
+    "planes": "Aircraft"
+  }, 
+  "name": "wowp", 
+  "methods": [
+    {
+      "method_key": "wowp_account_list", 
+      "category_name": "Account", 
+      "errors": [
+        [
+          402, 
+          "SEARCH_NOT_SPECIFIED", 
+          "**Search** parameter not specified with no account_id"
+        ], 
+        [
+          407, 
+          "NOT_ENOUGH_SEARCH_LENGTH", 
+          "**Search** parameter is not long enough. Allowed value depends on **type** parameter."
+        ], 
+        [
+          407, 
+          "SEARCH_LIST_LIMIT_EXCEEDED", 
+          "Limit of specified names in **search** parameter exceeded ( >100 )"
+        ]
+      ], 
+      "name": "Players", 
+      "url": "account/list", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nickname", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Search type. Default is \"startswith\". Valid values:\n\n* \"startswith\" &mdash; Search by initial characters of player name. Minimum length: 3 characters. Maximum length: 24 characters. (by default)\n* \"exact\" &mdash; Search by exact match of player name. Case insensitive. You can enter several names, separated with commas (up to 100). ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "search", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name search string. Parameter \"type\" defines minimum length and type of search. Using the exact search type, you can enter several names, separated with commas. Maximum length: 24.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Number of returned entries (fewer can be returned, but not more than 100). If the limit sent exceeds 100, a limit of None is applied (by default).", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns partial list of players. The list is filtered by initial characters of user name and sorted alphabetically."
+    }, 
+    {
+      "method_key": "wowp_account_info2", 
+      "category_name": "Account", 
+      "errors": [], 
+      "name": "Player personal data", 
+      "url": "account/info2", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "cbt_games_played", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Battles fought during Close Beta Test", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "client_language", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Language selected in the game client", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "created_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when player's account was created", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "global_rating", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Personal rating", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "last_battle_time", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Last battle time", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nickname", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "obt_games_played", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Battles fought during Open Beta Test", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "updated_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when player details were updated", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Player statistics", 
+            "fields": [
+              {
+                "help_text": "General player statistics", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "wins", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Victories", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "battles", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Battles fought", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "draws", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Draws", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "losses", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Defeats", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "deaths", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of times player's aircraft was destroyed", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "flights", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of sorties", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "flight_time", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Sortie duration", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "battle_score", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Combat points", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "zone_captures", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Total participations in capturing sectors", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_battles_score", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most combat points earned per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_xp", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average experience earned per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_battle_score", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average number of combat points earned per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "help_text": "Bombers", 
+                    "fields": [
+                      {
+                        "doc_type": "numeric", 
+                        "name": "assisted", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of assists", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Damage caused", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "max_damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most damage caused per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of destroyed aerial targets", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "max_killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most aerial targets destroyed per battle", 
+                        "deprecated_text": ""
+                      }
+                    ], 
+                    "deprecated_text": "", 
+                    "name": "bombers", 
+                    "deprecated": false
+                  }, 
+                  {
+                    "help_text": "Air defense aircraft", 
+                    "fields": [
+                      {
+                        "doc_type": "numeric", 
+                        "name": "assisted", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of assists", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Damage caused", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "max_damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most damage caused per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of destroyed aerial targets", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "max_killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most aerial targets destroyed per battle", 
+                        "deprecated_text": ""
+                      }
+                    ], 
+                    "deprecated_text": "", 
+                    "name": "defenders", 
+                    "deprecated": false
+                  }, 
+                  {
+                    "help_text": "Ground targets", 
+                    "fields": [
+                      {
+                        "doc_type": "numeric", 
+                        "name": "assisted", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of assists", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Damage caused", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "max_damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most damage caused per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of destroyed aerial targets", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "max_killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most aerial targets destroyed per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "avg_killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Average number of aerial targets destroyed per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "avg_killed_per_flight", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Average number of aerial targets destroyed per sortie", 
+                        "deprecated_text": ""
+                      }
+                    ], 
+                    "deprecated_text": "", 
+                    "name": "ground_objects", 
+                    "deprecated": false
+                  }, 
+                  {
+                    "help_text": "Players", 
+                    "fields": [
+                      {
+                        "doc_type": "numeric", 
+                        "name": "assisted", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of assists", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Damage caused", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "max_damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most damage caused per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of destroyed aerial targets", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "max_killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most aerial targets destroyed per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "avg_killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Average number of aerial targets destroyed per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "numeric", 
+                        "name": "killed_in_defence", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Number of aerial targets destroyed when defending sectors", 
+                        "deprecated_text": ""
+                      }
+                    ], 
+                    "deprecated_text": "", 
+                    "name": "players", 
+                    "deprecated": false
+                  }, 
+                  {
+                    "help_text": "Aerial targets", 
+                    "fields": [
+                      {
+                        "doc_type": "float", 
+                        "name": "max_damage_dealt", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Most damage caused per battle", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "float", 
+                        "name": "avg_killed_per_flight", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Average number of aerial targets destroyed per sortie", 
+                        "deprecated_text": ""
+                      }
+                    ], 
+                    "deprecated_text": "", 
+                    "name": "air_targets", 
+                    "deprecated": false
+                  }, 
+                  {
+                    "help_text": "Air defense aircraft and bombers", 
+                    "fields": [
+                      {
+                        "doc_type": "float", 
+                        "name": "avg_killed", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Average number of aerial targets destroyed per battle", 
+                        "deprecated_text": ""
+                      }
+                    ], 
+                    "deprecated_text": "", 
+                    "name": "defenders_and_bombers", 
+                    "deprecated": false
+                  }, 
+                  {
+                    "doc_type": "associative array", 
+                    "name": "flights_by_plane_type", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of sorties by aircraft types", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "associative array", 
+                    "name": "ranks_by_plane_type", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Grades for completing aircraft type-specific missions", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "associative array", 
+                    "name": "eff_by_plane_type", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Battle performance by aircraft types", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "all", 
+                "deprecated": false
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "statistics", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Player's private data", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "credits", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "free_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Free Experience", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "associative array", 
+                "name": "contacts", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Contact groups", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "gold", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Gold", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "premium_expires_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Premium Account expiration time", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "boolean", 
+                "name": "is_premium", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the account is Premium Account", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "private", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "[Access token](/documentation/guide/principles/#access_token) for the private data of a user's account; can be received via the authorization method; valid within a stated time period", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns player details."
+    }, 
+    {
+      "method_key": "wowp_account_achievements", 
+      "category_name": "Account", 
+      "errors": [], 
+      "name": "Player's achievements", 
+      "url": "account/achievements", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Achievements earned", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Most number", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "first_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "First time when an achievement was received", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "last_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Last time when an achievement was received", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "achievements", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns players' achievement details."
+    }, 
+    {
+      "method_key": "wowp_clans_list", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Clans", 
+      "url": "clans/list", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "tag", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan tag", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "created_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creation date", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "members_count", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Number of clan members", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "search", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Part of name or tag for clan search. Minimum 2 characters", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Number of returned entries (fewer can be returned, but not more than 100). If the limit sent exceeds 100, a limit of 100 is applied (by default).", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "page_no", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Page number. Default is 1. Min value is 1.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method searches through clans and sorts them in a specified order."
+    }, 
+    {
+      "method_key": "wowp_clans_info", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Clan details", 
+      "url": "clans/info", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "tag", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan tag", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "created_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creation date", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "members_count", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Number of clan members", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "old_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Old clan name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "old_tag", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Old clan tag", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "renamed_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Time (UTC) when clan name was changed", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "description", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan description", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_clan_disbanded", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan has been deleted. The deleted clan data contains valid values for the following fields only: **clan_id**, **is_clan_disbanded**, **updated_at**.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "updated_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Time when clan details were updated", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "creator_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creator ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "creator_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creator's name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "leader_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Commander ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "leader_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Commander's name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "list of integers", 
+            "name": "members_ids", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "List of clan players' IDs", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Clan members.\n\n**An extra field.**", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "account_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "User ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "account_name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Player name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "joined_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Date when player joined clan", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "role", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Technical position name", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "members", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "extra", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Extra fields that will be added to the response. Valid values:\n\n* \"members\" ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID. Maximum limit: 100. Min value is 1.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns detailed clan information."
+    }, 
+    {
+      "method_key": "wowp_clans_glossary", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Clan glossary", 
+      "url": "clans/glossary", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "associative array", 
+            "name": "clans_roles", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Available clan positions", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Clan settings", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "max_members_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Max number of clan members", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "settings", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information on clan entities."
+    }, 
+    {
+      "method_key": "wowp_clans_accountinfo", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Player clan data", 
+      "url": "clans/accountinfo", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "User ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "account_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "joined_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when player joined clan", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "role", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Technical position name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Brief clan details.\n\n**An extra field.**", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "clan_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "tag", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan tag", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "created_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan creation date", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "members_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of clan members", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "clan", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "extra", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Extra fields that will be added to the response. Valid values:\n\n* \"clan\" ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Account ID. Maximum limit: 100. Min value is 1.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns player clan data. Player clan data exist only for accounts, that were participating in clan activities: sent join requests, were clan members, etc."
+    }, 
+    {
+      "method_key": "wowp_encyclopedia_planes", 
+      "category_name": "Encyclopedia", 
+      "errors": [], 
+      "name": "List of aircraft", 
+      "url": "encyclopedia/planes", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized **name** field", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "level", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Tier", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nation", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Nation", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nation_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized **nation** field", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_premium", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Indicates if the aircraft is Premium aircraft", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_gift", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Indicates if the aircraft was a gift", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Type", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Aircraft images", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "small", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to 51 x 31 px image of aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "medium", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to 102 x 63 px image of aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "large", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to 408 x 252 px image of aircraft", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "images", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Type. Maximum limit: 100. Valid values:\n\n* \"fighter\" &mdash; Fighter \n* \"fighterHeavy\" &mdash; Heavy Fighter \n* \"assault\" &mdash; Attack Aircraft \n* \"navy\" &mdash; Multirole Fighter \n* \"bomber\" &mdash; Bomber ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "nation", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Nation. Maximum limit: 100. Valid values:\n\n* \"ussr\" &mdash; U.S.S.R. \n* \"germany\" &mdash; Germany \n* \"usa\" &mdash; U.S.A. \n* \"france\" &mdash; France \n* \"uk\" &mdash; U.K. \n* \"china\" &mdash; China \n* \"japan\" &mdash; Japan ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns list of all aircrafts from Encyclopedia."
+    }, 
+    {
+      "method_key": "wowp_encyclopedia_planeinfo", 
+      "category_name": "Encyclopedia", 
+      "errors": [], 
+      "name": "Aircraft details", 
+      "url": "encyclopedia/planeinfo", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized **name** field", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "short_name_18n", 
+            "deprecated": true, 
+            "required": true, 
+            "help_text": "Localized short name of aircraft", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "short_name_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized short name of aircraft", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "level", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Tier", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nation", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Nation", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nation_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized **nation** field", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_premium", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Indicates if the aircraft is Premium aircraft", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_gift", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Indicates if the aircraft was a gift", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "description", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized description of aircraft", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Type", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "price_credit", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Purchase cost in credits", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "price_gold", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Purchase cost in gold", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Aircraft images", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "small", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to 51 x 31 px image of aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "medium", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to 102 x 63 px image of aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "large", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to 408 x 252 px image of aircraft", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "images", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Crew", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "role", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Qualification of crew member", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "role_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **role** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "crew", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Calculation of specifications", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "hp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hit points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "slots_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of slots", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_factor", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Airspeed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_at_the_ground", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top speed at sea level", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top speed at best altitude", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "optimal_height", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Optimum altitude", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dive_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum dive speed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "stall_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Stall speed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "rate_of_climbing", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rate of climb", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "optimal_maneuver_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Optimum airspeed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dps", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Firepower", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "maneuverability", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maneuverability", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "average_turn_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average time to turn 360 deg", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "roll_maneuverability", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rate of roll", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "controllability", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Controllability", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "features", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "list of integers", 
+            "name": "prev_planes", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Ancestors of the vehicle first generation", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "list of integers", 
+            "name": "next_planes", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Descendants of the vehicle first generation", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID. Maximum limit: 1000. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns aircraft details from Encyclopedia."
+    }, 
+    {
+      "method_key": "wowp_encyclopedia_planemodules", 
+      "category_name": "Encyclopedia", 
+      "errors": [], 
+      "name": "Configuration", 
+      "url": "encyclopedia/planemodules", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "help_text": "Engine", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is standard", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **name** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "level", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Research cost", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Purchase cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "compatible_vehicles", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "List of compatible aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "engine_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Engine ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "equipment_type", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Type", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "equipment_type_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **equipment_type** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "power", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "Power", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "thrust", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "Thrust", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "engine", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Airframe", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is standard", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **name** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "level", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Research cost", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Purchase cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "compatible_vehicles", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "List of compatible aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "construction_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Airframe ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "hp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hit points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "construction", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Autocannon", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is standard", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **name** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "level", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Research cost", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Purchase cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "compatible_vehicles", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "List of compatible aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "gun_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Gun ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "type", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Type", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "type_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **type** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "caliber", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Caliber", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rpm", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rate of fire", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "bullet_velocity", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Muzzle velocity", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dps", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "gun", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Rear gun", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is standard", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **name** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "level", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Research cost", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Purchase cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "compatible_vehicles", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "List of compatible aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "turret_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rear gun ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "bullet_velocity", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Muzzle velocity", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "caliber", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Caliber", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dps", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rpm", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rate of fire", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "weapon_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Autocannon", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "turret", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Bomb", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is standard", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **name** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "level", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Research cost", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Purchase cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "compatible_vehicles", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "List of compatible aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "bomb_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Bomb ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_radius", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage radius", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_damage_max", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "bomb", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Rocket", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is standard", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **name** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "level", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Research cost", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Purchase cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "compatible_vehicles", 
+                "deprecated": false, 
+                "required": false, 
+                "help_text": "List of compatible aircraft", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rocket_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rocket ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_radius", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage radius", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_damage_max", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "rocket", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID. Maximum limit: 1000. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Configuration. Default is \"engine, bomb, rocket, turret, turretfront, turretupper, turretlower, gun, construction\". Maximum limit: 100. Valid values:\n\n* \"engine\" &mdash; engine \n* \"bomb\" &mdash; bomb \n* \"rocket\" &mdash; rocket \n* \"turret\" &mdash; rear gun \n* \"turretfront\" &mdash; Передняя турель \n* \"turretupper\" &mdash; Верхняя турель \n* \"turretlower\" &mdash; Нижняя турель \n* \"gun\" &mdash; autocannon \n* \"construction\" &mdash; airframe ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information from Encyclopedia about modules available for specified aircrafts."
+    }, 
+    {
+      "method_key": "wowp_encyclopedia_planeupgrades", 
+      "category_name": "Encyclopedia", 
+      "errors": [], 
+      "name": "Tech Tree", 
+      "url": "encyclopedia/planeupgrades", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "slot_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Slot name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "slot_name_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized **slot_name** field", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Modules available", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "module_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is standard", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "parent", 
+                "deprecated": true, 
+                "required": true, 
+                "help_text": "Name of parent module in Tech Tree", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "parent_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Parent module ID in Tech Tree", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of strings", 
+                "name": "conflicts", 
+                "deprecated": true, 
+                "required": true, 
+                "help_text": "Incompatible modules", 
+                "deprecated_text": "Use the field **incompatible_modules**"
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "incompatible_modules", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": " List of IDs of incompatible modules", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "next_plane_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Aircraft ID to be opened with module research", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of installed modules", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "bind_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "ID of unique bind of slot and module", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "modules", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information from Encyclopedia about slots of aircrafts and lists of modules which are compatible with specified slots."
+    }, 
+    {
+      "method_key": "wowp_encyclopedia_planespecification", 
+      "category_name": "Encyclopedia", 
+      "errors": [], 
+      "name": "Calculation of specifications", 
+      "url": "encyclopedia/planespecification", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "help_text": "Slots and modules", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "slot_name", 
+                "deprecated": true, 
+                "required": true, 
+                "help_text": "Slot name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "slot_name_i18n", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Localized **slot_name** field", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "module_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Standard module", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "bind_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "ID of unique bind of slot and module", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "slots", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Aircraft specifications", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "hp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hit points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "mass", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_factor", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Airspeed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_at_the_ground", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top speed at sea level", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top speed at best altitude", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "optimal_height", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Optimum altitude", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dive_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum dive speed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "stall_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Stall speed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "rate_of_climbing", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rate of climb", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "optimal_maneuver_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Optimum airspeed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dps", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Firepower", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "maneuverability", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maneuverability", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "average_turn_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average time to turn 360 deg", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "roll_maneuverability", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rate of roll", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "controllability", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Controllability", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "specification", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "module_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Module ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "bind_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "ID of unique bind of slot and module. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information from Encyclopedia about aircraft specifications depending on installed modules."
+    }, 
+    {
+      "method_key": "wowp_encyclopedia_achievements", 
+      "category_name": "Encyclopedia", 
+      "errors": [], 
+      "name": "Achievements", 
+      "url": "encyclopedia/achievements", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "achievement_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Achievement ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Achievement name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized **name** field", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "image", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "URL to image", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "description", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Achievement description", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "order", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Sort order", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "section", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Section", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "section_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized section name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "type", 
+            "deprecated": true, 
+            "required": true, 
+            "help_text": "ID of achievement type", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type_i18n", 
+            "deprecated": true, 
+            "required": true, 
+            "help_text": "Localized **type** field", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns dictionary of achievements from Encyclopedia."
+    }, 
+    {
+      "method_key": "wowp_encyclopedia_info", 
+      "category_name": "Encyclopedia", 
+      "errors": [], 
+      "name": "Encyclopedia information", 
+      "url": "encyclopedia/info", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "timestamp", 
+            "name": "updated_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when Encyclopedia data were updated", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information about Encyclopedia."
+    }, 
+    {
+      "method_key": "wowp_planes_stats", 
+      "category_name": "Aircraft", 
+      "errors": [], 
+      "name": "Player's aircraft statistics", 
+      "url": "planes/stats", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "updated_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when details on aircraft were updated", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "General statistics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "wins", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Victories", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "battles", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Battles fought", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "draws", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Draws", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "losses", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Defeats", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "deaths", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of times player's aircraft was destroyed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "flights", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of sorties", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "flight_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Sortie duration", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "battle_score", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Combat points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "zone_captures", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Total participations in capturing sectors", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_battles_score", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Most combat points earned per battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "avg_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average experience earned per battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "avg_battle_score", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average number of combat points earned per battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "help_text": "Bombers", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "assisted", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of assists", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage caused", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "max_damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most damage caused per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of destroyed aerial targets", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "bombers", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Air defense aircraft", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "assisted", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of assists", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage caused", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "max_damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most damage caused per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of destroyed aerial targets", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "defenders", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Ground targets", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "assisted", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of assists", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage caused", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "max_damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most damage caused per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_damage_dealt_per_flight", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average damage caused per sortie", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of destroyed aerial targets", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average number of aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_killed_per_flight", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average number of aerial targets destroyed per sortie", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed_per_flight", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed per sortie", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "ground_objects", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Players", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "assisted", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of assists", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage caused", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "max_damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most damage caused per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of destroyed aerial targets", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average number of aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "killed_in_defence", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of aerial targets destroyed when defending sectors", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed_in_defence", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed when defending sectors", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "players", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Aerial targets", 
+                "fields": [
+                  {
+                    "doc_type": "float", 
+                    "name": "max_damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most damage caused per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_damage_dealt_per_flight", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average damage caused per sortie", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_killed_per_flight", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average number of aerial targets destroyed per sortie", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed_per_flight", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed per sortie", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "air_targets", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Air defense aircraft and bombers", 
+                "fields": [
+                  {
+                    "doc_type": "float", 
+                    "name": "max_damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most damage caused per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Most aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "avg_killed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Average number of aerial targets destroyed per battle", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "defenders_and_bombers", 
+                "deprecated": false
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "chosen", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of times that an aircraft was selected during a battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "chosen_first", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of times that an aircraft was selected in the Hangar", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "avg_flight_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average sortie duration", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "all", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Private data on the player's aircraft", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "in_garage", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Aircraft availability in the Hangar", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "in_garage_updated_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Last time when the information about the availability of aircraft in the Hangar was updated", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "private", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "[Access token](/documentation/guide/principles/#access_token) for the private data of a user's account; can be received via the authorization method; valid within a stated time period", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Aircraft ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "in_garage", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Filter by aircraft availability in the Hangar. If the parameter is not specified, all aircraft are returned. Parameter processing requires a valid access_token for the specified account_id. Valid values:\n\n* \"1\" &mdash; Return aircraft available in the Hangar. \n* \"0\" &mdash; Return aircraft that are no longer available in the Hangar. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns statistics on player's aircraft."
+    }, 
+    {
+      "method_key": "wowp_planes_achievements", 
+      "category_name": "Aircraft", 
+      "errors": [], 
+      "name": "Player's aircraft achievements", 
+      "url": "planes/achievements", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Aircraft ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Achievements earned", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Most number", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "first_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "First time when an achievement was received", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "last_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Last time when an achievement was received", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "achievements", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "plane_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Aircraft ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns achievements on player's aircraft."
+    }, 
+    {
+      "method_key": "wowp_ratings_types", 
+      "category_name": "Player ratings", 
+      "errors": [], 
+      "name": "Types of ratings", 
+      "url": "ratings/types", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating period", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "threshold", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating threshold", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "list of strings", 
+            "name": "rank_fields", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating categories", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns dictionary of rating periods and ratings details."
+    }, 
+    {
+      "method_key": "wowp_ratings_dates", 
+      "category_name": "Player ratings", 
+      "errors": [
+        [
+          404, 
+          "RATINGS_NOT_FOUND", 
+          "No data"
+        ]
+      ], 
+      "name": "Dates with available ratings", 
+      "url": "ratings/dates", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "list of timestamps", 
+            "name": "dates", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Dates with available ratings", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating period. For valid values, check the [Types of ratings](/reference/all/wowp/ratings/types/) method.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Player account ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns dates with available rating data."
+    }, 
+    {
+      "method_key": "wowp_ratings_top", 
+      "category_name": "Player ratings", 
+      "errors": [
+        [
+          404, 
+          "RATINGS_NOT_FOUND", 
+          "No data"
+        ]
+      ], 
+      "name": "Top players", 
+      "url": "ratings/top", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Battles fought", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "battles_count", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total damage caused to aircraft", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "damage_dealt", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Enemy aircraft destroyed", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "frags_count", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total number of targets destroyed", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "frags_count_ground", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total damage caused to targets", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "damage_dealt_ground", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Maximum experience per battle", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "xp_max", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Victories/Battles ratio", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "wins_ratio", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Average experience per battle", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "xp_avg", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating period. For valid values, check the [Types of ratings](/reference/all/wowp/ratings/types/) method.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "rank_field", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating category", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp/date", 
+            "name": "date", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Ratings calculation date. Up to 7 days before the current date; default value: yesterday. Date in UNIX timestamp or ISO 8601 format. E.g.: 1376542800 or 2013-08-15T00:00:00", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Maximum number of top players on the list. Default is 10. Min value is 1. Maximum value: 1000.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "page_no", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Result page number. Default is 1. Min value is 1.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns list of top players by specified parameter."
+    }, 
+    {
+      "method_key": "wowp_ratings_accounts", 
+      "category_name": "Player ratings", 
+      "errors": [
+        [
+          404, 
+          "RATINGS_NOT_FOUND", 
+          "No data"
+        ]
+      ], 
+      "name": "Player ratings", 
+      "url": "ratings/accounts", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Battles fought", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "battles_count", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total damage caused to aircraft", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "damage_dealt", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Enemy aircraft destroyed", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "frags_count", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total number of targets destroyed", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "frags_count_ground", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total damage caused to targets", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "damage_dealt_ground", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Maximum experience per battle", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "xp_max", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Victories/Battles ratio", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "wins_ratio", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Average experience per battle", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "xp_avg", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating period. For valid values, check the [Types of ratings](/reference/all/wowp/ratings/types/) method.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp/date", 
+            "name": "date", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Ratings calculation date. Up to 7 days before the current date; default value: yesterday. Date in UNIX timestamp or ISO 8601 format. E.g.: 1376542800 or 2013-08-15T00:00:00", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns player ratings by specified IDs."
+    }, 
+    {
+      "method_key": "wowp_ratings_neighbors", 
+      "category_name": "Player ratings", 
+      "errors": [
+        [
+          404, 
+          "RATINGS_NOT_FOUND", 
+          "No data"
+        ]
+      ], 
+      "name": "Adjacent positions in rating", 
+      "url": "ratings/neighbors", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Battles fought", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "battles_count", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total damage caused to aircraft", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "damage_dealt", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Enemy aircraft destroyed", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "frags_count", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total number of targets destroyed", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "frags_count_ground", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Total damage caused to targets", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "damage_dealt_ground", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Maximum experience per battle", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "xp_max", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Victories/Battles ratio", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "wins_ratio", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Average experience per battle", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "value", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Absolute value", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Position", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rank_delta", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Change of position in rating", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "xp_avg", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"zh-cn\" &mdash; 简体中文 \n* \"tr\" &mdash; Türkçe \n* \"cs\" &mdash; Čeština \n* \"th\" &mdash; ไทย \n* \"vi\" &mdash; Tiếng Việt \n* \"ko\" &mdash; 한국어 ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating period. For valid values, check the [Types of ratings](/reference/all/wowp/ratings/types/) method.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "rank_field", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Rating category", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp/date", 
+            "name": "date", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Ratings calculation date. Up to 7 days before the current date; default value: yesterday. Date in UNIX timestamp or ISO 8601 format. E.g.: 1376542800 or 2013-08-15T00:00:00", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Maximum number of adjacent positions in rating. Default is 5. Min value is 1. Maximum value: 50.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns list of adjacent positions in specified rating."
+    }
+  ]
+}
