@@ -565,7 +565,7 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
     return [getPath(method.method_key), pathItem];
 }
 
-export function convertGame(game: Game): OpenAPI.OpenAPI {
+export function convertGame(game: Game, servers: OpenAPI.Server[]): OpenAPI.OpenAPI {
     return {
         openapi: "3.0.0",
         info: {
@@ -583,19 +583,7 @@ export function convertGame(game: Game): OpenAPI.OpenAPI {
             },
             version: "1.0.0"
         },
-        paths: Object.fromEntries(game.methods.filter(method => !method.deprecated && fs.existsSync(`tests/${method.method_key.split("_").join("/")}`)).map(convertMethod)),
-        servers: [{
-            url: "https://api.worldoftanks.eu/wot",
-            description: "Europe"
-        },
-        {
-            url: "https://api.worldoftanks.com/wot",
-            description: "North America"
-        },
-        {
-            url: "https://api.worldoftanks.asia/wot",
-            description: "Asia"
-        }],
+        servers,
         components: {
             parameters: {
                 fields: {
@@ -670,6 +658,7 @@ export function convertGame(game: Game): OpenAPI.OpenAPI {
         security: [{
             application_id: []
         }],
+        paths: Object.fromEntries(game.methods.filter(method => !method.deprecated && fs.existsSync(`tests/${method.method_key.split("_").join("/")}`)).map(convertMethod)),
         //tags: Object.values(game.category_names).map(name => ({ name }))
     }
 }
