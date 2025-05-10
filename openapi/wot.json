@@ -15,6 +15,105 @@
     },
     "version": "1.0.0"
   },
+  "servers": [
+    {
+      "url": "https://api.worldoftanks.eu/wot",
+      "description": "Europe"
+    },
+    {
+      "url": "https://api.worldoftanks.com/wot",
+      "description": "North America"
+    },
+    {
+      "url": "https://api.worldoftanks.asia/wot",
+      "description": "Asia"
+    },
+    {
+      "url": "https://api.tanki.su/wot",
+      "description": "CIS"
+    },
+    {
+      "url": "https://api.wotgame.cn/wot",
+      "description": "China"
+    }
+  ],
+  "components": {
+    "parameters": {
+      "fields": {
+        "name": "fields",
+        "description": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields.",
+        "in": "query",
+        "style": "form",
+        "explode": false,
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0,
+          "maxItems": 100,
+          "default": [
+          ]
+        }
+      },
+      "language": {
+        "name": "language",
+        "description": "Localization language.",
+        "in": "query",
+        "style": "form",
+        "explode": false,
+        "schema": {
+          "type": "string",
+          "enum": [
+            "en",
+            "ru",
+            "pl",
+            "de",
+            "fr",
+            "es",
+            "zh-cn",
+            "zh-tw",
+            "tr",
+            "cs",
+            "th",
+            "vi",
+            "ko"
+          ],
+          "x-enumDescriptions": [
+            "English",
+            "Russian",
+            "Polish",
+            "German",
+            "French",
+            "Spanish",
+            "Chinese Simplified",
+            "Chinese Traditional",
+            "Turkish",
+            "Czech",
+            "Thai",
+            "Vietnamese",
+            "Korean"
+          ]
+        }
+      }
+    },
+    "schemas": {
+    },
+    "securitySchemes": {
+      "application_id": {
+        "name": "application_id",
+        "description": "[Application](https://developers.wargaming.net/applications/) identification key used to send requests to API.",
+        "in": "query",
+        "type": "apiKey"
+      }
+    }
+  },
+  "security": [
+    {
+      "application_id": [
+      ]
+    }
+  ],
   "paths": {
     "/account/list/": {
       "get": {
@@ -15743,96 +15842,5 @@
         }
       }
     }
-  },
-  "servers": [
-    {
-      "url": "https://api.worldoftanks.eu/wot",
-      "description": "Europe"
-    },
-    {
-      "url": "https://api.worldoftanks.com/wot",
-      "description": "North America"
-    },
-    {
-      "url": "https://api.worldoftanks.asia/wot",
-      "description": "Asia"
-    }
-  ],
-  "components": {
-    "parameters": {
-      "fields": {
-        "name": "fields",
-        "description": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields.",
-        "in": "query",
-        "style": "form",
-        "explode": false,
-        "schema": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "minItems": 0,
-          "maxItems": 100,
-          "default": [
-          ]
-        }
-      },
-      "language": {
-        "name": "language",
-        "description": "Localization language.",
-        "in": "query",
-        "style": "form",
-        "explode": false,
-        "schema": {
-          "type": "string",
-          "enum": [
-            "en",
-            "ru",
-            "pl",
-            "de",
-            "fr",
-            "es",
-            "zh-cn",
-            "zh-tw",
-            "tr",
-            "cs",
-            "th",
-            "vi",
-            "ko"
-          ],
-          "x-enumDescriptions": [
-            "English",
-            "Russian",
-            "Polish",
-            "German",
-            "French",
-            "Spanish",
-            "Chinese Simplified",
-            "Chinese Traditional",
-            "Turkish",
-            "Czech",
-            "Thai",
-            "Vietnamese",
-            "Korean"
-          ]
-        }
-      }
-    },
-    "schemas": {
-    },
-    "securitySchemes": {
-      "application_id": {
-        "name": "application_id",
-        "description": "[Application](https://developers.wargaming.net/applications/) identification key used to send requests to API.",
-        "in": "query",
-        "type": "apiKey"
-      }
-    }
-  },
-  "security": [
-    {
-      "application_id": [
-      ]
-    }
-  ]
+  }
 }
