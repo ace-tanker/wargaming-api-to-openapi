@@ -60,6 +60,14 @@ function convertParameter(parameter: Parameter): OpenAPI.Schema | OpenAPI.Refere
             parameter.help_text = parameter.help_text.replace(defaultMatch[0], "");
         }
 
+        let limitMatch = help_text.match(/ \(fewer can be returned, but not more than (\d+|None)\)\. If the limit sent exceeds (\d+|None), a limit of (\d+|None) is applied \(by default\)/);
+
+        if (limitMatch?.length === 4) {
+            if (limitMatch[1] !== "None") type.maximum = parseInt(limitMatch[1]);
+            if (limitMatch[3] !== "None") type.default = parseInt(limitMatch[3]);
+            parameter.help_text = parameter.help_text.replace(limitMatch[0], "");
+        }
+
         if (doc_type === "numeric, list") {
             let res: OpenAPI.Schema = { type: "array", items: type };
 
