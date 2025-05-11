@@ -357,7 +357,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
         }
     }, new Map() as Map<"array" | "object" | "record", any[]>);
 
-    if (partial_match) console.warn(`Partial match: ${group.help_text}`);
+    if (partial_match) console.warn(`Partial group match: ${group.name}.`);
 
     const to = {
         object(tests: any[]) {
@@ -399,20 +399,21 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
         }
     }
 
-    if (types.size > 0) {
-        if (types.size > 1) {
-            return {
-                oneOf: [...types.entries()].map(([type, tests2]) => to[type](tests2))
-            }
-        }
-        else {
-            let [type, tests2] = [...types.entries()][0];
+    if (types.size === 0) {
+        types.set("object", []);
 
-            return to[type](tests2);
+        console.warn(`Not enough tests to infer type of group "${group.name}": "object" is used instead.`);
+    }
+
+    if (types.size > 1) {
+        return {
+            oneOf: [...types.entries()].map(([type, tests2]) => to[type](tests2))
         }
     }
     else {
-        throw new Error("need more tests");
+        let [type, tests2] = [...types.entries()][0];
+
+        return to[type](tests2);
     }
 }
 
