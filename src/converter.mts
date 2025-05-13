@@ -461,6 +461,12 @@ function getJsonFilesSync(folderPath: string): any[] {
     });
 }
 
+function sortParameters(a: Parameter, b: Parameter) {
+    if (a.name === "application_id" || (a.required && !b.required)) return -1;
+    else if (b.name === "application_id" || (b.required && !a.required)) return 1;
+    else return a.name.localeCompare(b.name);
+}
+
 export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
     let tests = getJsonFilesSync(`tests/${method.method_key.split("_").join("/")}`);
 
@@ -537,7 +543,7 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
             summary: method.name,
             description: method.description,
             operationId: ["get", ...methodKey.slice(1)].join("_"),
-            parameters: method.input_form_info.fields.filter(parameter => parameter.name !== "application_id").map(parseParameter),
+            parameters: method.input_form_info.fields.sort(sortParameters).filter(parameter => parameter.name !== "application_id").map(parseParameter),
             responses: response,
             tags: [method.category_name],
             externalDocs: {
@@ -557,7 +563,7 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
                     "application/x-www-form-urlencoded": {
                         schema: {
                             type: "object",
-                            properties: Object.fromEntries(method.input_form_info.fields.map(parameter => [parameter.name, { description: fixDescription(parameter.help_text), ...convertParameter(parameter) }])),
+                            properties: Object.fromEntries(method.input_form_info.fields.sort(sortParameters).map(parameter => [parameter.name, { description: fixDescription(parameter.help_text), ...convertParameter(parameter) }])),
                             required: method.input_form_info.fields.filter(parameter => parameter.required).map(parameter => parameter.name)
                         }
                     }
