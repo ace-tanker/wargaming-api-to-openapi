@@ -557,7 +557,7 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
                     "application/x-www-form-urlencoded": {
                         schema: {
                             type: "object",
-                            properties: Object.fromEntries(method.input_form_info.fields.map(parameter => [parameter.name, convertParameter(parameter)])),
+                            properties: Object.fromEntries(method.input_form_info.fields.map(parameter => [parameter.name, { description: fixDescription(parameter.help_text), ...convertParameter(parameter) }])),
                             required: method.input_form_info.fields.filter(parameter => parameter.required).map(parameter => parameter.name)
                         }
                     }
