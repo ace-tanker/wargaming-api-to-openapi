@@ -5578,7 +5578,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"pt\" &mdash; Portuguese ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"pl\" &mdash; Polski \n* \"tr\" &mdash; Türkçe ", 
             "deprecated_text": ""
           }, 
           {
@@ -5955,7 +5955,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"pt\" &mdash; Portuguese ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"pl\" &mdash; Polski \n* \"tr\" &mdash; Türkçe ", 
             "deprecated_text": ""
           }, 
           {
@@ -6111,7 +6111,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"pt\" &mdash; Portuguese ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"pl\" &mdash; Polski \n* \"tr\" &mdash; Türkçe ", 
             "deprecated_text": ""
           }, 
           {
@@ -6387,7 +6387,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"pt\" &mdash; Portuguese ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"pl\" &mdash; Polski \n* \"tr\" &mdash; Türkçe ", 
             "deprecated_text": ""
           }, 
           {
@@ -6551,7 +6551,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"pt\" &mdash; Portuguese ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"pl\" &mdash; Polski \n* \"tr\" &mdash; Türkçe ", 
             "deprecated_text": ""
           }, 
           {
@@ -6774,7 +6774,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"pt\" &mdash; Portuguese ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"pl\" &mdash; Polski \n* \"tr\" &mdash; Türkçe ", 
             "deprecated_text": ""
           }, 
           {
@@ -7007,7 +7007,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"pt\" &mdash; Portuguese ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"pl\" &mdash; Polski \n* \"tr\" &mdash; Türkçe ", 
             "deprecated_text": ""
           }, 
           {

@@ -1,0 +1,5177 @@
+{
+  "long_name": null, 
+  "category_names": {
+    "ratings": "Player ratings", 
+    "account": "Accounts", 
+    "auth": "Authentication", 
+    "encyclopedia": "Tankopedia", 
+    "tanks": "Player's vehicles", 
+    "clans": "Clans"
+  }, 
+  "name": "wotx", 
+  "methods": [
+    {
+      "method_key": "wotx_account_list", 
+      "category_name": "Accounts", 
+      "errors": [
+        [
+          402, 
+          "SEARCH_NOT_SPECIFIED", 
+          "**Search** parameter not specified with no account_id"
+        ], 
+        [
+          407, 
+          "NOT_ENOUGH_SEARCH_LENGTH", 
+          "**Search** parameter is not long enough. Allowed value depends on **type** parameter."
+        ], 
+        [
+          407, 
+          "SEARCH_LIST_LIMIT_EXCEEDED", 
+          "Limit of specified names in **search** parameter exceeded ( >100 )"
+        ]
+      ], 
+      "name": "Players", 
+      "url": "account/list", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nickname", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Search type. Default is \"startswith\". Valid values:\n\n* \"startswith\" &mdash; Search by initial characters of player name. Minimum length: 3 characters. Maximum length: 24 characters. (by default)\n* \"exact\" &mdash; Search by exact match of player name. Case insensitive. You can enter several names, separated with commas (up to 100). ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "search", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name search string. Parameter \"type\" defines minimum length and type of search. Using the exact search type, you can enter several names, separated with commas. Maximum length: 24.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Number of returned entries (fewer can be returned, but not more than 100). If the limit sent exceeds 100, a limit of None is applied (by default).", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns partial list of players. The list is filtered by initial characters of user name and sorted alphabetically."
+    }, 
+    {
+      "method_key": "wotx_account_info", 
+      "category_name": "Accounts", 
+      "errors": [
+        [
+          407, 
+          "ACCOUNT_ID_LIST_LIMIT_EXCEEDED", 
+          "Limit of passed-in **account_id** IDs exceeded. Maximum: 100."
+        ]
+      ], 
+      "name": "Player personal data", 
+      "url": "account/info", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "help_text": "Player statistics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "trees_cut", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Trees knocked down", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_frags", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum destroyed in battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_frags_tank_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Vehicle, in which maximum number of enemy vehicles was destroyed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum experience per battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_xp_tank_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Vehicle, in which maximum experience per battle was earned", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_damage", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum damage caused in a battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_damage_tank_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Vehicle used to cause maximum damage", 
+                "deprecated_text": ""
+              }, 
+              {
+                "help_text": "Overall Statistics", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "battles", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Battles fought", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "wins", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Victories", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "xp", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Total experience", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "losses", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Defeats", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "survived_battles", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Battles survived", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "damage_received", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage received", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage caused", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "spotted", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Enemies spotted", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "shots", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Shots fired", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "hits", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Hits", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "frags", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Vehicles destroyed", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "capture_points", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Base capture points", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "dropped_capture_points", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Base defense points", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "all", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Tank Company battles statistics", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "battles", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Battles fought", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "wins", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Victories", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "xp", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Total experience", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "losses", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Defeats", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "survived_battles", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Battles survived", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "damage_received", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage received", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "damage_dealt", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Damage caused", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "spotted", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Enemies spotted", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "shots", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Shots fired", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "hits", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Hits", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "frags", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Vehicles destroyed", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "capture_points", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Base capture points", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "dropped_capture_points", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Base defense points", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "company", 
+                "deprecated": false
+              }, 
+              {
+                "doc_type": "associative array", 
+                "name": "frags", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number and models of vehicles destroyed by a player. Player's private data.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_track", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your destroying a track. Value is calculated starting from version 1.3.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_radio", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your spotting. Value is calculated starting from version 1.3.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "direct_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Direct hits received. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "no_damage_direct_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Direct hits received that caused no damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "piercings_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Penetrations received. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits received as a result of splash damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_hits", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits on enemy as a result of splash damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "piercings", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Penetrations. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_wheel", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your shooting the wheel.", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "statistics", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nickname", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "global_rating", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Personal rating", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Player's private data", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "gold", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Gold", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "free_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Free Experience", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "credits", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "premium_expires_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Premium Account expiration time", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "boolean", 
+                "name": "is_premium", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the account is Premium Account", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "ban_info", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Account ban details", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "ban_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "End time of account ban", 
+                "deprecated_text": ""
+              }, 
+              {
+                "help_text": "Account restrictions", 
+                "fields": [
+                  {
+                    "doc_type": "timestamp", 
+                    "name": "chat_ban_time", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "End time of chat ban", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "restrictions", 
+                "deprecated": false
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "battle_life_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Total time of destruction", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "slots", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of slots in the Garage", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "empty_slots", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of slots available in the Garage", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "private", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "created_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when player's account was created", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "updated_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when player details were updated", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "last_battle_time", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Last battle time", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "[Access token](/documentation/guide/principles/#access_token) for the private data of a user's account; can be received via the authorization method; valid within a stated time period", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns player details."
+    }, 
+    {
+      "method_key": "wotx_account_achievements", 
+      "category_name": "Accounts", 
+      "errors": [], 
+      "name": "Player's achievements", 
+      "url": "account/achievements", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "associative array", 
+            "name": "achievements", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Achievements earned", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "max_series", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Maximum values of achievement series", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "ribbons", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Ribbons earned", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns players' achievement details.\n\nAchievement properties define the **achievements** field values\n\n * 1-4 for Mastery Badges and Stage Achievements (type: \"class\");\n * maximum value of Achievement series (type: \"series\");\n * number of achievements earned from sections: Battle Hero, Epic Achievements, Group Achievements, Special Achievements, etc. (type: \"repeatable, single, custom\").\n"
+    }, 
+    {
+      "method_key": "wotx_account_xuidinfo", 
+      "category_name": "Accounts", 
+      "errors": [], 
+      "name": "Player data based on XUID", 
+      "url": "account/xuidinfo", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "xuid", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player Microsoft XUID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "xuid", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player Microsoft XUID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns player details based on the player Microsoft XUID."
+    }, 
+    {
+      "method_key": "wotx_account_psninfo", 
+      "category_name": "Accounts", 
+      "errors": [], 
+      "name": "Player data based on Play Station UID", 
+      "url": "account/psninfo", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "psnid", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Play Station UID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Account ID", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "psnid", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Play Station UID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns player data based on Play Station UID"
+    }, 
+    {
+      "method_key": "wotx_auth_login", 
+      "category_name": "Authentication", 
+      "errors": [
+        [
+          401, 
+          "AUTH_CANCEL", 
+          "Application authorization cancelled by user"
+        ], 
+        [
+          403, 
+          "AUTH_EXPIRED", 
+          "User authorization timed out"
+        ], 
+        [
+          410, 
+          "AUTH_ERROR", 
+          "Authentication error"
+        ]
+      ], 
+      "name": "Sign in with Console service", 
+      "url": "auth/login", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "location", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "URL where user is redirected for authentication.\nThis URL is returned only if parameter **nofollow=1** is passed in.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "expires_at", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "**Access_token** expiration time in UNIX. Delta can also be specified in seconds.\n\nExpiration time and delta must not exceed two weeks from the current time.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "redirect_uri", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "URL where user is redirected after authentication.\n\nBy default: [{API_HOST}/blank/](https://{API_HOST}/blank/)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "display", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Layout for mobile applications. Valid values:\n\n* \"page\" &mdash; Page \n* \"popup\" &mdash; Popup window \n* \"touch\" &mdash; Mobile view ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "nofollow", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "If parameter **nofollow=1** is passed in, the user is not redirected. URL is returned in response. Default is 0. Min value is 0. Maximum value: 1.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Authentication form localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Czech \n* \"de\" &mdash; German \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Spanish \n* \"es-ar\" &mdash; Argentinian Spanish \n* \"fr\" &mdash; French \n* \"ja\" &mdash; Japanese \n* \"pl\" &mdash; Polish \n* \"pt-br\" &mdash; Brazilian Portuguese \n* \"ru\" &mdash; Russian \n* \"th\" &mdash; Thai \n* \"tr\" &mdash; Turkish \n* \"vi\" &mdash; Vietnamese \n* \"zh-tw\" &mdash; Traditional Chinese \n* \"zh-cn\" &mdash; Simplified Chinese ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method authenticates user based on PlayStation Network ID which is used in World of Tanks PlayStation 4. To log in, player must enter PlayStation Network ID and password.\n\nInformation on authorization status is sent to URL specified in **redirect_uri** parameter.\n\nIf authentication is successful, the following parameters are sent to **redirect_uri**:\n\n*  **status: ok** — successful authentication\n*  **access_token** — access token is passed in to all methods that require authentication\n*  **expires_at** — expiration date of **access_token**\n*  **account_id** — user ID\n*  **nickname** — user name\n*  **psn_access_token** — PlayStation Network access token\n*  **psn_access_token_expires_at** — expiration date of **psn_access_token**.\n\nIf authentication fails, the following parameters are sent to **redirect_uri**:\n\n*  **status: error** — authentication error\n*  **code** — error code\n*  **message** — error message."
+    }, 
+    {
+      "method_key": "wotx_auth_prolongate", 
+      "category_name": "Authentication", 
+      "errors": [], 
+      "name": "Access Token extension", 
+      "url": "auth/prolongate", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Access token is passed to all methods requiring authorization.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "expires_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "**Access_token** expiration time", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "[Access token](/documentation/guide/principles/#access_token) for the private data of a user's account; can be received via the authorization method; valid within a stated time period", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "expires_at", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "**Access_token** expiration time in UNIX. Delta can also be specified in seconds.\n\nExpiration time and delta must not exceed two weeks from the current time.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "POST"
+      ], 
+      "description": "Method generates new **access_token** based on the current token.\n\nThis method is used when the player is still using the application but the current **access_token** is about to expire."
+    }, 
+    {
+      "method_key": "wotx_auth_logout", 
+      "category_name": "Authentication", 
+      "errors": [], 
+      "name": "Log out", 
+      "url": "auth/logout", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "https"
+      ], 
+      "output_form_info": null, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "[Access token](/documentation/guide/principles/#access_token) for the private data of a user's account; can be received via the authorization method; valid within a stated time period", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "POST"
+      ], 
+      "description": "Method deletes user's **access_token**.\n\nAfter this method is called, **access_token** becomes invalid."
+    }, 
+    {
+      "method_key": "wotx_clans_list", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Clans", 
+      "url": "clans/list", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "tag", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan tag", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "color", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan color in HEX #RRGGBB", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "created_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creation date", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "members_count", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Number of clan members", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "emblem_set_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan emblems set ID", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "search", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Part of name or tag for clan search. Minimum 2 characters", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Number of returned entries (fewer can be returned, but not more than 100). If the limit sent exceeds 100, a limit of 100 is applied (by default).", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "page_no", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Page number. Default is 1. Min value is 1.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns partial list of clans in alphabetical order by clan name or tag."
+    }, 
+    {
+      "method_key": "wotx_clans_info", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Clan details", 
+      "url": "clans/info", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "tag", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan tag", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "color", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan color in HEX #RRGGBB", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "created_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creation date", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "members_count", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Number of clan members", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "old_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Old clan name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "old_tag", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Old clan tag", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "renamed_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Time (UTC) when clan name was changed", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "description", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan description", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "motto", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan motto", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_clan_disbanded", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan has been deleted. The deleted clan data contains valid values for the following fields only: **clan_id**, **is_clan_disbanded**, **updated_at**.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "updated_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Time when clan details were updated", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "creator_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creator ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "creator_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan creator's name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "leader_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Commander ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "leader_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Commander's name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "emblem_set_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan emblems set ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Clan members.\n\n**An extra field.**", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "account_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "User ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "account_name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Player name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "joined_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Date when player joined clan", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "role", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Technical position name", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "members", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "list of integers", 
+            "name": "members_ids", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "List of clan players' IDs", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "recruiting_policy", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan recruiting policy.\n\nValid values:\n\n * open - free to join, if statistics completely meet the required threshold values (by default)\n * restricted - applications to join clan can be sent\n * closed - applications to join clan cannot be sent", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Threshold statistics values to join clan. Contains null if threshold values are not set.", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "battles", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Battles fought", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "battles_survived", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Battles survived", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "wins_ratio", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Victories/Battles ratio", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "hits_ratio", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hit ratio", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "battles_per_day", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average number of battles per day", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "xp_per_battle", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average experience per battle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "damage_per_battle", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage per battle", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "joining_options", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "extra", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Extra fields that will be added to the response. Valid values:\n\n* \"members\" ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID. Maximum limit: 100. Min value is 1.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns detailed clan information."
+    }, 
+    {
+      "method_key": "wotx_clans_accountinfo", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Player clan data", 
+      "url": "clans/accountinfo", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "User ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "account_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "joined_at", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Date when player joined clan", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "role", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Technical position name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "clan_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Clan ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Brief clan details.\n\n**An extra field.**", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "clan_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "tag", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan tag", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "color", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan color in HEX #RRGGBB", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "timestamp", 
+                "name": "created_at", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan creation date", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "members_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Number of clan members", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "emblem_set_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Emblems set ID", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "clan", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "in_clan_cooldown_till", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Cooldown for leaving the clan", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "extra", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Extra fields that will be added to the response. Valid values:\n\n* \"clan\" ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Account ID. Maximum limit: 100. Min value is 1.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns player clan data. Player clan data exist only for accounts, that were clan members at least once."
+    }, 
+    {
+      "method_key": "wotx_clans_glossary", 
+      "category_name": "Clans", 
+      "errors": [], 
+      "name": "Clan glossary", 
+      "url": "clans/glossary", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "associative array", 
+            "name": "clans_roles", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Available clan positions", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Clan settings", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "create_fee_gold", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan creation cost in gold", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rename_fee_gold", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Clan renaming cost in gold", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_members_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Max number of clan members", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "leader_role_after_retirement", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Role received after retirement as the clan commander", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "default_account_role", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Role received after joining the clan", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "min_battles_count", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Minimum battles required to create clan", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "rename_cooldown", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Cooldown for clan renaming (in seconds)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "leave_cooldown", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Cooldown peroid after leaving the clan (in seconds)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_invites_per_clan", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum number of invitations", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_applications_per_account", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum number of applications", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "invite_lifetime", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Invitation expiry date", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "application_lifetime", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Application expiry date", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "settings", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Available emblems", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "x24", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Link to 24x24 emblem", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "x32", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Link to 32x32 emblem", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "x64", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Link to 64x64 emblem", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "x195", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Link to 195x195 emblem", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "x256", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Link to 256x256 emblem", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "emblems", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns general information about clans."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_crewroles", 
+      "category_name": "Tankopedia", 
+      "errors": [], 
+      "name": "Crews", 
+      "url": "encyclopedia/crewroles", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "help_text": "Crew skills and perks", 
+            "fields": [
+              {
+                "doc_type": "boolean", 
+                "name": "is_perk", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates whether a skill or a perk is dealt with", 
+                "deprecated_text": ""
+              }, 
+              {
+                "help_text": "Images of skills and perks", 
+                "fields": [
+                  {
+                    "doc_type": "string", 
+                    "name": "large", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Link to large image", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "images", 
+                "deprecated": false
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Name of skill or perk", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "description", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Description of skill or perk", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "skills", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Crew member qualification", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information about crews."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_vehicles", 
+      "category_name": "Tankopedia", 
+      "errors": [], 
+      "name": "Vehicles", 
+      "url": "encyclopedia/vehicles", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle type", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "tag", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle tag", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "short_name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle short name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "description", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle description", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nation", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Nation", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "tier", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Tier", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_premium", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Indicates if the vehicle is Premium vehicle", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "era", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Era", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Image links", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "big_icon", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to 160 x 100 px image of vehicle", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "images", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "price_credit", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Cost in credits", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "price_gold", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Cost in gold", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "prices_xp", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "List of research costs in form of pairs:\n\n* parent vehicle ID\n* cost of research in XP", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "next_tanks", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "List of vehicles available for research in form of pairs:\n\n* researched vehicle ID\n* cost of research in XP", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Module research information", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "module_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "type", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module type", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Research cost", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "next_tanks", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "List of vehicle IDs available after research of the module", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "next_modules", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "List of module IDs available after research of the module", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "boolean", 
+                "name": "is_default", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Indicates if the module is basic", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "modules_tree", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "has_multi_weapon", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle has multiple weapons", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "total_turrets", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Number of turrets", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "page_no", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Result page number", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Number of returned entries (fewer can be returned, but not more than 100). If the limit sent exceeds 100, a limit of 100 is applied (by default).", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Vehicle ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "nation", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Nation. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "tier", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Tier. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns list of available vehicles."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_vehicleupgrades", 
+      "category_name": "Tankopedia", 
+      "errors": [], 
+      "name": "Equipment and consumables", 
+      "url": "encyclopedia/vehicleupgrades", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "help_text": "List of compatible equipment", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_gold", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Cost in gold", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Vehicle name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "description", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Achievement description", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "equipment_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Equipment ID", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "equipment", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "List of compatible consumables", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "price_credit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Cost in credits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "price_gold", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Cost in gold", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Vehicle name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "description", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Achievement description", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "URL to image", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "consumable_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Consumable ID", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "consumables", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns list of vehicle equipment and consumables."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_achievements", 
+      "category_name": "Tankopedia", 
+      "errors": [], 
+      "name": "Achievements", 
+      "url": "encyclopedia/achievements", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Award name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "description", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Award description", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "image", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Award image link", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "section", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Award section", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "weight", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Award priority value (used to determine place of award in award list)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Award type", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Award classes (for mastery badges)", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Award name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "image", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Award image link", 
+                "deprecated_text": ""
+              }, 
+              {
+                "help_text": "Information about nation emblems", 
+                "fields": [
+                  {
+                    "doc_type": "associative array", 
+                    "name": "x200", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "List of links to 200x200 px emblems", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "nation_images", 
+                "deprecated": false
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "description", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Achievement description", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "options", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "category", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Award category", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "condition", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Condition", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "hero_info", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Historical reference", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "category", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Filter by award category. Maximum limit: 100. Valid values:\n\n* \"achievements\" &mdash; Achievements \n* \"ribbons\" &mdash; Ribbons ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns list of awards, medals, ribbons."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_info", 
+      "category_name": "Tankopedia", 
+      "errors": [], 
+      "name": "Tankopedia information", 
+      "url": "encyclopedia/info", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "game_version", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Game client version", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "vehicle_types", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Available vehicle types", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "vehicle_nations", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Nations available", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Award sections", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Award section name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "order", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Award section order", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "achievement_sections", 
+            "deprecated": false
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information about Tankopedia."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_modules", 
+      "category_name": "Tankopedia", 
+      "errors": [], 
+      "name": "Modules", 
+      "url": "encyclopedia/modules", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "module_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Module ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Module type", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Module name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "price_credit", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Cost in credits", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "image", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Image link", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "weight", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Weight (kg)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "tier", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Tier", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "nation", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Nation", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "list of integers", 
+            "name": "tanks", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicles compatible with module", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Basic technical characteristics of module.\n\n**An extra field.**", 
+            "fields": [
+              {
+                "help_text": "Gun characteristics", 
+                "fields": [
+                  {
+                    "doc_type": "float", 
+                    "name": "fire_rate", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Rate of fire (rounds/min)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "dispersion", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Dispersion at 100 m (m)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "aim_time", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Aiming time (s)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "reload_time", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Reload time (s)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "move_up_arc", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Elevation angle (deg)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "move_down_arc", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Depression angle (deg)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "traverse_speed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Traverse speed (deg/s)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "help_text": "Gun shells characteristics", 
+                    "fields": [
+                      {
+                        "doc_type": "string", 
+                        "name": "type", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Shell type", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "list of integers", 
+                        "name": "damage", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Damage (hp), a list of values: min, avg, max", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "doc_type": "list of integers", 
+                        "name": "penetration", 
+                        "deprecated": false, 
+                        "required": true, 
+                        "help_text": "Penetration (mm), a list of values: min, avg, max", 
+                        "deprecated_text": ""
+                      }, 
+                      {
+                        "help_text": "Stun characteristics", 
+                        "fields": [
+                          {
+                            "doc_type": "object", 
+                            "name": "duration", 
+                            "deprecated": false, 
+                            "required": true, 
+                            "help_text": "Stun duration (s) caused by this shell type, a list of values: min, max", 
+                            "deprecated_text": ""
+                          }
+                        ], 
+                        "deprecated_text": "", 
+                        "name": "stun", 
+                        "deprecated": false
+                      }
+                    ], 
+                    "deprecated_text": "", 
+                    "name": "ammo", 
+                    "deprecated": false
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "max_ammo", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of shells", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "gun_group_number", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Grouping number on multi gun turrets", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "gun", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Engine characteristics", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "power", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Engine Power (hp)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "float", 
+                    "name": "fire_chance", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Chance of engine fire", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "engine", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Turret characteristics", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "hp", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Hit points", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "armor_front", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Armor: front (mm)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "armor_sides", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Armor: sides (mm)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "armor_rear", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Armor: rear (mm)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "view_range", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "View range (m)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "traverse_speed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Traverse speed (deg/s)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "guns_for_slot", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Number of guns", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "turret", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Suspension characteristics", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "load_limit", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Load limit (kg)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "traverse_speed", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Traverse speed (deg/s)", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "suspension", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Radio characteristics", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "signal_range", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Signal range", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "radio", 
+                "deprecated": false
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "default_profile", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "era", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Era", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "extra", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Extra fields that will be added to the response. Valid values:\n\n* \"default_profile\" ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "page_no", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Result page number", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "limit", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Number of returned entries (fewer can be returned, but not more than 100). If the limit sent exceeds 100, a limit of 100 is applied (by default).", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "module_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Module ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "type", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Module type. Maximum limit: 100. Valid values:\n\n* \"vehicleRadio\" &mdash; Radio \n* \"vehicleEngine\" &mdash; Engines \n* \"vehicleGun\" &mdash; Gun \n* \"vehicleChassis\" &mdash; Suspension \n* \"vehicleTurret\" &mdash; Turret ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "nation", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Nation. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns list of available modules that can be installed on vehicles, such as engines, turrets, etc. At least one input filter parameter (module ID, type) is required to be indicated."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_arenas", 
+      "category_name": "Tankopedia", 
+      "errors": [], 
+      "name": "Maps", 
+      "url": "encyclopedia/arenas", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "arena_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Map ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "camouflage_type", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Map type", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "name_i18n", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Localized map name", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "description", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Short map description", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns information about maps."
+    }, 
+    {
+      "method_key": "wotx_encyclopedia_vehicleprofile", 
+      "category_name": "Tankopedia", 
+      "errors": [
+        [
+          404, 
+          "INCOMPATIBLE_MODULE_IDS", 
+          "Specified modules are incompatible in a single configuration"
+        ], 
+        [
+          404, 
+          "PROFILE_NOT_FOUND", 
+          "Specified configuration does not exist"
+        ]
+      ], 
+      "name": "Vehicle characteristics", 
+      "url": "encyclopedia/vehicleprofile", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "hp", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Hit points", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "hull_hp", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Hull HP", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "weight", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Weight (kg)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "hull_weight", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Hull weight (kg)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "max_weight", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Load limit (kg)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "max_ammo", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Ammunition", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "speed_forward", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Top speed (km/h)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "speed_backward", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Top reverse speed (km/h)", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Mounted modules", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "engine_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Engine ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "gun_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Gun ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "turret_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Turret ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "suspension_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Suspension ID", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "radio_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Radio ID", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "modules", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Armor", 
+            "fields": [
+              {
+                "help_text": "Hull armor", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "front", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Front (mm)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "sides", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Sides (mm)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "rear", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Rear (mm)", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "hull", 
+                "deprecated": false
+              }, 
+              {
+                "help_text": "Turret armor", 
+                "fields": [
+                  {
+                    "doc_type": "numeric", 
+                    "name": "front", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Front (mm)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "sides", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Sides (mm)", 
+                    "deprecated_text": ""
+                  }, 
+                  {
+                    "doc_type": "numeric", 
+                    "name": "rear", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Rear (mm)", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "turret", 
+                "deprecated": false
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "armor", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Engine characteristics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "tier", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "weight", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight (kg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "tag", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module tag", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "power", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Engine Power (hp)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "fire_chance", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Chance of engine fire", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "engine", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Gun characteristics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "tier", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "weight", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight (kg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "tag", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module tag", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "fire_rate", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Rate of fire (rounds/min)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "dispersion", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Dispersion at 100 m (m)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "aim_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Aiming time (s)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "reload_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Reload time (s)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "caliber", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Caliber (mm)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "move_up_arc", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Elevation angle (deg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "move_down_arc", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Depression angle (deg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "traverse_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Traverse speed (deg/s)", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "gun", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Turret characteristics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "tier", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "weight", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight (kg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "tag", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module tag", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "view_range", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "View range (m)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "traverse_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Traverse speed (deg/s)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "hp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hit points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "traverse_left_arc", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Traverse angle, left (deg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "traverse_right_arc", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Traverse angle, right (deg)", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "turret", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Suspension characteristics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "tier", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "weight", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight (kg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "tag", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module tag", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "load_limit", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Load limit (kg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "traverse_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Traverse speed (deg/s)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "steering_lock_angle", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum wheel turning angle (for wheeled vehicles)", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "suspension", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Radio characteristics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "tier", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Tier", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "name", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module name", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "weight", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Weight (kg)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "string", 
+                "name": "tag", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Module tag", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "signal_range", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Signal range", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "radio", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Gun shells characteristics", 
+            "fields": [
+              {
+                "doc_type": "string", 
+                "name": "type", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Shell type", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "damage", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage (hp), a list of values: min, avg, max", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "penetration", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Penetration (mm), a list of values: min, avg, max", 
+                "deprecated_text": ""
+              }, 
+              {
+                "help_text": "Stun characteristics", 
+                "fields": [
+                  {
+                    "doc_type": "object", 
+                    "name": "duration", 
+                    "deprecated": false, 
+                    "required": true, 
+                    "help_text": "Stun duration (s) caused by this shell type, a list of values: min, max", 
+                    "deprecated_text": ""
+                  }
+                ], 
+                "deprecated_text": "", 
+                "name": "stun", 
+                "deprecated": false
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "ammo", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Vehicle characteristics in Siege mode", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "aim_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Aiming time (s)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_forward", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_backward", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top reverse speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_off_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time needed to switch on the Siege mode", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_on_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time required to switch to Siege mode", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "dispersion", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Dispersion at 100 m (m)", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "siege", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Vehicle characteristics in Rapid mode (for wheeled vehicles)", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "speed_forward", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_backward", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top reverse speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "suspension_steering_lock_angle", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum wheel turning angle", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_off_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time required to switch to Cruise mode", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_on_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time required to switch to Rapid mode", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "turret_traverse_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Traverse speed (deg/s)", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "rapid", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Vehicle characteristics in autosiege mode", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "autoswitch_on_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Switch on speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "autoswitch_off_speed", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Switch off speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_off_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time needed to switch on the Siege mode", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_on_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time required to switch to Siege mode", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "autosiege", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Vehicle characteristics in turbo mode", 
+            "fields": [
+              {
+                "doc_type": "float", 
+                "name": "aim_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Aiming time (s)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_forward", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "speed_backward", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Top reverse speed (km/h)", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_off_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time needed to switch on the Siege mode", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "float", 
+                "name": "switch_on_time", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Time required to switch to Siege mode", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "turbo", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Multi weapon vehicle characteristics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "gun_group_number", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Grouping number on multi gun turrets", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "list of integers", 
+                "name": "guns", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "List of turret guns per group number", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "turret_id", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Turret ID", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "multi_weapon", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Multi turret vehicle characteristics", 
+            "fields": [
+              {
+                "doc_type": "list of integers", 
+                "name": "turrets", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "List of vehicle turrets", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "multi_turret", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "is_default", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Standard configuration", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "profile_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle Configuration ID", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "engine_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Engine ID. If module is not specified, standard module is used by default.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "gun_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Gun ID. If module is not specified, standard module is used by default.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "suspension_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Suspension ID. If module is not specified, standard module is used by default.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "turret_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Turret ID. If module is not specified, standard module is used by default.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "radio_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Radio ID. If module is not specified, standard module is used by default.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "profile_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Configuration ID. If specified, parameters of IDs of separate modules are ignored.", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns vehicle configuration characteristics based on the specified module IDs."
+    }, 
+    {
+      "method_key": "wotx_tanks_stats", 
+      "category_name": "Player's vehicles", 
+      "errors": [], 
+      "name": "Vehicle statistics", 
+      "url": "tanks/stats", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "help_text": "Overall Statistics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "battles", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Battles fought", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "wins", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Victories", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Total experience", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "losses", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Defeats", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "survived_battles", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Battles survived", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage received", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_dealt", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage caused", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "spotted", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Enemies spotted", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "shots", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Shots fired", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "hits", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "frags", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Vehicles destroyed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "capture_points", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Base capture points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dropped_capture_points", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Base defense points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_track", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your destroying a track. Value is calculated starting from version 1.3.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_radio", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your spotting. Value is calculated starting from version 1.3.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "direct_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Direct hits received. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "no_damage_direct_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Direct hits received that caused no damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "piercings_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Penetrations received. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits received as a result of splash damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_hits", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits on enemy as a result of splash damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "piercings", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Penetrations. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_damage", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum damage caused in a battle.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_wheel", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your shooting the wheel.", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "all", 
+            "deprecated": false
+          }, 
+          {
+            "help_text": "Tank Company battles statistics", 
+            "fields": [
+              {
+                "doc_type": "numeric", 
+                "name": "battles", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Battles fought", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "wins", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Victories", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "xp", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Total experience", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "losses", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Defeats", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "survived_battles", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Battles survived", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage received", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_dealt", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Damage caused", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "spotted", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Enemies spotted", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "shots", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Shots fired", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "hits", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "frags", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Vehicles destroyed", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "capture_points", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Base capture points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "dropped_capture_points", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Base defense points", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_track", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your destroying a track. Value is calculated starting from version 1.3.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_radio", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your spotting. Value is calculated starting from version 1.3.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "direct_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Direct hits received. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "no_damage_direct_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Direct hits received that caused no damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "piercings_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Penetrations received. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_hits_received", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits received as a result of splash damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "explosion_hits", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Hits on enemy as a result of splash damage. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "piercings", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Penetrations. Value is calculated starting from version 1.10.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "max_damage", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Maximum damage caused in a battle.", 
+                "deprecated_text": ""
+              }, 
+              {
+                "doc_type": "numeric", 
+                "name": "damage_assisted_wheel", 
+                "deprecated": false, 
+                "required": true, 
+                "help_text": "Average damage upon your shooting the wheel.", 
+                "deprecated_text": ""
+              }
+            ], 
+            "deprecated_text": "", 
+            "name": "company", 
+            "deprecated": false
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "frags", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Details on vehicles destroyed. This data requires a valid access_token for the specified account.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "max_xp", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Maximum experience per battle", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "max_frags", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Maximum destroyed in battle", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "last_battle_time", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Last battle time", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "trees_cut", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Trees knocked down", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "mark_of_mastery", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "\nMastery Badges:\n\n * 0 — None\n * 1 — 3rd Class \n * 2 — 2nd Class\n * 3 — 1st Class\n * 4 — Ace Tanker\n", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "boolean", 
+            "name": "in_garage", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Availability of vehicle in the Garage. This data requires a valid access_token for the specified account.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "in_garage_updated", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Time of status update. This data requires a valid access_token for the specified account.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "timestamp", 
+            "name": "battle_life_time", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Total time of destruction", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "marks_on_gun_battles_count", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Number of battles for marksOnGun achievement", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "mark_of_mastery_battles_count", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Number of battles for markOfMastery achievement", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "marks_on_gun", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Marks on gun", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "[Access token](/documentation/guide/principles/#access_token) for the private data of a user's account; can be received via the authorization method; valid within a stated time period", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID. Min value is 0.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Player's vehicle ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "in_garage", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Filter by vehicle availability in the Garage. If the parameter is not specified, all vehicles are returned. Parameter processing requires a valid access_token for the specified account_id. Valid values:\n\n* \"1\" &mdash; Return vehicles available in the Garage. \n* \"0\" &mdash; Return vehicles that are no longer in the Garage. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns overall statistics, Tank Company statistics, and clan statistics per each vehicle for each user."
+    }, 
+    {
+      "method_key": "wotx_tanks_achievements", 
+      "category_name": "Player's vehicles", 
+      "errors": [], 
+      "name": "Vehicle achievements", 
+      "url": "tanks/achievements", 
+      "deprecated": false, 
+      "allowed_protocols": [
+        "http", 
+        "https"
+      ], 
+      "output_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Vehicle ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "achievements", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Achievements earned", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "series", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Current values of Achievement Series", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "max_series", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Maximum values of achievement series", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "associative array", 
+            "name": "ribbons", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Ribbons earned", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "input_form_info": {
+        "help_text": "", 
+        "fields": [
+          {
+            "doc_type": "string", 
+            "name": "application_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Application ID", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "language", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"en\" &mdash; English (by default)\n* \"ru\" &mdash; Русский \n* \"pl\" &mdash; Polski \n* \"de\" &mdash; Deutsch \n* \"fr\" &mdash; Français \n* \"es\" &mdash; Español \n* \"tr\" &mdash; Türkçe ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string, list", 
+            "name": "fields", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "access_token", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "[Access token](/documentation/guide/principles/#access_token) for the private data of a user's account; can be received via the authorization method; valid within a stated time period", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric", 
+            "name": "account_id", 
+            "deprecated": false, 
+            "required": true, 
+            "help_text": "Player account ID. Min value is 0.", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "numeric, list", 
+            "name": "tank_id", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Player's vehicle ID. Maximum limit: 100. ", 
+            "deprecated_text": ""
+          }, 
+          {
+            "doc_type": "string", 
+            "name": "in_garage", 
+            "deprecated": false, 
+            "required": false, 
+            "help_text": "Filter by vehicle availability in the Garage. If the parameter is not specified, all vehicles are returned. Parameter processing requires a valid access_token for the specified account_id. Valid values:\n\n* \"1\" &mdash; Return vehicles available in the Garage. \n* \"0\" &mdash; Return vehicles that are no longer in the Garage. ", 
+            "deprecated_text": ""
+          }
+        ], 
+        "deprecated_text": "", 
+        "name": "", 
+        "deprecated": false
+      }, 
+      "allowed_http_methods": [
+        "GET", 
+        "POST"
+      ], 
+      "description": "Method returns players' achievement details.\n\nAchievement properties define the **achievements** field values\n\n * 1-4 for Mastery Badges and Stage Achievements (type: \"class\");\n * maximum value of Achievement series (type: \"series\");\n * number of achievements earned from sections: Battle Hero, Epic Achievements, Group Achievements, Special Achievements, etc. (type: \"repeatable, single, custom\").\n"
+    }
+  ]
+}

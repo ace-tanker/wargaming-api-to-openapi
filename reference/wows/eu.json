@@ -77,7 +77,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -7132,7 +7132,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -7229,7 +7229,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -7342,7 +7342,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -7591,7 +7591,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -7752,7 +7752,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -7953,7 +7953,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -8106,7 +8106,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }
         ], 
@@ -8659,7 +8659,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -8828,7 +8828,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }
         ], 
@@ -10789,7 +10789,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -11022,7 +11022,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }
         ], 
@@ -12661,7 +12661,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -13326,7 +13326,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -13495,7 +13495,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -13769,7 +13769,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -13914,7 +13914,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -14011,7 +14011,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -14108,7 +14108,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }
         ], 
@@ -14213,7 +14213,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }
         ], 
@@ -14342,7 +14342,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }
         ], 
@@ -14431,7 +14431,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }
         ], 
@@ -19400,7 +19400,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -19681,7 +19681,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"it\" &mdash; Italiano \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"zh-cn\" &mdash; 中文 \n* \"tr\" &mdash; Türkçe \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -19762,7 +19762,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
@@ -19875,7 +19875,7 @@
             "name": "language", 
             "deprecated": false, 
             "required": false, 
-            "help_text": "Localization language. Default is \"th\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English \n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย (by default)\n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
+            "help_text": "Localization language. Default is \"en\". Valid values:\n\n* \"cs\" &mdash; Čeština \n* \"de\" &mdash; Deutsch \n* \"en\" &mdash; English (by default)\n* \"es\" &mdash; Español \n* \"fr\" &mdash; Français \n* \"ja\" &mdash; 日本語 \n* \"pl\" &mdash; Polski \n* \"ru\" &mdash; Русский \n* \"th\" &mdash; ไทย \n* \"zh-tw\" &mdash; 繁體中文 \n* \"tr\" &mdash; Türkçe \n* \"zh-cn\" &mdash; 中文 \n* \"pt-br\" &mdash; Português do Brasil \n* \"es-mx\" &mdash; Español (México) ", 
             "deprecated_text": ""
           }, 
           {
