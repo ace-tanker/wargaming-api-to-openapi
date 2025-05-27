@@ -1,5 +1,5 @@
 import type * as OpenAPI from "./openapi.mjs"
-import type { Field, Group, Parameter, Error, Protocol, HTTPMethod, Method, Game } from "./api.mjs"
+import type { Field, Group, Parameter, Method, Game } from "./api.mjs"
 
 import * as fs from "fs";
 import * as path from "path";
@@ -8,7 +8,7 @@ function getPath(method_key: string) {
     return `/${method_key.split("_").slice(1).join("/")}/`;
 }
 
-function convertParameter(parameter: Parameter): OpenAPI.Schema | OpenAPI.Reference {
+function convertParameterType(parameter: Parameter): OpenAPI.Schema {
     let { name, doc_type, help_text, required } = parameter;
 
     let validValuesMatch = help_text.match(/Valid values:\n\n(.*)$/s);
@@ -357,7 +357,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
         }
     }, new Map() as Map<"array" | "object" | "record", any[]>);
 
-    if (partial_match) console.warn(`Partial group match: ${group.name}.`);
+    if (partial_match) console.warn(`Partial group match: "${group.help_text}".`);
 
     const to = {
         object(tests: any[]) {
@@ -402,7 +402,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
     if (types.size === 0) {
         types.set("object", []);
 
-        console.warn(`Not enough tests to infer type of group "${group.name}": "object" is used instead.`);
+        console.warn(`Not enough tests to infer type of group "${group.help_text}": "object" is used instead.`);
     }
 
     if (types.size > 1) {
@@ -425,11 +425,8 @@ function convertDataFields(obj: Field | Group, tests: any[]): [string, OpenAPI.S
     return [obj.name, { description: obj.help_text, ...("fields" in obj ? convertGroup(obj, tests) : convertField(obj.doc_type, tests)) }];
 }
 
-function parseParameter(parameter: Parameter): OpenAPI.Parameter | OpenAPI.Reference {
-    if (parameter.name === "fields") return { "$ref": "#/components/parameters/fields" }
-    if (parameter.name === "language") return { "$ref": "#/components/parameters/language" }
-
-    let schema = convertParameter(parameter);
+export function convertParameter(parameter: Parameter): OpenAPI.Parameter {
+    let schema = convertParameterType(parameter);
 
     let res: OpenAPI.Parameter = {
         name: parameter.name,
@@ -449,10 +446,6 @@ function parseParameter(parameter: Parameter): OpenAPI.Parameter | OpenAPI.Refer
 }
 
 function getJsonFilesSync(folderPath: string): any[] {
-    if (!fs.existsSync(folderPath)) {
-        return [];
-    }
-
     const jsonFiles = fs.readdirSync(folderPath).filter(file => file.endsWith(".json"));
 
     return jsonFiles.map(file => {
@@ -467,7 +460,7 @@ function sortParameters(a: Parameter, b: Parameter) {
     else return a.name.localeCompare(b.name);
 }
 
-export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
+export function convertMethod(method: Method, parameters: string[]): [string, OpenAPI.PathItem] {
     let tests = getJsonFilesSync(`tests/${method.method_key.split("_").join("/")}`);
 
     let schema: OpenAPI.Schema = {
@@ -486,12 +479,12 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
                         }
                     }
                 },
-                data: convertDataFields(method.output_form_info ?? {
-                    "help_text": "",
-                    "fields": [],
-                    "deprecated_text": "",
-                    "name": "",
-                    "deprecated": false
+                data: convertDataFields({
+                    "help_text": method.description,
+                    "fields": method.output_form_info?.fields ?? [],
+                    "deprecated_text": method.output_form_info?.deprecated_text ?? "",
+                    "name": method.name,
+                    "deprecated": method.output_form_info?.deprecated ?? false
                 }, tests.map(test => test.data))[1]
             },
             required: ["status", "meta", "data"]
@@ -514,13 +507,13 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
             required: ["status", "error"]
         }]
     }
-    let schema2: OpenAPI.Schema = convertDataFields(method.output_form_info ?? {
-        "help_text": "",
-        "fields": [],
-        "deprecated_text": "",
-        "name": "",
-        "deprecated": false
-    }, tests.map(test => test.data))[1]
+    //let schema2: OpenAPI.Schema = convertDataFields(method.output_form_info ?? {
+    //    "help_text": "",
+    //    "fields": [],
+    //    "deprecated_text": "",
+    //    "name": "",
+    //    "deprecated": false
+    //}, tests.map(test => test.data))[1]
 
     let response = {
         "200": {
@@ -537,13 +530,18 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
     };
 
     let methodKey = method.method_key.split("_");
+    let [game, category, key] = methodKey;
 
     if (method.allowed_http_methods.includes("GET")) {
         pathItem.get = {
             summary: method.name,
             description: method.description,
             operationId: ["get", ...methodKey.slice(1)].join("_"),
-            parameters: method.input_form_info.fields.sort(sortParameters).filter(parameter => parameter.name !== "application_id").map(parseParameter),
+            parameters: method.input_form_info.fields.filter(parameter => parameter.name !== "application_id" && (parameter.name !== "language" || parameters.includes(`${category}_language`))).sort(sortParameters).map(parameter => {
+                if (parameters.includes(parameter.name)) return { "$ref": `#/components/parameters/${parameter.name}` };
+                else if (parameter.name === "language") return { "$ref": `#/components/parameters/${category}_language` };
+                else return convertParameter(parameter)
+            }),
             responses: response,
             tags: [method.category_name],
             externalDocs: {
@@ -556,14 +554,13 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
             summary: method.name,
             description: method.description,
             operationId: ["post", ...methodKey.slice(1)].join("_"),
-            security: [],
             requestBody: {
                 required: true,
                 content: {
                     "application/x-www-form-urlencoded": {
                         schema: {
                             type: "object",
-                            properties: Object.fromEntries(method.input_form_info.fields.sort(sortParameters).map(parameter => [parameter.name, { description: fixDescription(parameter.help_text), ...convertParameter(parameter) }])),
+                            properties: Object.fromEntries(method.input_form_info.fields.filter(parameter => parameter.name !== "application_id").sort(sortParameters).map(parameter => [parameter.name, { description: fixDescription(parameter.help_text), ...convertParameterType(parameter) }])),
                             required: method.input_form_info.fields.filter(parameter => parameter.required).map(parameter => parameter.name)
                         }
                     }
@@ -580,7 +577,7 @@ export function convertMethod(method: Method): [string, OpenAPI.PathItem] {
     return [getPath(method.method_key), pathItem];
 }
 
-export function convertGame(game: Game, servers: OpenAPI.Server[]): OpenAPI.OpenAPI {
+export function convertGame(game: Game, servers: OpenAPI.Server[], parameters: Record<string, OpenAPI.Parameter>): OpenAPI.OpenAPI {
     return {
         openapi: "3.0.0",
         info: {
@@ -600,64 +597,7 @@ export function convertGame(game: Game, servers: OpenAPI.Server[]): OpenAPI.Open
         },
         servers,
         components: {
-            parameters: {
-                fields: {
-                    "name": "fields",
-                    "description": "Response field. The fields are separated with commas. Embedded fields are separated with dots. To exclude a field, use “-” in front of its name. In case the parameter is not defined, the method returns all fields.",
-                    "in": "query",
-                    "style": "form",
-                    "explode": false,
-                    "schema": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        },
-                        minItems: 0,
-                        maxItems: 100,
-                        default: []
-                    }
-                },
-                language: {
-                    "name": "language",
-                    "description": "Localization language.",
-                    "in": "query",
-                    "style": "form",
-                    "explode": false,
-                    "schema": {
-                        "type": "string",
-                        "enum": [
-                            "en",
-                            "ru",
-                            "pl",
-                            "de",
-                            "fr",
-                            "es",
-                            "zh-cn",
-                            "zh-tw",
-                            "tr",
-                            "cs",
-                            "th",
-                            "vi",
-                            "ko"
-                        ],
-                        "x-enumDescriptions": [
-                            "English",
-                            "Russian",
-                            "Polish",
-                            "German",
-                            "French",
-                            "Spanish",
-                            "Chinese Simplified",
-                            "Chinese Traditional",
-                            "Turkish",
-                            "Czech",
-                            "Thai",
-                            "Vietnamese",
-                            "Korean"
-                        ]
-                    }
-                },
-            },
+            parameters,
             schemas: {
 
             },
@@ -673,7 +613,19 @@ export function convertGame(game: Game, servers: OpenAPI.Server[]): OpenAPI.Open
         security: [{
             application_id: []
         }],
-        paths: Object.fromEntries(game.methods.filter(method => !method.deprecated && fs.existsSync(`tests/${method.method_key.split("_").join("/")}`)).map(convertMethod)),
-        //tags: Object.values(game.category_names).map(name => ({ name }))
+        paths: Object.fromEntries(game.methods.filter(method => {
+            if (method.deprecated) {
+                console.warn(`Method deprecated ignored: ${method.method_key}.`);
+
+                return false;
+            }
+
+            if (fs.existsSync(`tests/${method.method_key.split("_").join("/")}`)) return true;
+            else {
+                console.warn(`Tests not found, method ignored: ${method.method_key}.`);
+
+                return false;
+            }
+        }).map(method => convertMethod(method, Object.keys(parameters))))
     }
 }
