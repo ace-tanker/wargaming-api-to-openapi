@@ -1,0 +1,190 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 20,
+    "page_total": 2,
+    "page": 1
+  },
+  "data": [
+    {
+      "status": "ACTIVE",
+      "fronts": [
+      ],
+      "end": "2025-07-15T07:00:00",
+      "season_name": "season_22_container",
+      "season_id": "season_22_container",
+      "start": "2025-05-15T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2024-07-16T07:00:00",
+      "season_name": "season_21_container",
+      "season_id": "season_21_container",
+      "start": "2024-05-02T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2023-06-08T01:00:00",
+      "season_name": "season_20_container",
+      "season_id": "season_20_container",
+      "start": "2023-03-23T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2023-03-17T07:00:00",
+      "season_name": "we_2023_season",
+      "season_id": "we_2023_season",
+      "start": "2023-02-09T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-12-01T01:00:00",
+      "season_name": "season_19_container",
+      "season_id": "season_19_container",
+      "start": "2022-09-15T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-08-19T07:00:00",
+      "season_name": "iron_age_season",
+      "season_id": "iron_age_season",
+      "start": "2022-07-14T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-06-30T07:00:00",
+      "season_name": "season_18_container",
+      "season_id": "season_18_container",
+      "start": "2022-04-21T07:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-03-11T07:00:00",
+      "season_name": "confrontation_season",
+      "season_id": "confrontation_season",
+      "start": "2022-02-03T08:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2021-12-01T08:00:00",
+      "season_name": "season_17",
+      "season_id": "season_17",
+      "start": "2021-09-21T08:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2021-08-27T07:00:00",
+      "season_name": "thunderstorm_season",
+      "season_id": "thunderstorm_season",
+      "start": "2021-07-22T08:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2021-06-30T08:00:00",
+      "season_name": "season_16",
+      "season_id": "season_16",
+      "start": "2021-03-10T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2021-02-12T07:00:00",
+      "season_name": "renaissance_season",
+      "season_id": "renaissance_season",
+      "start": "2021-01-06T08:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2020-11-28T08:00:00",
+      "season_name": "season_15",
+      "season_id": "season_15",
+      "start": "2020-09-14T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2020-07-31T07:00:00",
+      "season_name": "metal_wars_season",
+      "season_id": "metal_wars_season",
+      "start": "2020-06-26T08:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2020-06-15T08:00:00",
+      "season_name": "season_14",
+      "season_id": "season_14",
+      "start": "2020-03-24T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2020-03-13T07:00:00",
+      "season_name": "dawn_of_industry_season",
+      "season_id": "dawn_of_industry_season",
+      "start": "2020-01-22T08:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2019-11-17T08:00:00",
+      "season_name": "season_13",
+      "season_id": "season_13",
+      "start": "2019-09-30T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2019-09-13T08:00:00",
+      "season_name": "season_12",
+      "season_id": "season_12",
+      "start": "2019-08-09T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2019-08-02T08:00:00",
+      "season_name": "fire_trail_season",
+      "season_id": "fire_trail_season",
+      "start": "2019-06-28T09:00:00"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2019-05-21T09:00:00",
+      "season_name": "season_11",
+      "season_id": "season_11",
+      "start": "2019-04-04T08:00:00"
+    }
+  ]
+}

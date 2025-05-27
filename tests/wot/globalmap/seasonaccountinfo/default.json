@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "587574285": {
+      "seasons": {
+        "season_22_container": [
+          {
+            "award_level": null,
+            "account_id": 587574285,
+            "clan_rank": null,
+            "updated_at": null,
+            "battles": null,
+            "season_id": "season_22_container",
+            "clan_id": 500277705,
+            "battles_to_award": 0,
+            "vehicle_level": 10
+          }
+        ]
+      }
+    }
+  }
+}

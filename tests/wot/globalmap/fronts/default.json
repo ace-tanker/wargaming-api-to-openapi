@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": [
+    {
+      "front_name": "season_22_eu",
+      "max_tanks_per_division": 15,
+      "fog_of_war": true,
+      "division_cost": 0,
+      "min_vehicle_level": 10,
+      "avg_clans_rating": 1159,
+      "is_active": true,
+      "vehicle_freeze": false,
+      "avg_won_bet": 0,
+      "provinces_count": 600,
+      "available_extensions": [
+        {
+          "wage": 0,
+          "name": "Engineer Battalion",
+          "description_tactical": null,
+          "cost": 0,
+          "description_strategic": "Module enables you to increase a Division's speed.<br>Relocation cooldown: -0%",
+          "extension_id": "ENGINEER"
+        }
+      ],
+      "max_vehicle_level": 10,
+      "min_tanks_per_division": 12,
+      "battle_time_limit": 15,
+      "is_event": true,
+      "avg_min_bet": 0,
+      "front_id": "season_22_eu"
+    }
+  ]
+}

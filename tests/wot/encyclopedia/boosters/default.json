@@ -1,0 +1,1463 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 97
+  },
+  "data": {
+    "122410": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122410,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to credits earned in battle for 1 h"
+    },
+    "122411": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122411,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to credits earned in battle for 1 h"
+    },
+    "122412": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122412,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to credits earned in battle for 1 h"
+    },
+    "122510": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122510,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Free and Crew XP earned in battle for 1 h"
+    },
+    "122511": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122511,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Free and Crew XP earned in battle for 1 h"
+    },
+    "122512": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122512,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Free and Crew XP earned in battle for 1 h"
+    },
+    "5062": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 110,
+      "booster_id": 5062,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to experience earned in battle for 1 h"
+    },
+    "121000": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 121000,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to experience earned in battle for 1 h"
+    },
+    "121001": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 150,
+      "booster_id": 121001,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to experience earned in battle for 1 h"
+    },
+    "121002": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 150,
+      "booster_id": 121002,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to credits earned in battle for 1 h"
+    },
+    "121003": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 250,
+      "booster_id": 121003,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to credits earned in battle for 1 h"
+    },
+    "121004": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 100,
+      "booster_id": 121004,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Free and Crew XP earned in battle for 1 h"
+    },
+    "121005": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 150,
+      "booster_id": 121005,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Free and Crew XP earned in battle for 1 h"
+    },
+    "122312": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122312,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to experience earned in battle for 1 h"
+    },
+    "122610": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122610,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Free and Crew XP earned in battle for 1 h"
+    },
+    "122611": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122611,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Free and Crew XP earned in battle for 1 h"
+    },
+    "122612": {
+      "resource": "free_xp_and_crew_xp",
+      "name": "Additional Free and Crew XP earned in battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122612,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_and_crew_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Free and Crew XP earned in battle for 1 h"
+    },
+    "11001": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 11001,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 14400,
+      "description": "+100% to experience earned in battle for 4 h"
+    },
+    "10001": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 10001,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+15% to experience earned in battle for 2 h"
+    },
+    "10002": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Medium)",
+      "price_gold": 0,
+      "booster_id": 10002,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+10% to experience earned in battle for 2 h"
+    },
+    "10003": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Small)",
+      "price_gold": 0,
+      "booster_id": 10003,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+5% to experience earned in battle for 2 h"
+    },
+    "10011": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 10011,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+75% to Crew Experience earned in battle for 2 h"
+    },
+    "10012": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Medium)",
+      "price_gold": 0,
+      "booster_id": 10012,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+50% to Crew Experience earned in battle for 2 h"
+    },
+    "10013": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Small)",
+      "price_gold": 0,
+      "booster_id": 10013,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+25% to Crew Experience earned in battle for 2 h"
+    },
+    "10021": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 10021,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+100% to Free Experience earned in battle for 2 h"
+    },
+    "10022": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Medium)",
+      "price_gold": 0,
+      "booster_id": 10022,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+75% to Free Experience earned in battle for 2 h"
+    },
+    "10023": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Small)",
+      "price_gold": 0,
+      "booster_id": 10023,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+50% to Free Experience earned in battle for 2 h"
+    },
+    "9015": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9015,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to experience earned in battle for 1 h"
+    },
+    "9016": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9016,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to credits earned in battle for 1 h"
+    },
+    "9017": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9017,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+100% to experience earned in battle for 3 h"
+    },
+    "9018": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9018,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 10800,
+      "description": "+100% to credits earned in battle for 3 h"
+    },
+    "9019": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9019,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+150% to experience earned in battle for 1 h"
+    },
+    "9020": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9020,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+150% to credits earned in battle for 1 h"
+    },
+    "9021": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9021,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+150% to experience earned in battle for 3 h"
+    },
+    "9022": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9022,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 10800,
+      "description": "+150% to credits earned in battle for 3 h"
+    },
+    "9023": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9023,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to experience earned in battle for 1 h"
+    },
+    "9024": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9024,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to credits earned in battle for 1 h"
+    },
+    "9025": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9025,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+200% to experience earned in battle for 3 h"
+    },
+    "9026": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9026,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 10800,
+      "description": "+200% to credits earned in battle for 3 h"
+    },
+    "9027": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9027,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to Crew Experience earned in battle for 1 h"
+    },
+    "9028": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9028,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to Free Experience earned in battle for 1 h"
+    },
+    "9029": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9029,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+100% to Crew Experience earned in battle for 3 h"
+    },
+    "9030": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9030,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+100% to Free Experience earned in battle for 3 h"
+    },
+    "9031": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9031,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Crew Experience earned in battle for 1 h"
+    },
+    "9032": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9032,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Free Experience earned in battle for 1 h"
+    },
+    "9033": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9033,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+200% to Crew Experience earned in battle for 3 h"
+    },
+    "9034": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9034,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+200% to Free Experience earned in battle for 3 h"
+    },
+    "9035": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9035,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Crew Experience earned in battle for 1 h"
+    },
+    "9036": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9036,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Free Experience earned in battle for 1 h"
+    },
+    "9037": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9037,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+300% to Crew Experience earned in battle for 3 h"
+    },
+    "9038": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 9038,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 10800,
+      "description": "+300% to Free Experience earned in battle for 3 h"
+    },
+    "122210": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122210,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to experience earned in battle for 1 h"
+    },
+    "122211": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122211,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to experience earned in battle for 1 h"
+    },
+    "122212": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122212,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to experience earned in battle for 1 h"
+    },
+    "6002": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Medium)",
+      "price_gold": 0,
+      "booster_id": 6002,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+50% to Crew Experience earned in battle for 2 h"
+    },
+    "6003": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Small)",
+      "price_gold": 0,
+      "booster_id": 6003,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+50% to Free Experience earned in battle for 2 h"
+    },
+    "6005": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Small)",
+      "price_gold": 0,
+      "booster_id": 6005,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+50% to Free Experience earned in battle for 2 h"
+    },
+    "111001": {
+      "resource": "fl_experience",
+      "name": "Additional Frontline Experience per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 111001,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_fl_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_fl_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to Frontline Experience earned in battle for 1 h"
+    },
+    "111002": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 0,
+      "booster_id": 111002,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+70% to credits earned in battle for 1 h"
+    },
+    "5020": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 60,
+      "booster_id": 5020,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to experience earned in battle for 1 h"
+    },
+    "5021": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 25,
+      "booster_id": 5021,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+25% to experience earned in battle for 1 h"
+    },
+    "5022": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 50,
+      "booster_id": 5022,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+25% to experience earned in battle for 2 h"
+    },
+    "5023": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 25,
+      "booster_id": 5023,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+15% to experience earned in battle for 2 h"
+    },
+    "5024": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 50,
+      "booster_id": 5024,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 14400,
+      "description": "+15% to experience earned in battle for 4 h"
+    },
+    "5025": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Medium)",
+      "price_gold": 10,
+      "booster_id": 5025,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 14400,
+      "description": "+10% to experience earned in battle for 4 h"
+    },
+    "5026": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Medium)",
+      "price_gold": 25,
+      "booster_id": 5026,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 21600,
+      "description": "+10% to experience earned in battle for 6 h"
+    },
+    "5027": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Small)",
+      "price_gold": 10,
+      "booster_id": 5027,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 21600,
+      "description": "+5% to experience earned in battle for 6 h"
+    },
+    "5028": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 75,
+      "booster_id": 5028,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Free Experience earned in battle for 1 h"
+    },
+    "5029": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 25,
+      "booster_id": 5029,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Free Experience earned in battle for 1 h"
+    },
+    "5030": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 50,
+      "booster_id": 5030,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+200% to Free Experience earned in battle for 2 h"
+    },
+    "5031": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 25,
+      "booster_id": 5031,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+100% to Free Experience earned in battle for 2 h"
+    },
+    "5032": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 50,
+      "booster_id": 5032,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 14400,
+      "description": "+100% to Free Experience earned in battle for 4 h"
+    },
+    "5033": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Small)",
+      "price_gold": 10,
+      "booster_id": 5033,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 14400,
+      "description": "+50% to Free Experience earned in battle for 4 h"
+    },
+    "5034": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Small)",
+      "price_gold": 25,
+      "booster_id": 5034,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 21600,
+      "description": "+50% to Free Experience earned in battle for 6 h"
+    },
+    "5035": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 145,
+      "booster_id": 5035,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+300% to Crew Experience earned in battle for 1 h"
+    },
+    "5036": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 90,
+      "booster_id": 5036,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 3600,
+      "description": "+200% to Crew Experience earned in battle for 1 h"
+    },
+    "5037": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 120,
+      "booster_id": 5037,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+200% to Crew Experience earned in battle for 2 h"
+    },
+    "5038": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 50,
+      "booster_id": 5038,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+100% to Crew Experience earned in battle for 2 h"
+    },
+    "5039": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 95,
+      "booster_id": 5039,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 14400,
+      "description": "+100% to Crew Experience earned in battle for 4 h"
+    },
+    "5040": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Medium)",
+      "price_gold": 25,
+      "booster_id": 5040,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 14400,
+      "description": "+50% to Crew Experience earned in battle for 4 h"
+    },
+    "5041": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Medium)",
+      "price_gold": 50,
+      "booster_id": 5041,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 21600,
+      "description": "+50% to Crew Experience earned in battle for 6 h"
+    },
+    "5042": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 75,
+      "booster_id": 5042,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+50% to credits earned in battle for 1 h"
+    },
+    "5043": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 25,
+      "booster_id": 5043,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 3600,
+      "description": "+25% to credits earned in battle for 1 h"
+    },
+    "5044": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 50,
+      "booster_id": 5044,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 7200,
+      "description": "+25% to credits earned in battle for 2 h"
+    },
+    "5045": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 25,
+      "booster_id": 5045,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 7200,
+      "description": "+15% to credits earned in battle for 2 h"
+    },
+    "5046": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 50,
+      "booster_id": 5046,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 14400,
+      "description": "+15% to credits earned in battle for 4 h"
+    },
+    "5047": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Medium)",
+      "price_gold": 10,
+      "booster_id": 5047,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 14400,
+      "description": "+10% to credits earned in battle for 4 h"
+    },
+    "5048": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Medium)",
+      "price_gold": 25,
+      "booster_id": 5048,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 21600,
+      "description": "+10% to credits earned in battle for 6 h"
+    },
+    "5049": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Small)",
+      "price_gold": 10,
+      "booster_id": 5049,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 21600,
+      "description": "+5% to credits earned in battle for 6 h"
+    },
+    "5052": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Small)",
+      "price_gold": 10,
+      "booster_id": 5052,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 21600,
+      "description": "+20% to Free Experience earned in battle for 6 h"
+    },
+    "5060": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 120,
+      "booster_id": 5060,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+50% to experience earned in battle for 2 h"
+    },
+    "5061": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 220,
+      "booster_id": 5061,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+100% to experience earned in battle for 2 h"
+    },
+    "122310": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122310,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to experience earned in battle for 1 h"
+    },
+    "122311": {
+      "resource": "experience",
+      "name": "Additional Experience per Battle (Large)",
+      "price_gold": 100,
+      "booster_id": 122311,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_xp_expirable.png"
+      },
+      "lifetime": 3600,
+      "description": "+100% to experience earned in battle for 1 h"
+    },
+    "5064": {
+      "resource": "crew_experience",
+      "name": "Additional Crew Experience per Battle (Large)",
+      "price_gold": 175,
+      "booster_id": 5064,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_crew_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+300% to Crew Experience earned in battle for 2 h"
+    },
+    "5065": {
+      "resource": "credits",
+      "name": "Additional Credits per Battle (Large)",
+      "price_gold": 125,
+      "booster_id": 5065,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_credits.png"
+      },
+      "lifetime": 7200,
+      "description": "+50% to credits earned in battle for 2 h"
+    },
+    "5063": {
+      "resource": "free_experience",
+      "name": "Additional Free Experience per Battle (Large)",
+      "price_gold": 125,
+      "booster_id": 5063,
+      "is_auto": false,
+      "price_credit": 0,
+      "expires_at": null,
+      "images": {
+        "large": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp_big.png",
+        "small": "http:\/\/api.worldoftanks.eu\/static\/2.76.0\/wot\/encyclopedia\/boosters\/booster_free_xp.png"
+      },
+      "lifetime": 7200,
+      "description": "+300% to Free Experience earned in battle for 2 h"
+    }
+  }
+}

@@ -1,0 +1,4302 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 100
+  },
+  "data": [
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -12,
+            "clan_id": 500277705,
+            "battle_reward": 0,
+            "win_elo_delta": 13
+          },
+          "start_at": "2025-05-25T16:45:00",
+          "round": 2,
+          "clan_a": {
+            "loose_elo_delta": -13,
+            "clan_id": 500205287,
+            "battle_reward": 0,
+            "win_elo_delta": 12
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Westfield",
+      "attackers": [
+        500277705
+      ],
+      "neighbours": [
+        "belem",
+        "cameta",
+        "domeliseu",
+        "jacunda",
+        "muana",
+        "paragominas"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Abaetetuba",
+      "status": "CREATED",
+      "arena_id": "23_westfeld",
+      "prime_time": "16:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "abaetetuba",
+      "landing_type": null,
+      "owner_clan_id": 500205287,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/abaetetuba",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 2,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -8,
+            "clan_id": 500183566,
+            "battle_reward": 0,
+            "win_elo_delta": 7
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -7,
+            "clan_id": 500277705,
+            "battle_reward": 0,
+            "win_elo_delta": 8
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+        500183566,
+        500277705
+      ],
+      "neighbours": [
+        "araqua",
+        "awadam",
+        "ilhotadamalocaaroni",
+        "kockberg",
+        "taluen"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Acotipa",
+      "status": "CREATED",
+      "arena_id": "05_prohorovka",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "acotipa",
+      "landing_type": null,
+      "owner_clan_id": 500195234,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/acotipa",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+        500224170
+      ],
+      "neighbours": [
+        "aruana",
+        "bomjesusdoaraguaia",
+        "campinapolis",
+        "gauchadonorte",
+        "querencia"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Água Boa",
+      "status": null,
+      "arena_id": "44_north_america",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aguaboa",
+      "landing_type": null,
+      "owner_clan_id": 500313819,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aguaboa",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+        500246097
+      ],
+      "neighbours": [
+        "boavista",
+        "caroebe",
+        "ilhotadamalocaaroni",
+        "kockberg",
+        "kwatamang",
+        "trombetasindigenousterritory"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Aishalton",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aishalton",
+      "landing_type": null,
+      "owner_clan_id": 500249301,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aishalton",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -12,
+            "clan_id": 500249301,
+            "battle_reward": 0,
+            "win_elo_delta": 3
+          },
+          "start_at": "2025-05-25T17:00:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -3,
+            "clan_id": 500300887,
+            "battle_reward": 0,
+            "win_elo_delta": 12
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Murovanka",
+      "attackers": [
+        500249301,
+        500300887
+      ],
+      "neighbours": [
+        "altafloresta",
+        "brazilianairforcedetachment",
+        "cachoeiradaserra",
+        "colider",
+        "confresa",
+        "kendjan",
+        "riodourado",
+        "vilarica"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Aldeia Piaracu",
+      "status": "CREATED",
+      "arena_id": "11_murovanka",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aldeiapiaracu",
+      "landing_type": null,
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aldeiapiaracu",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Pearl River",
+      "attackers": [
+      ],
+      "neighbours": [
+        "bocamanu",
+        "colocacaopaquara",
+        "puertomaldonado",
+        "santarosadopurus",
+        "sepahua"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Alerta",
+      "status": null,
+      "arena_id": "60_asia_miao",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "alerta",
+      "landing_type": "tournament",
+      "owner_clan_id": 500315428,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/alerta",
+      "server": "EU2",
+      "competitors": [
+        500046758,
+        500228927
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -16,
+            "clan_id": 500223993,
+            "battle_reward": 0,
+            "win_elo_delta": 14
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -7,
+            "clan_id": 500142215,
+            "battle_reward": 0,
+            "win_elo_delta": 8
+          },
+          "battle_reward": null
+        },
+        {
+          "clan_b": {
+            "loose_elo_delta": -9,
+            "clan_id": 500135976,
+            "battle_reward": 0,
+            "win_elo_delta": 6
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -6,
+            "clan_id": 500252527,
+            "battle_reward": 0,
+            "win_elo_delta": 9
+          },
+          "battle_reward": null
+        },
+        {
+          "clan_b": {
+            "loose_elo_delta": -8,
+            "clan_id": 500190725,
+            "battle_reward": 0,
+            "win_elo_delta": 7
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -7,
+            "clan_id": 500022195,
+            "battle_reward": 0,
+            "win_elo_delta": 8
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Cliff",
+      "attackers": [
+      ],
+      "neighbours": [
+        "corrente",
+        "luiseduardomagalhaes",
+        "novoacordo",
+        "palmas",
+        "portonacional",
+        "saovaleriodanatividade"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Almas",
+      "status": "CREATED",
+      "arena_id": "18_cliff",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "almas",
+      "landing_type": "tournament",
+      "owner_clan_id": 500246097,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/almas",
+      "server": "EU2",
+      "competitors": [
+        500022195,
+        500135976,
+        500142215,
+        500190725,
+        500223993,
+        500252527
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Murovanka",
+      "attackers": [
+        500197981
+      ],
+      "neighbours": [
+        "altamira",
+        "laranjaldojari",
+        "montealegre",
+        "placas",
+        "senadorjoseporfirio"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Almeirim",
+      "status": null,
+      "arena_id": "11_murovanka",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "almeirim",
+      "landing_type": null,
+      "owner_clan_id": 500223515,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/almeirim",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Karelia",
+      "attackers": [
+      ],
+      "neighbours": [
+        "aracuai",
+        "ilheus",
+        "jequitinhonha",
+        "portoseguro",
+        "vitoriadaconquista"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Almenara",
+      "status": null,
+      "arena_id": "01_karelia",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-26T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "almenara",
+      "landing_type": null,
+      "owner_clan_id": 500246097,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/almenara",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+        500195245
+      ],
+      "neighbours": [
+        "aldeiapiaracu",
+        "cachoeiradaserra",
+        "colider",
+        "novabandeirantes",
+        "novacanaadonorte",
+        "novoplaneta",
+        "novoprogresso"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Alta Floresta",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "altafloresta",
+      "landing_type": null,
+      "owner_clan_id": 500223632,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/altafloresta",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+        500223515
+      ],
+      "neighbours": [
+        "almeirim",
+        "pacaja",
+        "placas",
+        "senadorjoseporfirio",
+        "teimoso"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Altamira",
+      "status": null,
+      "arena_id": "44_north_america",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "altamira",
+      "landing_type": null,
+      "owner_clan_id": 500197981,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/altamira",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+        500225848
+      ],
+      "neighbours": [
+        "boavista",
+        "pacaraima",
+        "pirilandia",
+        "santaelenadeuairen",
+        "uiaiacas"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Alto Alegre",
+      "status": null,
+      "arena_id": "06_ensk",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "altoalegre",
+      "landing_type": null,
+      "owner_clan_id": 500225558,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/altoalegre",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Cliff",
+      "attackers": [
+      ],
+      "neighbours": [
+        "carauari",
+        "itamarati",
+        "itanga",
+        "saopaulodeolivenca",
+        "tabatinga",
+        "tonantins"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Amaturá",
+      "status": null,
+      "arena_id": "18_cliff",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "amatura",
+      "landing_type": "tournament",
+      "owner_clan_id": 500137172,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/amatura",
+      "server": "EU2",
+      "competitors": [
+        500074003,
+        500143937,
+        500154581,
+        500159593,
+        500181203,
+        500204287
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+        500277705
+      ],
+      "neighbours": [
+        "bacara",
+        "calibuque",
+        "pirilandia",
+        "santaisabeldorionegro",
+        "uiaiacas",
+        "yanomamisettlement"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Amazon National Forest",
+      "status": null,
+      "arena_id": "06_ensk",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "amazonnationalforest",
+      "landing_type": null,
+      "owner_clan_id": 500225208,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/amazonnationalforest",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Ensk",
+      "attackers": [
+      ],
+      "neighbours": [
+        "aquidauana",
+        "bodoquena",
+        "cupinzal",
+        "puertosuarez",
+        "rioverdedematogrosso"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Amolar",
+      "status": null,
+      "arena_id": "06_ensk",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "amolar",
+      "landing_type": "tournament",
+      "owner_clan_id": 500137172,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/amolar",
+      "server": "EU2",
+      "competitors": [
+        500042313,
+        500047395,
+        500143937,
+        500158820,
+        500183415,
+        500277773
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Redshire",
+      "attackers": [
+      ],
+      "neighbours": [
+        "barrancasdelorinoco",
+        "ciudadbolivar",
+        "ciudadguayana",
+        "maturin",
+        "puertolacruz",
+        "zuata"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Anaco",
+      "status": null,
+      "arena_id": "34_redshire",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "anaco",
+      "landing_type": "tournament",
+      "owner_clan_id": 500205593,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/anaco",
+      "server": "EU2",
+      "competitors": [
+        500003668,
+        500022871,
+        500074387,
+        500173012,
+        500224931,
+        500227456,
+        500266997,
+        500277773
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -9,
+            "clan_id": 500276300,
+            "battle_reward": 0,
+            "win_elo_delta": 6
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -6,
+            "clan_id": 500286950,
+            "battle_reward": 0,
+            "win_elo_delta": 9
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Westfield",
+      "attackers": [
+        500276300,
+        500286950
+      ],
+      "neighbours": [
+        "brasilia",
+        "goianesia",
+        "goiania",
+        "ipora",
+        "rubiataba",
+        "saoluisdemontesbelos"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Anápolis",
+      "status": "CREATED",
+      "arena_id": "23_westfeld",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "anapolis",
+      "landing_type": null,
+      "owner_clan_id": 500310455,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/anapolis",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Highway",
+      "attackers": [
+      ],
+      "neighbours": [
+        "brinkmann",
+        "esquina",
+        "lostelares",
+        "malbran",
+        "quimili",
+        "santiagodelestero",
+        "villaangela"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Añatuya",
+      "status": null,
+      "arena_id": "45_north_america",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "anatuya",
+      "landing_type": null,
+      "owner_clan_id": 500273315,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/anatuya",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "docedeoctubre",
+        "nuevaloja"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Andoas",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "andoas",
+      "landing_type": null,
+      "owner_clan_id": 500205502,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/andoas",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Mines",
+      "attackers": [
+        500205287,
+        500277705
+      ],
+      "neighbours": [
+        "jurado",
+        "medellin",
+        "puertolibertador",
+        "sincelejo"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Apartadó",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "20:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "apartado",
+      "landing_type": null,
+      "owner_clan_id": 500241047,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/apartado",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Pearl River",
+      "attackers": [
+        500225208
+      ],
+      "neighbours": [
+        "auxiliadora",
+        "barradesaomanoel",
+        "bocadomoreru",
+        "novoaripuana",
+        "santoantoniodomatupi",
+        "vilameriti"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Apui",
+      "status": null,
+      "arena_id": "60_asia_miao",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "apui",
+      "landing_type": null,
+      "owner_clan_id": 500228976,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/apui",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Mines",
+      "attackers": [
+        500183566
+      ],
+      "neighbours": [
+        "amolar",
+        "bodoquena",
+        "campogrande",
+        "maracaju",
+        "rioverdedematogrosso",
+        "saogabrieldooeste"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Aquidauana",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aquidauana",
+      "landing_type": null,
+      "owner_clan_id": 500333081,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aquidauana",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Mines",
+      "attackers": [
+      ],
+      "neighbours": [
+        "arapiraca",
+        "conceicaodocoite",
+        "pauloafonso",
+        "salvador"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Aracaju",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-26T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aracaju",
+      "landing_type": null,
+      "owner_clan_id": 500205593,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aracaju",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Mines",
+      "attackers": [
+        500183566
+      ],
+      "neighbours": [
+        "dracena",
+        "frutal",
+        "marilia",
+        "paranaiba",
+        "saojosedoriopreto",
+        "treslagoas"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Araçatuba",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aracatuba",
+      "landing_type": null,
+      "owner_clan_id": 500047286,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aracatuba",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+      ],
+      "neighbours": [
+        "almenara",
+        "espinosa",
+        "janauba",
+        "jequitinhonha",
+        "montesclaros",
+        "teofilootoni",
+        "vitoriadaconquista"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Araçuaí",
+      "status": null,
+      "arena_id": "44_north_america",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-26T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aracuai",
+      "landing_type": null,
+      "owner_clan_id": 500200446,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aracuai",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Murovanka",
+      "attackers": [
+        500276300
+      ],
+      "neighbours": [
+        "camposlindos",
+        "colinasdotocantins",
+        "eldoradodoscarajas",
+        "estreito",
+        "imperatriz",
+        "redencao"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Araguaína",
+      "status": null,
+      "arena_id": "11_murovanka",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "araguaina",
+      "landing_type": null,
+      "owner_clan_id": 500213526,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/araguaina",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Murovanka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "aracaju",
+        "belojardim",
+        "maceio",
+        "pauloafonso",
+        "serratalhada"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Arapiraca",
+      "status": "FINISHED",
+      "arena_id": "11_murovanka",
+      "prime_time": "16:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "arapiraca",
+      "landing_type": null,
+      "owner_clan_id": 500213526,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/arapiraca",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -13,
+            "clan_id": 500277705,
+            "battle_reward": 0,
+            "win_elo_delta": 12
+          },
+          "start_at": "2025-05-25T17:00:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -12,
+            "clan_id": 500205287,
+            "battle_reward": 0,
+            "win_elo_delta": 13
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+        500277705
+      ],
+      "neighbours": [
+        "acotipa",
+        "ilhotadamalocaaroni",
+        "lourenco",
+        "noucouru",
+        "setevaras",
+        "taluen"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Araquã",
+      "status": "CREATED",
+      "arena_id": "44_north_america",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "araqua",
+      "landing_type": null,
+      "owner_clan_id": 500205287,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/araqua",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Fisherman's Bay",
+      "attackers": [
+        500224170
+      ],
+      "neighbours": [
+        "casanova",
+        "juazeirodonorte",
+        "petrolina",
+        "picos",
+        "salgueiro",
+        "taua"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Araripina",
+      "status": "FINISHED",
+      "arena_id": "36_fishing_bay",
+      "prime_time": "16:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "araripina",
+      "landing_type": null,
+      "owner_clan_id": 500230211,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/araripina",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Malinovka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "bacara",
+        "calibuque",
+        "macaco",
+        "mucura",
+        "novacolina",
+        "presidentefigueiredo"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Aratucuna",
+      "status": null,
+      "arena_id": "02_malinovka",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aratucuna",
+      "landing_type": "tournament",
+      "owner_clan_id": 500230156,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aratucuna",
+      "server": "EU2",
+      "competitors": [
+        500005725,
+        500042574,
+        500060512,
+        500061671,
+        500167772,
+        500184245,
+        500310107,
+        500320275
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "guasdualito",
+        "orocue",
+        "puertocarreno",
+        "saravena",
+        "yopal"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Arauca",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "arauca",
+      "landing_type": "tournament",
+      "owner_clan_id": 500230156,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/arauca",
+      "server": "EU2",
+      "competitors": [
+        500044317,
+        500152818,
+        500238246,
+        500243359
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Westfield",
+      "attackers": [
+        500028952
+      ],
+      "neighbours": [
+        "novaserrana",
+        "passos",
+        "patosdeminas",
+        "uberaba",
+        "uberlandia"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Araxá",
+      "status": null,
+      "arena_id": "23_westfeld",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "araxa",
+      "landing_type": null,
+      "owner_clan_id": 500235947,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/araxa",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+        500265242
+      ],
+      "neighbours": [
+        "cacoal",
+        "colniza",
+        "conselvan",
+        "guata",
+        "juina",
+        "padronal"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Aripuanã",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aripuana",
+      "landing_type": null,
+      "owner_clan_id": 500225460,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aripuana",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+        500228976,
+        500230222
+      ],
+      "neighbours": [
+        "guajaramirim",
+        "guata",
+        "jiparana",
+        "machadinhodoeste",
+        "novamamore",
+        "portovelho",
+        "saomigueldoguapore"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Ariquemes",
+      "status": null,
+      "arena_id": "44_north_america",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "ariquemes",
+      "landing_type": null,
+      "owner_clan_id": 500195245,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/ariquemes",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Redshire",
+      "attackers": [
+      ],
+      "neighbours": [
+        "calibuque",
+        "mucura",
+        "santaisabeldorionegro",
+        "tefe",
+        "uneiuxiindigenousterritory"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Arthur's Tears",
+      "status": null,
+      "arena_id": "34_redshire",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "arthurstears",
+      "landing_type": "tournament",
+      "owner_clan_id": 500070702,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/arthurstears",
+      "server": "EU2",
+      "competitors": [
+        500022871,
+        500042313,
+        500190725,
+        500223632,
+        500224170,
+        500227456,
+        500309708
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Fisherman's Bay",
+      "attackers": [
+        500003668
+      ],
+      "neighbours": [
+        "federacion",
+        "paysandu",
+        "tacuarembo",
+        "uruguaiana"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Artigas",
+      "status": null,
+      "arena_id": "36_fishing_bay",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "artigas",
+      "landing_type": null,
+      "owner_clan_id": 500230059,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/artigas",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -10,
+            "clan_id": 500246097,
+            "battle_reward": 0,
+            "win_elo_delta": 5
+          },
+          "start_at": "2025-05-25T17:00:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -5,
+            "clan_id": 500286950,
+            "battle_reward": 0,
+            "win_elo_delta": 10
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Redshire",
+      "attackers": [
+        500246097,
+        500286950
+      ],
+      "neighbours": [
+        "aguaboa",
+        "barradogarcas",
+        "bomjesusdoaraguaia",
+        "ipora",
+        "porangatu",
+        "rubiataba"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Aruanã",
+      "status": "CREATED",
+      "arena_id": "34_redshire",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "aruana",
+      "landing_type": null,
+      "owner_clan_id": 500249301,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/aruana",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+      ],
+      "neighbours": [
+        "baiadepedra",
+        "mirassoldoeste",
+        "pashachesglen",
+        "ponteselacerda",
+        "puertosuarez",
+        "sanignaciodevelasco",
+        "sanjosedechiquitos"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Ascención de la Frontera",
+      "status": null,
+      "arena_id": "44_north_america",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "ascenciondelafrontera",
+      "landing_type": null,
+      "owner_clan_id": 500003668,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/ascenciondelafrontera",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Westfield",
+      "attackers": [
+        500057154,
+        500183566
+      ],
+      "neighbours": [
+        "caaguazu",
+        "capitansosa",
+        "ciudaddeleste",
+        "formosa",
+        "fortingeneraljosebruguez"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Asunción",
+      "status": null,
+      "arena_id": "23_westfeld",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "asuncion",
+      "landing_type": null,
+      "owner_clan_id": 500205287,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/asuncion",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Karelia",
+      "attackers": [
+      ],
+      "neighbours": [
+        "caballococha",
+        "eirunepe",
+        "itamarati",
+        "palmeirasdojavari",
+        "tabatinga"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Atalaia do Norte",
+      "status": null,
+      "arena_id": "01_karelia",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "atalaiadonorte",
+      "landing_type": "tournament",
+      "owner_clan_id": 500242274,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/atalaiadonorte",
+      "server": "EU2",
+      "competitors": [
+        500205132,
+        500228927
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Himmelsdorf",
+      "attackers": [
+        500195245
+      ],
+      "neighbours": [
+        "apui",
+        "humaita",
+        "machadinhodoeste",
+        "novoaripuana",
+        "santoantoniodomatupi",
+        "tapaua"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Auxiliadora",
+      "status": null,
+      "arena_id": "04_himmelsdorf",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "auxiliadora",
+      "landing_type": null,
+      "owner_clan_id": 500228976,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/auxiliadora",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Sand River",
+      "attackers": [
+        500183566
+      ],
+      "neighbours": [
+        "awadam",
+        "georgetown",
+        "kockberg",
+        "kwatamang",
+        "nieuwnickerie",
+        "surama"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Avanavero",
+      "status": null,
+      "arena_id": "28_desert",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "avanavero",
+      "landing_type": null,
+      "owner_clan_id": 500195245,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/avanavero",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -16,
+            "clan_id": 500277705,
+            "battle_reward": 0,
+            "win_elo_delta": 9
+          },
+          "start_at": "2025-05-25T17:00:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -9,
+            "clan_id": 500192730,
+            "battle_reward": 0,
+            "win_elo_delta": 16
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+        500277705
+      ],
+      "neighbours": [
+        "acotipa",
+        "avanavero",
+        "kockberg",
+        "nieuwnickerie",
+        "paramaribo",
+        "saintlaurentdumaroni",
+        "taluen"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Awadam",
+      "status": "CREATED",
+      "arena_id": "06_ensk",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "awadam",
+      "landing_type": null,
+      "owner_clan_id": 500192730,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/awadam",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Pearl River",
+      "attackers": [
+      ],
+      "neighbours": [
+        "boyuibe",
+        "pucara",
+        "sucre",
+        "tarija",
+        "villaabecia",
+        "villamontes"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Azurduy",
+      "status": null,
+      "arena_id": "60_asia_miao",
+      "prime_time": "20:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "azurduy",
+      "landing_type": null,
+      "owner_clan_id": 500183566,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/azurduy",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Mines",
+      "attackers": [
+      ],
+      "neighbours": [
+        "barradocorda",
+        "buriticupu",
+        "caxias",
+        "pinheiro",
+        "saoluis",
+        "zedoca"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bacabal",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-26T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bacabal",
+      "landing_type": null,
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bacabal",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Murovanka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "amazonnationalforest",
+        "aratucuna",
+        "calibuque",
+        "caracarai",
+        "novacolina",
+        "pirilandia"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bacará",
+      "status": null,
+      "arena_id": "11_murovanka",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bacara",
+      "landing_type": "tournament",
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bacara",
+      "server": "EU2",
+      "competitors": [
+        500012158,
+        500042313,
+        500135964,
+        500138463,
+        500184582,
+        500213311,
+        500300887
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Sand River",
+      "attackers": [
+      ],
+      "neighbours": [
+        "cachoeiradosul",
+        "melo",
+        "pelotas",
+        "riogrande",
+        "santanadolivramento"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bagé",
+      "status": null,
+      "arena_id": "28_desert",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bage",
+      "landing_type": null,
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bage",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Murovanka",
+      "attackers": [
+        500225460
+      ],
+      "neighbours": [
+        "bodoquena",
+        "fuerteolimpo",
+        "mayorpablolagerenza",
+        "pashachesglen",
+        "puertosuarez",
+        "totobiegosodeindigenousterritory"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bahía Negra",
+      "status": null,
+      "arena_id": "11_murovanka",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bahianegra",
+      "landing_type": null,
+      "owner_clan_id": 500195245,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bahianegra",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+        500003668
+      ],
+      "neighbours": [
+        "ascenciondelafrontera",
+        "cuiaba",
+        "cupinzal",
+        "mirassoldoeste",
+        "puertosuarez"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Baía de Pedra",
+      "status": null,
+      "arena_id": "06_ensk",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "baiadepedra",
+      "landing_type": null,
+      "owner_clan_id": 500230156,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/baiadepedra",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Sand River",
+      "attackers": [
+      ],
+      "neighbours": [
+        "manaus",
+        "maues",
+        "nhamunda",
+        "nhamundaindigenousterritory",
+        "presidentefigueiredo"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Balbina Dam",
+      "status": null,
+      "arena_id": "28_desert",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "balbinadam",
+      "landing_type": null,
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/balbinadam",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Serene Coast",
+      "attackers": [
+        500225460
+      ],
+      "neighbours": [
+        "camposlindos",
+        "colinas",
+        "estreito",
+        "gilbues",
+        "urucui"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Balsas",
+      "status": "FINISHED",
+      "arena_id": "47_canada_a",
+      "prime_time": "16:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "balsas",
+      "landing_type": null,
+      "owner_clan_id": 500223515,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/balsas",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Redshire",
+      "attackers": [
+        500044361
+      ],
+      "neighbours": [
+        "coxim",
+        "cuiaba",
+        "cupinzal",
+        "diamantino",
+        "primaveradoleste",
+        "rondonopolis"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barão de Melgaço",
+      "status": null,
+      "arena_id": "34_redshire",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "baraodemelgaco",
+      "landing_type": null,
+      "owner_clan_id": 500044317,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/baraodemelgaco",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Steppes",
+      "attackers": [
+        500214157
+      ],
+      "neighbours": [
+        "barquisimeto",
+        "guasdualito",
+        "mantecal",
+        "maracaibo",
+        "sancristobal"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barinas",
+      "status": null,
+      "arena_id": "35_steppes",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barinas",
+      "landing_type": null,
+      "owner_clan_id": 500249301,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barinas",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+        500224170
+      ],
+      "neighbours": [
+        "barinas",
+        "mantecal",
+        "maracaibo",
+        "puntofijo",
+        "sanfernandodeapure",
+        "valencia"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barquisimeto",
+      "status": null,
+      "arena_id": "44_north_america",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barquisimeto",
+      "landing_type": null,
+      "owner_clan_id": 500246097,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barquisimeto",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Pearl River",
+      "attackers": [
+      ],
+      "neighbours": [
+        "governadorvaladares",
+        "jequitinhonha",
+        "saomateus",
+        "serra",
+        "teofilootoni"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barra de São Francisco",
+      "status": "CREATED",
+      "arena_id": "60_asia_miao",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barradesaofrancisco",
+      "landing_type": "tournament",
+      "owner_clan_id": 500246097,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barradesaofrancisco",
+      "server": "EU2",
+      "competitors": [
+        500042313,
+        500249301
+      ],
+      "round_number": 2,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Himmelsdorf",
+      "attackers": [
+        500226790
+      ],
+      "neighbours": [
+        "apui",
+        "bocadomoreru",
+        "garimpo",
+        "jacareacanga",
+        "kururuzinho",
+        "vilameriti"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barra de São Manoel",
+      "status": null,
+      "arena_id": "04_himmelsdorf",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barradesaomanoel",
+      "landing_type": null,
+      "owner_clan_id": 500267257,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barradesaomanoel",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Mines",
+      "attackers": [
+        500270778
+      ],
+      "neighbours": [
+        "cuiaba",
+        "diamantino",
+        "lucialva",
+        "mirassoldoeste",
+        "saojosedorioclaro"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barra do Bugres",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barradobugres",
+      "landing_type": null,
+      "owner_clan_id": 500180845,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barradobugres",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Lakeville",
+      "attackers": [
+      ],
+      "neighbours": [
+        "bacabal",
+        "buriticupu",
+        "caxias",
+        "colinas",
+        "grajau",
+        "parnarama"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barra do Corda",
+      "status": null,
+      "arena_id": "07_lakeville",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-26T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barradocorda",
+      "landing_type": null,
+      "owner_clan_id": 500224170,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barradocorda",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Abbey",
+      "attackers": [
+        500184582
+      ],
+      "neighbours": [
+        "aruana",
+        "campinapolis",
+        "guiratinga",
+        "ipora",
+        "mineiros",
+        "rioverde",
+        "saoluisdemontesbelos"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barra do Garças",
+      "status": null,
+      "arena_id": "19_monastery",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barradogarcas",
+      "landing_type": null,
+      "owner_clan_id": 500286950,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barradogarcas",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Mines",
+      "attackers": [
+        500197981
+      ],
+      "neighbours": [
+        "cucuta",
+        "ladorada",
+        "nechi",
+        "puertolibertador",
+        "tunja"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barrancabermeja",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barrancabermeja",
+      "landing_type": null,
+      "owner_clan_id": 500195245,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barrancabermeja",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Abbey",
+      "attackers": [
+        500205593
+      ],
+      "neighbours": [
+        "anaco",
+        "ciudadguayana",
+        "maturin"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barrancas del Orinoco",
+      "status": null,
+      "arena_id": "19_monastery",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barrancasdelorinoco",
+      "landing_type": null,
+      "owner_clan_id": 500224170,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barrancasdelorinoco",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Himmelsdorf",
+      "attackers": [
+        500192730,
+        500227401,
+        500229413
+      ],
+      "neighbours": [
+        "mitu",
+        "orocue",
+        "puertocarreno",
+        "puertoprincipe",
+        "sancarlosderionegro",
+        "sanfernandodeatabapo"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barranco Minas",
+      "status": null,
+      "arena_id": "04_himmelsdorf",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barrancominas",
+      "landing_type": null,
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barrancominas",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "riohacha",
+        "santacruzdemompox",
+        "sincelejo"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barranquilla",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barranquilla",
+      "landing_type": null,
+      "owner_clan_id": 500167772,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barranquilla",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "buritirama",
+        "corrente",
+        "correntina",
+        "luiseduardomagalhaes",
+        "paratinga",
+        "posse"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Barreiras",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "barreiras",
+      "landing_type": null,
+      "owner_clan_id": 500272878,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/barreiras",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Westfield",
+      "attackers": [
+        500242274
+      ],
+      "neighbours": [
+        "bocadocurimata",
+        "coari",
+        "codajas",
+        "labrea",
+        "tapaua",
+        "urucu"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Batelão",
+      "status": null,
+      "arena_id": "23_westfeld",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "batelao",
+      "landing_type": null,
+      "owner_clan_id": 500251699,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/batelao",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Abbey",
+      "attackers": [
+        500183566
+      ],
+      "neighbours": [
+        "comunidadyaguaru",
+        "estancialarana",
+        "guajaramirim",
+        "lomasuarez",
+        "puertopirana",
+        "rolimdemoura",
+        "santaanadelyacuma",
+        "saomigueldoguapore"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Baures",
+      "status": null,
+      "arena_id": "19_monastery",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "baures",
+      "landing_type": null,
+      "owner_clan_id": 500235299,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/baures",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -8,
+            "clan_id": 500219908,
+            "battle_reward": 0,
+            "win_elo_delta": 7
+          },
+          "start_at": "2025-05-25T17:00:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -7,
+            "clan_id": 500198417,
+            "battle_reward": 0,
+            "win_elo_delta": 8
+          },
+          "battle_reward": null
+        },
+        {
+          "clan_b": {
+            "loose_elo_delta": -15,
+            "clan_id": 500308803,
+            "battle_reward": 0,
+            "win_elo_delta": 15
+          },
+          "start_at": "2025-05-25T17:00:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -7,
+            "clan_id": 500320275,
+            "battle_reward": 0,
+            "win_elo_delta": 8
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Mines",
+      "attackers": [
+      ],
+      "neighbours": [
+        "itapeva",
+        "marilia",
+        "ourinhos",
+        "ribeiraopreto",
+        "saojosedoriopreto",
+        "sorocaba"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bauru",
+      "status": "CREATED",
+      "arena_id": "10_hills",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bauru",
+      "landing_type": "tournament",
+      "owner_clan_id": 500183566,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bauru",
+      "server": "EU2",
+      "competitors": [
+        500198417,
+        500219908,
+        500308803,
+        500313819,
+        500320275
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Mines",
+      "attackers": [
+      ],
+      "neighbours": [
+        "abaetetuba",
+        "muana",
+        "paragominas",
+        "tracuateua"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Belém",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "16:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-26T16:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "belem",
+      "landing_type": "tournament",
+      "owner_clan_id": 500226790,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/belem",
+      "server": "EU2",
+      "competitors": [
+        500225460
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+        500242274
+      ],
+      "neighbours": [
+        "divinopolis",
+        "itabira",
+        "juizdefora",
+        "lavras",
+        "muriae",
+        "setelagoas"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Belo Horizonte",
+      "status": null,
+      "arena_id": "06_ensk",
+      "prime_time": "17:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "belohorizonte",
+      "landing_type": null,
+      "owner_clan_id": 500137172,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/belohorizonte",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Ensk",
+      "attackers": [
+      ],
+      "neighbours": [
+        "arapiraca",
+        "maceio",
+        "patos",
+        "recife",
+        "serratalhada"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Belo Jardim",
+      "status": "CREATED",
+      "arena_id": "06_ensk",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "belojardim",
+      "landing_type": "tournament",
+      "owner_clan_id": 500227153,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/belojardim",
+      "server": "EU2",
+      "competitors": [
+        500135964,
+        500226326,
+        500229580,
+        500230222,
+        500234321
+      ],
+      "round_number": 2,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Prokhorovka",
+      "attackers": [
+        500243359
+      ],
+      "neighbours": [
+        "cacador",
+        "curitiba",
+        "curitibanos",
+        "florianopolis"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Blumenau",
+      "status": null,
+      "arena_id": "05_prohorovka",
+      "prime_time": "18:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "blumenau",
+      "landing_type": null,
+      "owner_clan_id": 500205287,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/blumenau",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Lakeville",
+      "attackers": [
+        500224170
+      ],
+      "neighbours": [
+        "aishalton",
+        "altoalegre",
+        "caracarai",
+        "caroebe",
+        "kwatamang",
+        "pacaraima",
+        "pirilandia"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Boa Vista",
+      "status": null,
+      "arena_id": "07_lakeville",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "boavista",
+      "landing_type": null,
+      "owner_clan_id": 500249301,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/boavista",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Cliff",
+      "attackers": [
+        500065961,
+        500183566
+      ],
+      "neighbours": [
+        "cachuelaesperanza",
+        "manoelurbano",
+        "novamamore",
+        "pauini",
+        "riobranco",
+        "saobento",
+        "seringalcatipari"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Boca do Acre",
+      "status": null,
+      "arena_id": "18_cliff",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bocadoacre",
+      "landing_type": null,
+      "owner_clan_id": 500212435,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bocadoacre",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Lakeville",
+      "attackers": [
+        500246097,
+        500251699
+      ],
+      "neighbours": [
+        "batelao",
+        "coari",
+        "itanga",
+        "jurua",
+        "tefe",
+        "urucu"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Boca do Curimatá",
+      "status": null,
+      "arena_id": "07_lakeville",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bocadocurimata",
+      "landing_type": null,
+      "owner_clan_id": 500242274,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bocadocurimata",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Westfield",
+      "attackers": [
+      ],
+      "neighbours": [
+        "apui",
+        "barradesaomanoel",
+        "colniza",
+        "conselvan",
+        "kururuzinho",
+        "santoantoniodomatupi"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Boca do Moreru",
+      "status": null,
+      "arena_id": "23_westfeld",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bocadomoreru",
+      "landing_type": "tournament",
+      "owner_clan_id": 500246097,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bocadomoreru",
+      "server": "EU2",
+      "competitors": [
+        500155666,
+        500238196,
+        500270995,
+        500276300,
+        500300887,
+        500330663
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -9,
+            "clan_id": 500243359,
+            "battle_reward": 0,
+            "win_elo_delta": 6
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -6,
+            "clan_id": 500230211,
+            "battle_reward": 0,
+            "win_elo_delta": 9
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Malinovka",
+      "attackers": [
+        500224170,
+        500230211,
+        500243359
+      ],
+      "neighbours": [
+        "montesclaros",
+        "pirapora",
+        "serro",
+        "setelagoas",
+        "tresmarias"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bocaiuva",
+      "status": "CREATED",
+      "arena_id": "02_malinovka",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bocaiuva",
+      "landing_type": null,
+      "owner_clan_id": 500178996,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bocaiuva",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+      ],
+      "neighbours": [
+        "alerta",
+        "cusco",
+        "macusani",
+        "puertomaldonado",
+        "quillabamba"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Boca Manu",
+      "status": null,
+      "arena_id": "06_ensk",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bocamanu",
+      "landing_type": null,
+      "owner_clan_id": 500270778,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bocamanu",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Murovanka",
+      "attackers": [
+      ],
+      "neighbours": [
+        "amolar",
+        "aquidauana",
+        "bahianegra",
+        "fuerteolimpo",
+        "portomurtinho",
+        "puertosuarez"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bodoquena",
+      "status": null,
+      "arena_id": "11_murovanka",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bodoquena",
+      "landing_type": "tournament",
+      "owner_clan_id": 500230156,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bodoquena",
+      "server": "EU2",
+      "competitors": [
+        500205132,
+        500224177,
+        500304058,
+        500311605
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Murovanka",
+      "attackers": [
+        500057154
+      ],
+      "neighbours": [
+        "ladorada",
+        "manizales",
+        "mochelosur",
+        "saldana",
+        "tunja",
+        "villavicencio"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bogota",
+      "status": null,
+      "arena_id": "11_murovanka",
+      "prime_time": "20:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bogota",
+      "landing_type": null,
+      "owner_clan_id": 500027942,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bogota",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Fisherman's Bay",
+      "attackers": [
+      ],
+      "neighbours": [
+        "buritirama",
+        "gilbues",
+        "remanso",
+        "saoraimundononato",
+        "urucui"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bom Jesus",
+      "status": "FINISHED",
+      "arena_id": "36_fishing_bay",
+      "prime_time": "16:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bomjesus",
+      "landing_type": "tournament",
+      "owner_clan_id": 500243359,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bomjesus",
+      "server": "EU2",
+      "competitors": [
+        500252527
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "El Halluf",
+      "attackers": [
+        500273315
+      ],
+      "neighbours": [
+        "carinhanha",
+        "correntina",
+        "espinosa",
+        "guanambi",
+        "macaubas",
+        "paratinga"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bom Jesus da Lapa",
+      "status": null,
+      "arena_id": "29_el_hallouf",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bomjesusdalapa",
+      "landing_type": null,
+      "owner_clan_id": 500200446,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bomjesusdalapa",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -10,
+            "clan_id": 500246097,
+            "battle_reward": 0,
+            "win_elo_delta": 5
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -5,
+            "clan_id": 500249301,
+            "battle_reward": 0,
+            "win_elo_delta": 10
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Fisherman's Bay",
+      "attackers": [
+        500246097,
+        500249301
+      ],
+      "neighbours": [
+        "aguaboa",
+        "aruana",
+        "confresa",
+        "gurupi",
+        "porangatu",
+        "querencia",
+        "saofelixdoaraguaia"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Bom Jesus do Araguaia",
+      "status": "CREATED",
+      "arena_id": "36_fishing_bay",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "bomjesusdoaraguaia",
+      "landing_type": null,
+      "owner_clan_id": 500224170,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/bomjesusdoaraguaia",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Karelia",
+      "attackers": [
+        500244293
+      ],
+      "neighbours": [
+        "manacapuru",
+        "manaus",
+        "maues",
+        "novoaripuana",
+        "varrevento",
+        "vilameriti"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Borba",
+      "status": null,
+      "arena_id": "01_karelia",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "borba",
+      "landing_type": null,
+      "owner_clan_id": 500223515,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/borba",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Karelia",
+      "attackers": [
+        500031501
+      ],
+      "neighbours": [
+        "azurduy",
+        "mayorpablolagerenza",
+        "pucara",
+        "santacruzlaviejaarchaeologicalruins",
+        "villamontes"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Boyuibe",
+      "status": null,
+      "arena_id": "01_karelia",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "boyuibe",
+      "landing_type": null,
+      "owner_clan_id": 500183566,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/boyuibe",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -11,
+            "clan_id": 500335408,
+            "battle_reward": 0,
+            "win_elo_delta": 4
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -4,
+            "clan_id": 500219908,
+            "battle_reward": 0,
+            "win_elo_delta": 11
+          },
+          "battle_reward": null
+        },
+        {
+          "clan_b": {
+            "loose_elo_delta": -10,
+            "clan_id": 500230211,
+            "battle_reward": 0,
+            "win_elo_delta": 5
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -11,
+            "clan_id": 500332635,
+            "battle_reward": 0,
+            "win_elo_delta": 19
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Fisherman's Bay",
+      "attackers": [
+      ],
+      "neighbours": [
+        "anapolis",
+        "catalao",
+        "goianesia",
+        "goiania",
+        "iaciara",
+        "paracatu",
+        "unai"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Brasília",
+      "status": "CREATED",
+      "arena_id": "36_fishing_bay",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "brasilia",
+      "landing_type": "tournament",
+      "owner_clan_id": 500251699,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/brasilia",
+      "server": "EU2",
+      "competitors": [
+        500219908,
+        500230211,
+        500313819,
+        500332635,
+        500335408
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+        500076202
+      ],
+      "neighbours": [
+        "aldeiapiaracu",
+        "colider",
+        "confresa",
+        "gauchadonorte",
+        "querencia"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Brazilian Air Force Detachment",
+      "status": null,
+      "arena_id": "06_ensk",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "brazilianairforcedetachment",
+      "landing_type": null,
+      "owner_clan_id": 500178996,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/brazilianairforcedetachment",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -23,
+            "clan_id": 500183566,
+            "battle_reward": 0,
+            "win_elo_delta": 2
+          },
+          "start_at": "2025-05-25T17:15:00",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -2,
+            "clan_id": 500329414,
+            "battle_reward": 0,
+            "win_elo_delta": 23
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Sand River",
+      "attackers": [
+        500183566
+      ],
+      "neighbours": [
+        "cameta",
+        "laranjaldojari",
+        "macapa",
+        "muana",
+        "senadorjoseporfirio"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Breves",
+      "status": "CREATED",
+      "arena_id": "28_desert",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "breves",
+      "landing_type": null,
+      "owner_clan_id": 500329414,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/breves",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Mines",
+      "attackers": [
+      ],
+      "neighbours": [
+        "anatuya",
+        "esquina",
+        "malbran",
+        "rafaela"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Brinkmann",
+      "status": null,
+      "arena_id": "10_hills",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "brinkmann",
+      "landing_type": "tournament",
+      "owner_clan_id": 500227153,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/brinkmann",
+      "server": "EU2",
+      "competitors": [
+        500152818
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Westfield",
+      "attackers": [
+      ],
+      "neighbours": [
+        "cali",
+        "manizales",
+        "popayan",
+        "quibdo"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Buenaventura",
+      "status": null,
+      "arena_id": "23_westfeld",
+      "prime_time": "20:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "buenaventura",
+      "landing_type": "tournament",
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/buenaventura",
+      "server": "EU2",
+      "competitors": [
+        500075872,
+        500215497,
+        500241865
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Ensk",
+      "attackers": [
+        500213526,
+        500277705
+      ],
+      "neighbours": [
+        "bacabal",
+        "barradocorda",
+        "domeliseu",
+        "grajau",
+        "imperatriz",
+        "zedoca"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Buriticupu",
+      "status": "CREATED",
+      "arena_id": "06_ensk",
+      "prime_time": "16:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "buriticupu",
+      "landing_type": null,
+      "owner_clan_id": 500224170,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/buriticupu",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": 2,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -1,
+            "clan_id": 500314043,
+            "battle_reward": 0,
+            "win_elo_delta": 14
+          },
+          "start_at": "2025-05-25T16:45:01",
+          "round": 2,
+          "clan_a": {
+            "loose_elo_delta": -14,
+            "clan_id": 500184245,
+            "battle_reward": 0,
+            "win_elo_delta": 1
+          },
+          "battle_reward": null
+        },
+        {
+          "clan_b": {
+            "loose_elo_delta": -10,
+            "clan_id": 500228976,
+            "battle_reward": 0,
+            "win_elo_delta": 5
+          },
+          "start_at": "2025-05-25T16:45:01",
+          "round": 2,
+          "clan_a": {
+            "loose_elo_delta": -5,
+            "clan_id": 500147675,
+            "battle_reward": 0,
+            "win_elo_delta": 10
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Himmelsdorf",
+      "attackers": [
+      ],
+      "neighbours": [
+        "barreiras",
+        "bomjesus",
+        "corrente",
+        "gilbues",
+        "paratinga",
+        "remanso",
+        "xiquexique"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Buritirama",
+      "status": "CREATED",
+      "arena_id": "04_himmelsdorf",
+      "prime_time": "16:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T16:15:01",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "buritirama",
+      "landing_type": "tournament",
+      "owner_clan_id": 500272878,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/buritirama",
+      "server": "EU2",
+      "competitors": [
+        500147675,
+        500184245,
+        500228976,
+        500314043
+      ],
+      "round_number": 2,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Lakeville",
+      "attackers": [
+        500249301
+      ],
+      "neighbours": [
+        "asuncion",
+        "ciudaddeleste",
+        "formosa",
+        "sanignacioguazu",
+        "santarosadelmonday"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Caaguazú",
+      "status": null,
+      "arena_id": "07_lakeville",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "caaguazu",
+      "landing_type": null,
+      "owner_clan_id": 500057154,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/caaguazu",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Steppes",
+      "attackers": [
+        500135976
+      ],
+      "neighbours": [
+        "atalaiadonorte",
+        "cruzplata",
+        "elestrecho",
+        "iquitos",
+        "ninhodaabelhalonghouse",
+        "saopaulodeolivenca",
+        "tabatinga",
+        "taraira"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Caballococha",
+      "status": null,
+      "arena_id": "35_steppes",
+      "prime_time": "19:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "caballococha",
+      "landing_type": null,
+      "owner_clan_id": 500225460,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/caballococha",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Westfield",
+      "attackers": [
+        500223515
+      ],
+      "neighbours": [
+        "mapiripan",
+        "mochelosur",
+        "orocue",
+        "puertoprincipe",
+        "villavicencio",
+        "yopal"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Cabuyaro",
+      "status": null,
+      "arena_id": "23_westfeld",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "cabuyaro",
+      "landing_type": null,
+      "owner_clan_id": 500225820,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/cabuyaro",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Cliff",
+      "attackers": [
+        500249301
+      ],
+      "neighbours": [
+        "blumenau",
+        "curitibanos",
+        "erechim",
+        "guarapuava",
+        "patobranco",
+        "pontagrossa"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Caçador",
+      "status": null,
+      "arena_id": "18_cliff",
+      "prime_time": "18:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T18:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "cacador",
+      "landing_type": null,
+      "owner_clan_id": 500225848,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/cacador",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+        {
+          "clan_b": {
+            "loose_elo_delta": -15,
+            "clan_id": 500252804,
+            "battle_reward": 0,
+            "win_elo_delta": 15
+          },
+          "start_at": "2025-05-25T17:15:01",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -15,
+            "clan_id": 500213311,
+            "battle_reward": 0,
+            "win_elo_delta": 15
+          },
+          "battle_reward": null
+        },
+        {
+          "clan_b": {
+            "loose_elo_delta": -8,
+            "clan_id": 500244541,
+            "battle_reward": 0,
+            "win_elo_delta": 7
+          },
+          "start_at": "2025-05-25T17:15:01",
+          "round": 1,
+          "clan_a": {
+            "loose_elo_delta": -7,
+            "clan_id": 500057431,
+            "battle_reward": 0,
+            "win_elo_delta": 8
+          },
+          "battle_reward": null
+        }
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 32,
+      "arena_name": "Live Oaks",
+      "attackers": [
+      ],
+      "neighbours": [
+        "aldeiapiaracu",
+        "altafloresta",
+        "kendjan",
+        "novoprogresso",
+        "seringalsaojorge"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Cachoeira da Serra",
+      "status": "CREATED",
+      "arena_id": "44_north_america",
+      "prime_time": "17:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T17:15:01",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "cachoeiradaserra",
+      "landing_type": "tournament",
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/cachoeiradaserra",
+      "server": "EU2",
+      "competitors": [
+        500057431,
+        500197981,
+        500213311,
+        500244541,
+        500252804
+      ],
+      "round_number": 1,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Malinovka",
+      "attackers": [
+        500135976
+      ],
+      "neighbours": [
+        "bage",
+        "ijui",
+        "pelotas",
+        "portoalegre",
+        "santacruzdosul",
+        "santanadolivramento",
+        "saopedrodosul"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Cachoeira do Sul",
+      "status": null,
+      "arena_id": "02_malinovka",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "cachoeiradosul",
+      "landing_type": null,
+      "owner_clan_id": 500277705,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/cachoeiradosul",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Karelia",
+      "attackers": [
+        500212435,
+        500230222
+      ],
+      "neighbours": [
+        "bocadoacre",
+        "elsena",
+        "novamamore",
+        "riberalta",
+        "riobranco"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Cachuela Esperanza",
+      "status": null,
+      "arena_id": "01_karelia",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "cachuelaesperanza",
+      "landing_type": null,
+      "owner_clan_id": 500309708,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/cachuelaesperanza",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Cliff",
+      "attackers": [
+        500225460,
+        500265242
+      ],
+      "neighbours": [
+        "aripuana",
+        "guata",
+        "jiparana",
+        "padronal",
+        "rolimdemoura",
+        "vilhena"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Cacoal",
+      "status": null,
+      "arena_id": "18_cliff",
+      "prime_time": "19:00",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T19:00:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "cacoal",
+      "landing_type": null,
+      "owner_clan_id": 500248222,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/cacoal",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    },
+    {
+      "active_battles": [
+      ],
+      "is_borders_disabled": false,
+      "front_name": "season_22_eu",
+      "max_bets": 1,
+      "arena_name": "Live Oaks",
+      "attackers": [
+        500171030
+      ],
+      "neighbours": [
+        "rosariodelerma",
+        "sanmigueldetucuman"
+      ],
+      "last_won_bet": 0,
+      "province_name": "Cafayate",
+      "status": null,
+      "arena_id": "44_north_america",
+      "prime_time": "20:15",
+      "current_min_bet": 0,
+      "battles_start_at": "2025-05-25T20:15:00",
+      "pillage_end_at": null,
+      "world_redivision": false,
+      "province_id": "cafayate",
+      "landing_type": null,
+      "owner_clan_id": 500195245,
+      "revenue_level": 0,
+      "daily_revenue": 0,
+      "uri": "\/#province\/cafayate",
+      "server": "EU2",
+      "competitors": [
+      ],
+      "round_number": null,
+      "front_id": "season_22_eu"
+    }
+  ]
+}

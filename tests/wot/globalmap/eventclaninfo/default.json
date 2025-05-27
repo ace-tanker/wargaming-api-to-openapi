@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "500246097": {
+      "events": {
+        "season_22": [
+          {
+            "task_fame_points": 0,
+            "event_id": "season_22",
+            "wins": 79,
+            "rank_delta": 0,
+            "battle_fame_points": 0,
+            "rank": 1,
+            "url": null,
+            "battles": 124,
+            "fame_points_since_turn": 223,
+            "fame_points": 4727602,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    }
+  }
+}

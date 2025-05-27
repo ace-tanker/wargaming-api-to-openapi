@@ -1,0 +1,31 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "587574285": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "34",
+            "account_id": 587574285,
+            "clan_rank": 2,
+            "rank_delta": 18,
+            "fame_points_to_improve_award": 6,
+            "updated_at": 1748192428,
+            "battles": 54,
+            "event_id": "season_22",
+            "clan_id": 500277705,
+            "rank": 34,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 992,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    }
+  }
+}

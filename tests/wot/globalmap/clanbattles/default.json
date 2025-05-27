@@ -1,0 +1,140 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 12
+  },
+  "data": [
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500225460,
+      "time": 1748196001,
+      "vehicle_level": 10,
+      "province_id": "codajas",
+      "type": "attack",
+      "province_name": "Codajás"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500180845,
+      "time": 1748196002,
+      "vehicle_level": 10,
+      "province_id": "portodosgauchos",
+      "type": "attack",
+      "province_name": "Porto dos Gaúchos"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500225460,
+      "time": 1748196902,
+      "vehicle_level": 10,
+      "province_id": "conselvan",
+      "type": "attack",
+      "province_name": "Conselvan"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500249301,
+      "time": 1748196903,
+      "vehicle_level": 10,
+      "province_id": "passofundo",
+      "type": "attack",
+      "province_name": "Passo Fundo"
+    },
+    {
+      "attack_type": "tournament",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500178996,
+      "time": 1748197801,
+      "vehicle_level": 10,
+      "province_id": "novaandradina",
+      "type": "attack",
+      "province_name": "Nova Andradina"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500251699,
+      "time": 1748197801,
+      "vehicle_level": 10,
+      "province_id": "codajas",
+      "type": "attack",
+      "province_name": "Codajás"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500068257,
+      "time": 1748198702,
+      "vehicle_level": 10,
+      "province_id": "padronal",
+      "type": "attack",
+      "province_name": "Padronal"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500225848,
+      "time": 1748198703,
+      "vehicle_level": 10,
+      "province_id": "passofundo",
+      "type": "attack",
+      "province_name": "Passo Fundo"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500068257,
+      "time": 1748199600,
+      "vehicle_level": 10,
+      "province_id": "vilhena",
+      "type": "attack",
+      "province_name": "Vilhena"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500059964,
+      "time": 1748199600,
+      "vehicle_level": 10,
+      "province_id": "treintaytres",
+      "type": "attack",
+      "province_name": "Treinta y Tres"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500251699,
+      "time": 1748200500,
+      "vehicle_level": 10,
+      "province_id": "bocadocurimata",
+      "type": "attack",
+      "province_name": "Boca do Curimatá"
+    },
+    {
+      "attack_type": "ground",
+      "front_id": "season_22_eu",
+      "front_name": "season_22_eu",
+      "competitor_id": 500249301,
+      "time": 1748200503,
+      "vehicle_level": 10,
+      "province_id": "sancristobal",
+      "type": "attack",
+      "province_name": "San Cristóbal"
+    }
+  ]
+}

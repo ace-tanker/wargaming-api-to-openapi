@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 1
+  },
+  "data": {
+    "500181733": {
+      "ratings": {
+        "elo_10": 952,
+        "elo_8": 1071,
+        "elo_6": 1000,
+        "updated_at": 1746971669
+      },
+      "statistics": {
+        "battles_10_level": 602,
+        "wins": 355,
+        "losses": 376,
+        "battles": 731,
+        "battles_8_level": 129,
+        "wins_10_level": 281,
+        "captures": 37,
+        "provinces_count": 0,
+        "wins_6_level": 0,
+        "wins_8_level": 74,
+        "battles_6_level": 0
+      },
+      "name": "République française",
+      "tag": "14JUI",
+      "private": null,
+      "clan_id": 500181733
+    }
+  }
+}

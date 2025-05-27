@@ -1,0 +1,2285 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 99
+  },
+  "data": {
+    "688827915": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "169",
+            "account_id": 688827915,
+            "clan_rank": 1,
+            "rank_delta": -15,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 32,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 170,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 687,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "601517582": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1256",
+            "account_id": 601517582,
+            "clan_rank": 1,
+            "rank_delta": -29,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 19,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1261,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 290,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "685147156": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1058",
+            "account_id": 685147156,
+            "clan_rank": 1,
+            "rank_delta": 80,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 14,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1061,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 322,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "506013219": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "738",
+            "account_id": 506013219,
+            "clan_rank": 1,
+            "rank_delta": 55,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 19,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 738,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 393,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "599325220": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1191",
+            "account_id": 599325220,
+            "clan_rank": 1,
+            "rank_delta": 100,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 16,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1208,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 299,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594811433": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "4247",
+            "account_id": 594811433,
+            "clan_rank": 1,
+            "rank_delta": -34,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 6,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 4278,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 109,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "596354500": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "493",
+            "account_id": 596354500,
+            "clan_rank": 1,
+            "rank_delta": 111,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 27,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 495,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 468,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "673253422": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "305",
+            "account_id": 673253422,
+            "clan_rank": 1,
+            "rank_delta": 14,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 31,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 306,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 570,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "597290034": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1110",
+            "account_id": 597290034,
+            "clan_rank": 1,
+            "rank_delta": -33,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 17,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1116,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 313,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "547397043": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "647",
+            "account_id": 547397043,
+            "clan_rank": 1,
+            "rank_delta": 46,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 21,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 650,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 417,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "570148407": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "608",
+            "account_id": 570148407,
+            "clan_rank": 1,
+            "rank_delta": -21,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 20,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 609,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 429,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "504859193": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1992",
+            "account_id": 504859193,
+            "clan_rank": 1,
+            "rank_delta": 200,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 10,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1995,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 213,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "596001340": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "284",
+            "account_id": 596001340,
+            "clan_rank": 1,
+            "rank_delta": 7,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 34,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 284,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 589,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "642379331": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 642379331,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 3,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 64,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "587818052": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 587818052,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 12,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "531944016": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1095",
+            "account_id": 531944016,
+            "clan_rank": 1,
+            "rank_delta": 91,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 15,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1098,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 315,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595163231": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1759",
+            "account_id": 595163231,
+            "clan_rank": 1,
+            "rank_delta": 506,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 13,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1763,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 235,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595615328": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1678",
+            "account_id": 595615328,
+            "clan_rank": 1,
+            "rank_delta": 464,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 12,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1691,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 242,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595757154": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2824",
+            "account_id": 595757154,
+            "clan_rank": 1,
+            "rank_delta": 1141,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 12,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2833,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 162,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "502037097": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "392",
+            "account_id": 502037097,
+            "clan_rank": 1,
+            "rank_delta": 17,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 25,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 392,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 514,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594761322": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "973",
+            "account_id": 594761322,
+            "clan_rank": 1,
+            "rank_delta": 234,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 22,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 974,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 338,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "601282672": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1191",
+            "account_id": 601282672,
+            "clan_rank": 1,
+            "rank_delta": 100,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 18,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1209,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 299,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594711153": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "724",
+            "account_id": 594711153,
+            "clan_rank": 1,
+            "rank_delta": -21,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 19,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 729,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 396,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "700312186": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "590",
+            "account_id": 700312186,
+            "clan_rank": 1,
+            "rank_delta": -22,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 27,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 592,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 435,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594712188": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 594712188,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "598451837": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "461",
+            "account_id": 598451837,
+            "clan_rank": 1,
+            "rank_delta": -22,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 23,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 464,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 479,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "500671623": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 500671623,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "522144904": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 522144904,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 0,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "524856463": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "100",
+            "account_id": 524856463,
+            "clan_rank": 1,
+            "rank_delta": 3,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 37,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 100,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 784,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "689762960": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 689762960,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 5,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 109,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "676587154": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "65",
+            "account_id": 676587154,
+            "clan_rank": 1,
+            "rank_delta": 4,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 46,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 65,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 885,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595232921": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "125",
+            "account_id": 595232921,
+            "clan_rank": 1,
+            "rank_delta": 14,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 41,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 125,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 750,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "700100254": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "4018",
+            "account_id": 700100254,
+            "clan_rank": 1,
+            "rank_delta": -31,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 6,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 4051,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 116,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "535804576": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 535804576,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "618445937": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 618445937,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "528091304": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2341",
+            "account_id": 528091304,
+            "clan_rank": 1,
+            "rank_delta": -35,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 8,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2345,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 187,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "506736303": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2484",
+            "account_id": 506736303,
+            "clan_rank": 1,
+            "rank_delta": -45,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 10,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2485,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 178,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595493555": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1370",
+            "account_id": 595493555,
+            "clan_rank": 1,
+            "rank_delta": -36,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 13,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1377,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 275,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594855094": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 594855094,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "597522355": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 597522355,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594709184": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 594709184,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 0,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595733706": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 595733706,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 3,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 29,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "693486301": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "5854",
+            "account_id": 693486301,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 6,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 5869,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 69,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "596703973": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 596703973,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 0,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "539112170": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "317",
+            "account_id": 539112170,
+            "clan_rank": 1,
+            "rank_delta": -18,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 26,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 317,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 561,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "516562161": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "540",
+            "account_id": 516562161,
+            "clan_rank": 1,
+            "rank_delta": 42,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 22,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 541,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 450,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "600501492": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2543",
+            "account_id": 600501492,
+            "clan_rank": 1,
+            "rank_delta": 368,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 7,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2556,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 175,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "541361938": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "917",
+            "account_id": 541361938,
+            "clan_rank": 1,
+            "rank_delta": -11,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 16,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 920,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 348,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "599703319": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "4903",
+            "account_id": 599703319,
+            "clan_rank": 1,
+            "rank_delta": -32,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 5,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 4943,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 90,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "598038809": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 598038809,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "602245403": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "123",
+            "account_id": 602245403,
+            "clan_rank": 1,
+            "rank_delta": -11,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 41,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 123,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 752,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "597432606": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "6117",
+            "account_id": 597432606,
+            "clan_rank": 1,
+            "rank_delta": -32,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 7,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 6196,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 63,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "618403615": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "148",
+            "account_id": 618403615,
+            "clan_rank": 1,
+            "rank_delta": -11,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 39,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 148,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 707,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594809637": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "286",
+            "account_id": 594809637,
+            "clan_rank": 1,
+            "rank_delta": -17,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 28,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 286,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 585,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595086118": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1444",
+            "account_id": 595086118,
+            "clan_rank": 1,
+            "rank_delta": -31,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 17,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1450,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 264,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "600154414": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2341",
+            "account_id": 600154414,
+            "clan_rank": 1,
+            "rank_delta": -35,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 10,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2351,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 187,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "502802749": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "142",
+            "account_id": 502802749,
+            "clan_rank": 1,
+            "rank_delta": 4,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 34,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 142,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 713,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "502621002": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 502621002,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "597014352": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "20",
+            "account_id": 597014352,
+            "clan_rank": 1,
+            "rank_delta": -3,
+            "fame_points_to_improve_award": 14,
+            "updated_at": 1748192428,
+            "battles": 55,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 20,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 1074,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "598616913": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2571",
+            "account_id": 598616913,
+            "clan_rank": 1,
+            "rank_delta": -42,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 9,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2584,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 173,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "606031706": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "350",
+            "account_id": 606031706,
+            "clan_rank": 1,
+            "rank_delta": -22,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 30,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 351,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 546,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "597632861": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "47",
+            "account_id": 597632861,
+            "clan_rank": 1,
+            "rank_delta": -7,
+            "fame_points_to_improve_award": 3,
+            "updated_at": 1748192428,
+            "battles": 51,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 47,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 958,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594780511": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "45",
+            "account_id": 594780511,
+            "clan_rank": 1,
+            "rank_delta": -8,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 50,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 45,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 963,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594714465": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "838",
+            "account_id": 594714465,
+            "clan_rank": 1,
+            "rank_delta": 62,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 21,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 841,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 368,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "703849315": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 703849315,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 5,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594983786": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2003",
+            "account_id": 594983786,
+            "clan_rank": 1,
+            "rank_delta": 682,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 16,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2015,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 212,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "506469739": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "183",
+            "account_id": 506469739,
+            "clan_rank": 1,
+            "rank_delta": 3,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 32,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 183,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 668,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "504649070": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 504649070,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 0,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595636596": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "18",
+            "account_id": 595636596,
+            "clan_rank": 1,
+            "rank_delta": -7,
+            "fame_points_to_improve_award": 10,
+            "updated_at": 1748192428,
+            "battles": 55,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 18,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 1088,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595136373": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1030",
+            "account_id": 595136373,
+            "clan_rank": 1,
+            "rank_delta": 264,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 21,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1040,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 326,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594705787": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2840",
+            "account_id": 594705787,
+            "clan_rank": 1,
+            "rank_delta": -41,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 8,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2854,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 161,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594961790": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "733",
+            "account_id": 594961790,
+            "clan_rank": 1,
+            "rank_delta": 169,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 22,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 735,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 394,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "695280003": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "461",
+            "account_id": 695280003,
+            "clan_rank": 1,
+            "rank_delta": 30,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 13,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 465,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 479,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "693434757": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "416",
+            "account_id": 693434757,
+            "clan_rank": 1,
+            "rank_delta": 93,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 29,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 419,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 499,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "500226950": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1992",
+            "account_id": 500226950,
+            "clan_rank": 1,
+            "rank_delta": -30,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 9,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1992,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 213,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "587749267": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1058",
+            "account_id": 587749267,
+            "clan_rank": 1,
+            "rank_delta": -26,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 15,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1059,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 322,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "557483924": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "760",
+            "account_id": 557483924,
+            "clan_rank": 1,
+            "rank_delta": -22,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 17,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 760,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 386,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "696998295": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "140",
+            "account_id": 696998295,
+            "clan_rank": 1,
+            "rank_delta": -12,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 36,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 140,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 721,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "505890204": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2440",
+            "account_id": 505890204,
+            "clan_rank": 1,
+            "rank_delta": -46,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 10,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2442,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 180,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595427236": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "401",
+            "account_id": 595427236,
+            "clan_rank": 1,
+            "rank_delta": -10,
+            "fame_points_to_improve_award": 3,
+            "updated_at": 1748192428,
+            "battles": 29,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 401,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 504,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "596168945": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "896",
+            "account_id": 596168945,
+            "clan_rank": 1,
+            "rank_delta": -14,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 17,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 898,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 353,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "595536299": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1738",
+            "account_id": 595536299,
+            "clan_rank": 1,
+            "rank_delta": 255,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 12,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1745,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 237,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "505355694": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 505355694,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "500739503": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 500739503,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 2,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 45,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "598545843": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "81",
+            "account_id": 598545843,
+            "clan_rank": 1,
+            "rank_delta": -4,
+            "fame_points_to_improve_award": 8,
+            "updated_at": 1748192428,
+            "battles": 41,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 81,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 841,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "681063358": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "329",
+            "account_id": 681063358,
+            "clan_rank": 1,
+            "rank_delta": 54,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 35,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 331,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 556,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "507217346": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 507217346,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "599929796": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1540",
+            "account_id": 599929796,
+            "clan_rank": 1,
+            "rank_delta": 258,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 16,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1547,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 254,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "558464968": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "43",
+            "account_id": 558464968,
+            "clan_rank": 1,
+            "rank_delta": -8,
+            "fame_points_to_improve_award": 7,
+            "updated_at": 1748192428,
+            "battles": 45,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 44,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 964,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "596861387": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "9",
+            "account_id": 596861387,
+            "clan_rank": 1,
+            "rank_delta": -1,
+            "fame_points_to_improve_award": 2,
+            "updated_at": 1748192428,
+            "battles": 57,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 9,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 1140,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "688023506": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "55",
+            "account_id": 688023506,
+            "clan_rank": 1,
+            "rank_delta": -12,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 50,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 55,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 925,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "501624791": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "1717",
+            "account_id": 501624791,
+            "clan_rank": 1,
+            "rank_delta": 169,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 11,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 1717,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 239,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "500091871": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 500091871,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 12,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "598139360": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "137",
+            "account_id": 598139360,
+            "clan_rank": 1,
+            "rank_delta": -10,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 41,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 137,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 722,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "502900560": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 502900560,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "594787299": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "255",
+            "account_id": 594787299,
+            "clan_rank": 1,
+            "rank_delta": 45,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 37,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 255,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 606,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "536647158": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "2341",
+            "account_id": 536647158,
+            "clan_rank": 1,
+            "rank_delta": 322,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 8,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 2347,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 187,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "501376504": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": "4018",
+            "account_id": 501376504,
+            "clan_rank": 1,
+            "rank_delta": -35,
+            "fame_points_to_improve_award": 1,
+            "updated_at": 1748192428,
+            "battles": 6,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": 4020,
+            "fame_points_since_turn": 19,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 116,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    },
+    "501749241": {
+      "events": {
+        "season_22": [
+          {
+            "award_level": null,
+            "account_id": 501749241,
+            "clan_rank": 1,
+            "rank_delta": null,
+            "fame_points_to_improve_award": null,
+            "updated_at": null,
+            "battles": 1,
+            "event_id": "season_22",
+            "clan_id": 500246097,
+            "rank": null,
+            "fame_points_since_turn": 0,
+            "url": null,
+            "battles_to_award": 0,
+            "fame_points": 0,
+            "front_id": "season_22_bg"
+          }
+        ]
+      }
+    }
+  }
+}

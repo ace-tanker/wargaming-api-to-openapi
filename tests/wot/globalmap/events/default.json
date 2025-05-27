@@ -1,0 +1,195 @@
+{
+  "status": "ok",
+  "meta": {
+    "count": 20,
+    "page_total": 2,
+    "page": 1
+  },
+  "data": [
+    {
+      "status": "ACTIVE",
+      "fronts": [
+        {
+          "url": null,
+          "front_name": "season_22_bg",
+          "front_id": "season_22_bg"
+        }
+      ],
+      "end": "2025-07-05T08:00:00",
+      "start": "2025-05-19T08:00:00",
+      "event_id": "season_22",
+      "event_name": "season_22"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2024-07-06T08:00:00",
+      "start": "2024-05-06T08:00:00",
+      "event_id": "season_21",
+      "event_name": "season_21"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2023-05-27T08:00:00",
+      "start": "2023-03-27T08:00:00",
+      "event_id": "season_20",
+      "event_name": "season_20"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2023-02-27T08:00:00",
+      "start": "2023-02-13T08:00:00",
+      "event_id": "we_2023",
+      "event_name": "we_2023"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-11-21T08:00:00",
+      "start": "2022-09-19T08:00:00",
+      "event_id": "season_19",
+      "event_name": "season_19"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-08-01T08:00:00",
+      "start": "2022-07-18T08:00:00",
+      "event_id": "iron_age",
+      "event_name": "iron_age"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-06-20T08:00:00",
+      "start": "2022-04-25T08:00:00",
+      "event_id": "season_18",
+      "event_name": "season_18"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2022-02-21T08:00:00",
+      "start": "2022-02-07T08:00:00",
+      "event_id": "confrontation",
+      "event_name": "confrontation"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2021-08-09T08:00:00",
+      "start": "2021-07-26T08:00:00",
+      "event_id": "thunderstorm",
+      "event_name": "thunderstorm"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2021-01-25T08:00:00",
+      "start": "2021-01-11T08:00:00",
+      "event_id": "renaissance",
+      "event_name": "renaissance"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2020-07-13T08:00:00",
+      "start": "2020-06-29T08:00:00",
+      "event_id": "metal_wars",
+      "event_name": "metal_wars"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2020-02-24T08:00:00",
+      "start": "2020-02-13T08:00:00",
+      "event_id": "dawn_of_industry",
+      "event_name": "dawn_of_industry"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2019-07-15T08:00:00",
+      "start": "2019-07-04T08:00:00",
+      "event_id": "fire_trail",
+      "event_name": "fire_trail"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2019-02-04T08:00:00",
+      "start": "2019-01-21T08:00:00",
+      "event_id": "soldiers_of_fortune",
+      "event_name": "soldiers_of_fortune"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2018-06-12T07:00:00",
+      "start": "2018-05-29T07:00:00",
+      "event_id": "arms_race",
+      "event_name": "arms_race"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2017-12-22T07:00:00",
+      "start": "2017-11-24T07:00:00",
+      "event_id": "event_gambit",
+      "event_name": "OPERATION GAMBIT"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2016-12-14T07:00:00",
+      "start": "2016-12-04T07:00:00",
+      "event_id": "steel_corrida_third_step",
+      "event_name": "The Third Stage"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2016-12-03T07:00:00",
+      "start": "2016-11-24T07:00:00",
+      "event_id": "steel_corrida_second_step",
+      "event_name": "The Second Stage"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2016-11-23T07:00:00",
+      "start": "2016-11-15T07:00:00",
+      "event_id": "steel_corrida_first_step",
+      "event_name": "The First Stage"
+    },
+    {
+      "status": "FINISHED",
+      "fronts": [
+      ],
+      "end": "2016-09-13T08:00:00",
+      "start": "2016-08-30T08:00:00",
+      "event_id": "birth_of_titans",
+      "event_name": "Birth of Titans"
+    }
+  ]
+}
