@@ -268,39 +268,7 @@ function convertField(doc_type: Primitive["doc_type"], tests: any[]): OpenAPI.Sc
                 if (testsNotNull.length < tests.length) res.nullable = true;
 
                 return res;
-
-                /*let [nullable, types] = guessTypes(tests.reduce((tests, test) => test !== null ? [...Object.values(test), ...tests] : tests, []))
-
-                if (types.size > 1) {
-                    throw new Error("to much types");
-                }
-                else {
-                    let res: OpenAPI.Schema = { type: "object" };
-
-                    if (types.has("null")) {
-                        res.nullable = true;
-                        types.delete("null");
-                    }
-
-                    let [[type, tests2]] = [...types.entries()] as [OpenAPI.Schema["type"], any[]][];
-
-                    if (type === "array") {
-                        let types = guessTypes(tests2.reduce((tests, test) => test !== null ? [...test, ...tests] : tests, []))
-
-                        let res2: OpenAPI.Schema = { type: "object" };
-
-                        if (types.has("null")) {
-                            res.nullable = true;
-                            types.delete("null");
                         }
-
-                        let [[type, tests3]] = [...types.entries()] as [OpenAPI.Schema["type"], any[]][];
-                    }
-                    else {
-                        res.additionalProperties = { type }
-                    }
-                }*/
-            }
             case "object":
                 return { type: "object" };
             default:
