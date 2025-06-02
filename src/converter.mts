@@ -497,7 +497,7 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
     //}, tests.map(test => test.data))[1]
 
     let response = {
-        "200": {
+        200: {
             description: "OK",
             content: {
                 "application/json": {
