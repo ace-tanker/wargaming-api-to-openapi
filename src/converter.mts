@@ -1,5 +1,5 @@
 import type * as OpenAPI from "./openapi.mjs"
-import type { Field, Group, Parameter, Method, Game } from "./api.mjs"
+import type { Primitive, Group, Parameter, Method, Game } from "./api.mjs"
 
 import * as fs from "fs";
 import * as path from "path";
@@ -212,14 +212,14 @@ function inferSchema(tests: any[]): OpenAPI.Schema {
     }
 }
 
-function convertField(doc_type: Field["doc_type"], tests: any[]): OpenAPI.Schema {
+function convertField(doc_type: Primitive["doc_type"], tests: any[]): OpenAPI.Schema {
     let isList = doc_type.match(/list of (.+)/);
 
     if (isList) {
         let testsNotNull = tests.filter(test => test !== null);
 
         if (testsNotNull.every(test => Array.isArray(test))) {
-            let types: Record<string, string> = {
+            let types: Record<string, Primitive["doc_type"]> = {
                 integers: "numeric",
                 strings: "string",
                 booleans: "boolean",
@@ -361,7 +361,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
 
     const to = {
         object(tests: any[]) {
-            let [permaFields, extraFields] = group.fields.reduce(([perma, extra], field) => field.help_text.includes("**An extra field.**") ? [perma, [field, ...extra]] : [[field, ...perma], extra], [[], []] as [(Field | Group)[], (Field | Group)[]]);
+            let [permaFields, extraFields] = group.fields.reduce(([perma, extra], field) => field.help_text.includes("**An extra field.**") ? [perma, [field, ...extra]] : [[field, ...perma], extra], [[], []] as [(Primitive | Group)[], (Primitive | Group)[]]);
 
             extraFields.forEach(field => {
                 field.help_text = field.help_text.replace("**An extra field.**", "").trim();
@@ -421,7 +421,7 @@ function fixDescription(description: string) {
     return description.replace("](/", "](https://developers.wargaming.net/").trim()
 }
 
-function convertDataFields(obj: Field | Group, tests: any[]): [string, OpenAPI.Schema] {
+function convertDataFields(obj: Primitive | Group, tests: any[]): [string, OpenAPI.Schema] {
     return [obj.name, { description: obj.help_text, ...("fields" in obj ? convertGroup(obj, tests) : convertField(obj.doc_type, tests)) }];
 }
 
