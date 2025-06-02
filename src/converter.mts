@@ -587,7 +587,7 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
         }
     }
 
-    return [getPath(method.method_key), pathItem];
+    return [`/${method.url}/`, pathItem];
 }
 
 /**
