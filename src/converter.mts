@@ -268,7 +268,7 @@ function convertField(doc_type: Primitive["doc_type"], tests: any[]): OpenAPI.Sc
                 if (testsNotNull.length < tests.length) res.nullable = true;
 
                 return res;
-                        }
+            }
             case "object":
                 return { type: "object" };
             default:
@@ -461,11 +461,11 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
                     }
                 },
                 data: convertDataFields({
-                    "help_text": method.description,
-                    "fields": method.output_form_info?.fields ?? [],
-                    "deprecated_text": method.output_form_info?.deprecated_text ?? "",
-                    "name": method.name,
-                    "deprecated": method.output_form_info?.deprecated ?? false
+                    name: method.name,
+                    help_text: method.description,
+                    fields: method.output_form_info?.fields ?? [],
+                    deprecated_text: "",
+                    deprecated: false
                 }, tests.map(test => test.data))[1]
             },
             required: ["status", "meta", "data"]
