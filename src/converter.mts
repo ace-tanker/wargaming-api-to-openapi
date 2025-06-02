@@ -425,6 +425,12 @@ function convertDataFields(obj: Primitive | Group, tests: any[]): [string, OpenA
     return [obj.name, { description: obj.help_text, ...("fields" in obj ? convertGroup(obj, tests) : convertField(obj.doc_type, tests)) }];
 }
 
+/**
+ * Generates an OpenAPI Parameter object from a Wargaming.net API parameter definition.
+ *
+ * @param parameter - The Wargaming.net API parameter definition to convert.
+ * @returns The resulting OpenAPI Parameter object.
+ */
 export function convertParameter(parameter: Parameter): OpenAPI.Parameter {
     let schema = convertParameterType(parameter);
 
@@ -460,6 +466,13 @@ function sortParameters(a: Parameter, b: Parameter) {
     else return a.name.localeCompare(b.name);
 }
 
+/**
+ * Generates an OpenAPI PathItem for a given method definition.
+ *
+ * @param method The Wargaming.net method definition to convert.
+ * @param parameters A list of parameter names to reference or include.
+ * @returns A tuple containing the API path and the corresponding PathItem object.
+ */
 export function convertMethod(method: Method, parameters: string[]): [string, OpenAPI.PathItem] {
     let tests = getJsonFilesSync(`tests/${method.method_key.split("_").join("/")}`);
 
@@ -577,6 +590,14 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
     return [getPath(method.method_key), pathItem];
 }
 
+/**
+ * Generates a complete OpenAPI specification from a Wargaming.net API specification.
+ *
+ * @param game The Wargaming.net game API specification to convert.
+ * @param servers The list of Wargaming.net API servers for the specified game.
+ * @param parameters Global OpenAPI parameters to apply across operations.
+ * @returns A fully constructed OpenAPI specification object.
+ */
 export function convertGame(game: Game, servers: OpenAPI.Server[], parameters: Record<string, OpenAPI.Parameter>): OpenAPI.OpenAPI {
     return {
         openapi: "3.0.0",
