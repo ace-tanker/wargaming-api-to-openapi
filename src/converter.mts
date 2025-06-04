@@ -1,5 +1,5 @@
 import type * as OpenAPI from "./openapi.mjs"
-import type { Primitive, Group, Parameter, Method, Game } from "./api.mjs"
+import type { Primitive, Group, Field, Parameter, Method, Game } from "./api.mjs"
 
 import * as fs from "fs";
 import * as path from "path";
@@ -212,7 +212,7 @@ function inferSchema(tests: any[]): OpenAPI.Schema {
     }
 }
 
-function convertField(doc_type: Primitive["doc_type"], tests: any[]): OpenAPI.Schema {
+function convertPrimitiveType(doc_type: Primitive["doc_type"], tests: any[]): OpenAPI.Schema {
     let isList = doc_type.match(/list of (.+)/);
 
     if (isList) {
@@ -232,7 +232,7 @@ function convertField(doc_type: Primitive["doc_type"], tests: any[]): OpenAPI.Sc
             if (type) {
                 let extendedTests = testsNotNull.reduce((tests, test) => [...test, ...tests], []);
 
-                let res: OpenAPI.Schema = { type: "array", items: convertField(type, extendedTests) }
+                let res: OpenAPI.Schema = { type: "array", items: convertPrimitiveType(type, extendedTests) }
 
                 if (testsNotNull.length < tests.length) res.nullable = true;
 
@@ -277,7 +277,7 @@ function convertField(doc_type: Primitive["doc_type"], tests: any[]): OpenAPI.Sc
     }
 }
 
-function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
+function convertGroupFields(fields: Group["fields"], tests: any[]): OpenAPI.Schema {
     let testsNotNull = tests.filter(test => test !== null);
 
     let nullable = testsNotNull.length < tests.length;
@@ -296,10 +296,10 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
         }
         else {
             if (typeof test === "object") {
-                if (group.fields.every(field => field.name in test)
-                    || (group.fields.some(field => field.name in test) && !Object.values(test).every(value => group.fields.every(field => typeof value === "object" && (value == null || field.name in value))))) {
+                if (fields.every(field => field.name in test)
+                    || (fields.some(field => field.name in test) && !Object.values(test).every(value => fields.every(field => typeof value === "object" && (value == null || field.name in value))))) {
 
-                    if (!group.fields.every(field => field.name in test)) partial_match = true;
+                    if (!fields.every(field => field.name in test)) partial_match = true;
 
                     if (!map.has("object")) {
                         map.set("object", []);
@@ -325,11 +325,11 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
         }
     }, new Map() as Map<"array" | "object" | "record", any[]>);
 
-    if (partial_match) console.warn(`Partial group match: "${group.help_text}".`);
+    if (partial_match) console.warn(`Partial group match.`);
 
     const to = {
         object(tests: any[]) {
-            let [permaFields, extraFields] = group.fields.reduce(([perma, extra], field) => field.help_text.includes("**An extra field.**") ? [perma, [field, ...extra]] : [[field, ...perma], extra], [[], []] as [(Primitive | Group)[], (Primitive | Group)[]]);
+            let [permaFields, extraFields] = fields.reduce(([perma, extra], field) => field.help_text.includes("**An extra field.**") ? [perma, [field, ...extra]] : [[field, ...perma], extra], [[], []] as [(Primitive | Group)[], (Primitive | Group)[]]);
 
             extraFields.forEach(field => {
                 field.help_text = field.help_text.replace("**An extra field.**", "").trim();
@@ -337,7 +337,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
 
             let res: OpenAPI.Schema = {
                 type: "object",
-                properties: Object.fromEntries(group.fields.map(field => convertDataFields(field, tests.filter(test => test[field.name] !== undefined).map(test => test[field.name]))))
+                properties: Object.fromEntries(fields.map(field => convertField(field, tests.filter(test => test[field.name] !== undefined).map(test => test[field.name]))))
             }
 
             if (permaFields.length > 0) res.required = permaFields.map(field => field.name)
@@ -348,7 +348,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
         array(tests: any[]) {
             let res: OpenAPI.Schema = {
                 type: "array",
-                items: convertGroup(group, tests.reduce((tests, test) => [...test, ...tests], []))
+                items: convertGroupFields(fields, tests.reduce((tests, test) => [...test, ...tests], []))
             }
 
             if (nullable) res.nullable = true;
@@ -358,7 +358,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
         record(tests: any[]) {
             let res: OpenAPI.Schema = {
                 type: "object",
-                additionalProperties: convertGroup(group, tests.reduce((tests, test) => [...Object.values(test), ...tests], []))
+                additionalProperties: convertGroupFields(fields, tests.reduce((tests, test) => [...Object.values(test), ...tests], []))
             }
 
             if (nullable) res.nullable = true;
@@ -370,7 +370,7 @@ function convertGroup(group: Group, tests: any[]): OpenAPI.Schema {
     if (types.size === 0) {
         types.set("object", []);
 
-        console.warn(`Not enough tests to infer type of group "${group.help_text}": "object" is used instead.`);
+        console.warn(`Not enough tests to infer type of group, "object" is used instead.`);
     }
 
     if (types.size > 1) {
@@ -389,8 +389,12 @@ function fixDescription(description: string) {
     return description.replace("](/", "](https://developers.wargaming.net/").trim()
 }
 
-function convertDataFields(obj: Primitive | Group, tests: any[]): [string, OpenAPI.Schema] {
-    return [obj.name, { description: obj.help_text, ...("fields" in obj ? convertGroup(obj, tests) : convertField(obj.doc_type, tests)) }];
+function convertField(field: Field, tests: any[]): [string, OpenAPI.Schema] {
+    let schema = "fields" in field ? convertGroupFields(field.fields, tests) : convertPrimitiveType(field.doc_type, tests);
+
+    if (field.help_text) schema.description = field.help_text;
+
+    return [field.name, schema];
 }
 
 /**
@@ -460,13 +464,7 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
                         }
                     }
                 },
-                data: convertDataFields({
-                    name: method.name,
-                    help_text: method.description,
-                    fields: method.output_form_info?.fields ?? [],
-                    deprecated_text: "",
-                    deprecated: false
-                }, tests.map(test => test.data))[1]
+                data: convertGroupFields(method.output_form_info?.fields ?? [], tests.map(test => test.data))
             },
             required: ["status", "meta", "data"]
         }, {
