@@ -17,32 +17,16 @@ export type MethodID = string
  * Represents a primitive field in a response.
  */
 export type Primitive = {
-    /** Name of the field. */
-    name: string
-    /** Description of the field. */
-    help_text: string
-    /** Indicates if the field is required. */
-    required: boolean
     /** Data type of the field. */
     doc_type: "numeric" | "float" | "string" | "boolean" | "timestamp" | "associative array" | "object" | "list of integers" | "list of floats" | "list of strings" | "list of booleans" | "list of timestamps"
-    /** Indicates if the field is deprecated. */
-    deprecated: boolean
-    /** Description of deprecation, if applicable. */
-    deprecated_text: string
+    /** Indicates if the field is required. */
+    required: boolean
 }
 
 /**
  * Represents a group of fields, which can include primitives or other groups.
  */
 export type Group = {
-    /** Name of the group. */
-    name: string
-    /** Description of the group. */
-    help_text: string
-    /** Indicates if the group is deprecated. */
-    deprecated: boolean
-    /** Description of deprecation, if applicable. */
-    deprecated_text: string
     /** List of fields in the group. */
     fields: Field[]
 }
@@ -50,7 +34,16 @@ export type Group = {
 /**
  * Represents a field, which can be either a Primitive or a Group.
  */
-export type Field = Primitive | Group
+export type Field = {
+    /** Name of the field. */
+    name: string
+    /** Description of the field. */
+    help_text: string
+    /** Indicates if the field is deprecated. */
+    deprecated: boolean
+    /** Description of deprecation, if applicable. */
+    deprecated_text: string
+} & (Primitive | Group)
 
 /**
  * Represents a parameter for a method.

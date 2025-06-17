@@ -1,3 +1,5 @@
+export { JSONSchema7 as Schema } from "json-schema";
+
 export interface OpenAPI {
     openapi: string;
     info: Info;
@@ -120,26 +122,6 @@ export interface Response {
 
 export interface MediaType {
     schema: (Schema | Reference);
-}
-
-export interface Schema {
-    type?: "string" | "number" | "integer" | "boolean" | "object" | "array";
-    properties?: Record<string, (Schema | Reference)>;
-    additionalProperties?: (Schema | Reference),
-    items?: (Schema | Reference);
-    format?: string;
-    enum?: string[] | number[];
-    description?: string;
-    "oneOf"?: (Schema | Reference)[],
-    required?: string[]
-    "x-enum-varnames"?: string[],
-    "x-enumDescriptions"?: string[],
-    default?: any
-    minItems?: number
-    maxItems?: number
-    minimum?: number
-    maximum?: number
-    nullable?: boolean
 }
 
 export interface Reference {
