@@ -160,7 +160,7 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
  * @param tests An array of test values used to infer additional schema properties.
  * @returns An OpenAPI schema object representing the primitive field.
  */
-export function convertPrimitive({ doc_type, required }: Primitive, tests: APIPrimitive[]): OpenAPI.Schema {
+export function convertPrimitive(doc_type: Primitive["doc_type"], tests: APIPrimitive[]): OpenAPI.Schema {
     const schema: OpenAPI.Schema = {};
     const testsNotNull = tests.filter(test => test !== null);
 
@@ -190,7 +190,7 @@ export function convertPrimitive({ doc_type, required }: Primitive, tests: APIPr
         let extendedTests = (testsNotNull as APIList[]).reduce((tests: APIPrimitive[], test) => [...test, ...tests], []);
 
         schema.type = "array";
-        schema.items = convertPrimitive({ doc_type: doc_type2, required }, extendedTests);
+        schema.items = convertPrimitive(doc_type2, extendedTests);
     }
 
     return testsNotNull.length < tests.length ? {
@@ -296,7 +296,7 @@ export function convertGroup(group: Group, tests: APIGroup[]): OpenAPI.Schema {
  * @returns A tuple containing the field name and the corresponding OpenAPI schema object.
  */
 export function convertField(field: Field, tests: APIField[]): [string, OpenAPI.Schema] {
-    let schema = "fields" in field ? convertGroup(field, tests as APIGroup[]) : convertPrimitive(field, tests as APIPrimitive[]);
+    let schema = "fields" in field ? convertGroup(field, tests as APIGroup[]) : convertPrimitive(field.doc_type, tests as APIPrimitive[]);
 
     if (field.help_text) schema.description = field.help_text.replace("**An extra field.**", "").trim();
 
