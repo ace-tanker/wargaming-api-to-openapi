@@ -7,8 +7,6 @@ import * as fs from "fs";
 import * as path from "path";
 
 import { JSONSchema7 } from "json-schema"
-import { Schema } from "inspector";
-
 
 type APINull = null
 type APIArray = APIGroup[]
@@ -193,8 +191,6 @@ export function convertPrimitive({ doc_type, required }: Primitive, tests: APIPr
 
         schema.type = "array";
         schema.items = convertPrimitive({ doc_type: doc_type2, required }, extendedTests);
-
-        return schema;
     }
 
     return testsNotNull.length < tests.length ? {
