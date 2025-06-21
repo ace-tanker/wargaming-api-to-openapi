@@ -416,7 +416,10 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
                     })),
                     required: [...metaKeys.keys()]
                 },
-                data: convertGroup(method.output_form_info ? method.output_form_info : { fields: [] }, tests.map(test => test.data))
+                data: method.output_form_info ? convertGroup(method.output_form_info, tests.map(test => test.data)) : {
+                    type: "object",
+                    properties: {}
+                }
             },
             required: ["status", "meta", "data"]
         }, {
