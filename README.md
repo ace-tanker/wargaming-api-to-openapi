@@ -13,6 +13,7 @@ The official API reference is incomplete, so real API responses are used to infe
 - which fields may be `null`
 - exact types for ambiguous primitives (e.g. "associative array" or "object")
 - distinction between `object`, `record`, and `array` groups
+
 All fields including optional ones **should be included** to prevent failures in the inference process.
 ## Limitations
 Some limitations in the generated OpenAPI specification are due to the conversion process and may be fixed manually, while others are inherent to OpenAPI itself.
