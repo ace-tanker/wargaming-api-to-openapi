@@ -1,6 +1,13 @@
 import { JSONSchema7 } from "json-schema";
 
-export type Schema = JSONSchema7 & { nullable?: boolean, "x-enumDescriptions"?: string[] }
+export interface Schema extends JSONSchema7 {
+    nullable?: boolean;
+    "x-enumDescriptions"?: string[];
+    discriminator?: {
+        propertyName: string;
+        mapping?: Record<string, string>;
+    };
+}
 
 export interface OpenAPI {
     openapi: string;
