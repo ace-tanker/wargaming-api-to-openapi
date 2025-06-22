@@ -168,7 +168,10 @@ export function convertPrimitive(doc_type: Primitive["doc_type"], tests: Types.P
         schema.type = "object";
         schema.additionalProperties = inferJSON(testsNotNull.reduce((tests: Types.AssociativeArray[], test) => [...Object.values(test), ...tests], []));
     }
-    else if (doc_type === "object") schema.type = "object";
+    else if (doc_type === "object") {
+        schema.type = "object";
+        schema.additionalProperties = false;
+    }
     else if (doc_type === "list of booleans" || doc_type === "list of floats" || doc_type === "list of integers" || doc_type === "list of strings" || doc_type === "list of timestamps") {
         const types = {
             "list of integers": "numeric",
@@ -235,7 +238,8 @@ export function convertObject({ fields }: Group, tests: Types.Object[]): OpenAPI
     return {
         type: "object",
         properties: Object.fromEntries(fields.map(field => convertField(field, tests.filter(test => test[field.name] !== undefined).map(test => test[field.name])))),
-        required: fields.filter(field => !field.help_text.includes("**An extra field.**")).map(field => field.name)
+        required: fields.filter(field => !field.help_text.includes("**An extra field.**")).map(field => field.name),
+        additionalProperties: false
     }
 }
 
@@ -402,14 +406,17 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
 
                         return [key, nullable ? version === "3.1.0" ? { oneOf: [schema, { type: "null" }] } : { ...schema, nullable } : schema]
                     })),
-                    required: metaKeys.size > 0 ? [...metaKeys.keys()] : undefined
+                    required: metaKeys.size > 0 ? [...metaKeys.keys()] : undefined,
+                    additionalProperties: false
                 },
                 data: method.output_form_info ? convertGroup(method.output_form_info, tests.map(test => test.data)) : {
                     type: "object",
-                    properties: {}
+                    properties: {},
+                    additionalProperties: false
                 }
             },
-            required: ["status", "meta", "data"]
+            required: ["status", "meta", "data"],
+            additionalProperties: false
         }, {
             type: "object",
             properties: {
@@ -431,7 +438,8 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
                     required: ["code", "message", "field", "value"]
                 }
             },
-            required: ["status", "error"]
+            required: ["status", "error"],
+            additionalProperties: false
         }]
     }
 
