@@ -424,9 +424,11 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
                     type: "object",
                     properties: {
                         code: { type: "number" },
-                        message: { type: "string" }
+                        message: { type: "string" },
+                        field: { type: "string" },
+                        value: { type: "string" }
                     },
-                    required: ["code", "message"]
+                    required: ["code", "message", "field", "value"]
                 }
             },
             required: ["status", "error"]
