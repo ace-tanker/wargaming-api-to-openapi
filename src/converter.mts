@@ -383,6 +383,9 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
     }, new Map())
 
     const schema: OpenAPI.Schema = {
+        discriminator: {
+            propertyName: "status"
+        },
         oneOf: [{
             type: "object",
             properties: {
