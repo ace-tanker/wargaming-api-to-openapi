@@ -1,9 +1,13 @@
+/**
+ * This file exposes methods to convert an API reference into an OpenAPI specification.
+ */
+
 import type * as OpenAPI from "./openapi.mjs"
 import type { Primitive, Group, Field, Parameter, Method, Game } from "./api.mjs"
 import { inferJSON } from "./inference.mjs"
-import * as Types from "./api-types.mjs"
+import * as Types from "./api-tools.mjs"
 
-const version: "3.1" | "3.0" = "3.0";
+const version: "3.1.0" | "3.0.0" = "3.0.0";
 
 /**
  * Converts a Wargaming API parameter definition into an OpenAPI schema object.
@@ -11,17 +15,18 @@ const version: "3.1" | "3.0" = "3.0";
  * @param primitive The parameter field definition from the Wargaming API specification.
  * @returns An OpenAPI schema object representing the parameter field.
  */
-function convertParameter({ name, doc_type, help_text, required }: Parameter): OpenAPI.Schema {
+function convertParameter({ doc_type, help_text, required }: Parameter): OpenAPI.Schema {
     const schema: OpenAPI.Schema = { };
 
-    let validValuesMatch = help_text.match(/Valid values:\n\n(.*)$/s);
-    let validValues: string[] = [];
-    let validValuesDescription: string[] = [];
+    const validValuesMatch = help_text.match(/Valid values:\n\n(.*)$/s);
+    const validValues: string[] = [];
+    const validValuesDescription: string[] = [];
 
     if (validValuesMatch?.length === 2) {
         let check = true;
+
         validValuesMatch[1].split("\n").map(e => {
-            let match = e.replace("&mdash;", "-").match(/\* *\"(.+?)\" *(?:- *(.*))?/);
+            const match = e.replace("&mdash;", "-").match(/\* *\"(.+?)\" *(?:- *(.*))?/);
 
             if (match && match?.length >= 2) {
                 validValues.push(match[1])
@@ -40,14 +45,14 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
     }
 
     if (doc_type.startsWith("numeric")) {
-        let type: OpenAPI.Schema = { type: "integer" };
+        const type: OpenAPI.Schema = { type: "integer" };
 
         if (validValues.length > 0) type.enum = validValues.map(value => parseInt(value));
         if (validValuesDescription.length > 0) type["x-enumDescriptions"] = validValuesDescription.map(description => description.trim());
 
-        let minMatch = help_text.match(/Min value is (\d+)\./);
-        let maxMatch = help_text.match(/Maximum value: (\d+)\./);
-        let defaultMatch = help_text.match(/Default is (\d+)\./);
+        const minMatch = help_text.match(/Min value is (\d+)\./);
+        const maxMatch = help_text.match(/Maximum value: (\d+)\./);
+        const defaultMatch = help_text.match(/Default is (\d+)\./);
 
         if (minMatch?.length === 2) {
             type.minimum = parseInt(minMatch[1])
@@ -62,7 +67,7 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
             help_text = help_text.replace(defaultMatch[0], "");
         }
 
-        let limitMatch = help_text.match(/ \(fewer can be returned, but not more than (\d+|None)\)\. If the limit sent exceeds (\d+|None), a limit of (\d+|None) is applied \(by default\)/);
+        const limitMatch = help_text.match(/ \(fewer can be returned, but not more than (\d+|None)\)\. If the limit sent exceeds (\d+|None), a limit of (\d+|None) is applied \(by default\)/);
 
         if (limitMatch?.length === 4) {
             if (limitMatch[1] !== "None") type.maximum = parseInt(limitMatch[1]);
@@ -76,7 +81,7 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
 
             if (required) schema.minItems = 1;
 
-            let maxMatch = help_text.match(/Maximum limit: (\d+)\./);
+            const maxMatch = help_text.match(/Maximum limit: (\d+)\./);
 
             if (maxMatch?.length === 2) {
                 schema.maxItems = parseInt(maxMatch[1])
@@ -89,16 +94,17 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
             return type;
         }
     }
+
     if (doc_type.startsWith("string")) {
-        let type: OpenAPI.Schema = { type: "string" };
+        const type: OpenAPI.Schema = { type: "string" };
 
         if (validValues.length > 0) type.enum = validValues.map(value => value.replace(/\"/g, "").trim());
         if (validValuesDescription.length > 0) type["x-enumDescriptions"] = validValuesDescription.map(description => description.trim());
 
-        let defaultMatch = help_text.match(/Default is \"(.+)\"\./);
+        const defaultMatch = help_text.match(/Default is \"(.+)\"\./);
 
         if (doc_type === "string, list") {
-            let schema: OpenAPI.Schema = { type: "array", items: type };
+            const schema: OpenAPI.Schema = { type: "array", items: type };
 
             if (defaultMatch?.length === 2) {
                 schema.default = defaultMatch[1].split(",").map(s => s.trim());
@@ -107,7 +113,7 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
 
             if (required) schema.minItems = 1;
 
-            let maxMatch = help_text.match(/Maximum limit: (\d+)\./);
+            const maxMatch = help_text.match(/Maximum limit: (\d+)\./);
 
             if (maxMatch?.length === 2) {
                 schema.maxItems = parseInt(maxMatch[1])
@@ -164,7 +170,7 @@ export function convertPrimitive(doc_type: Primitive["doc_type"], tests: Types.P
     }
     else if (doc_type === "object") schema.type = "object";
     else if (doc_type === "list of booleans" || doc_type === "list of floats" || doc_type === "list of integers" || doc_type === "list of strings" || doc_type === "list of timestamps") {
-        let types = {
+        const types = {
             "list of integers": "numeric",
             "list of strings": "string",
             "list of booleans": "boolean",
@@ -172,15 +178,15 @@ export function convertPrimitive(doc_type: Primitive["doc_type"], tests: Types.P
             "list of floats": "float"
         }
 
-        let doc_type2 = types[doc_type] as Primitive["doc_type"];
+        const doc_type2 = types[doc_type] as Primitive["doc_type"];
 
-        let extendedTests = (testsNotNull as Types.List[]).reduce((tests: Types.Primitive[], test) => [...test, ...tests], []);
+        const extendedTests = (testsNotNull as Types.List[]).reduce((tests: Types.Primitive[], test) => [...test, ...tests], []);
 
         schema.type = "array";
         schema.items = convertPrimitive(doc_type2, extendedTests);
     }
 
-    return testsNotNull.length < tests.length ? version === "3.1" ? {
+    return testsNotNull.length < tests.length ? version === "3.1.0" ? {
         oneOf: [schema, {
             type: "null"
         }]
@@ -273,9 +279,9 @@ export function convertGroup(group: Group, tests: Types.Group[]): OpenAPI.Schema
     if (unexpectedValues.length > 1)
         console.warn(`Got unexpected values from tests.`);
 
-    if (version === "3.1" && nullValues.length > 0) oneOf.push({ type: "null" });
+    if (version === "3.1.0" && nullValues.length > 0) oneOf.push({ type: "null" });
 
-    return version === "3.1" ? oneOf.length === 0 ? {} : oneOf.length === 1 ? oneOf[0] : { oneOf }
+    return version === "3.1.0" ? oneOf.length === 0 ? {} : oneOf.length === 1 ? oneOf[0] : { oneOf }
         : oneOf.length === 0 ? {} : oneOf.length === 1 ? { ...oneOf[0], nullable: true } : { oneOf, nullable: true };
 }
 
@@ -287,7 +293,7 @@ export function convertGroup(group: Group, tests: Types.Group[]): OpenAPI.Schema
  * @returns A tuple containing the field name and the corresponding OpenAPI schema object.
  */
 export function convertField(field: Field, tests: Types.Field[]): [string, OpenAPI.Schema] {
-    let schema = "fields" in field ? convertGroup(field, tests as Types.Group[]) : convertPrimitive(field.doc_type, tests as Types.Primitive[]);
+    const schema = "fields" in field ? convertGroup(field, tests as Types.Group[]) : convertPrimitive(field.doc_type, tests as Types.Primitive[]);
 
     if (field.help_text) schema.description = field.help_text.replace("**An extra field.**", "").trim();
 
@@ -301,9 +307,9 @@ export function convertField(field: Field, tests: Types.Field[]): [string, OpenA
  * @returns The resulting OpenAPI Parameter object.
  */
 export function convertGETParameter(parameter: Parameter): OpenAPI.Parameter {
-    let { description, ...schema } = convertParameter(parameter);
+    const { description, ...schema } = convertParameter(parameter);
 
-    let res: OpenAPI.Parameter = {
+    const res: OpenAPI.Parameter = {
         name: parameter.name,
         description,
         in: "query",
@@ -365,7 +371,7 @@ function sortParameters(a: Parameter, b: Parameter) {
  * @returns A tuple containing the API path and the corresponding PathItem object.
  */
 export function convertMethod(method: Method, parameters: string[], getTests: (method: Method) => any[]): [string, OpenAPI.PathItem] {
-    let tests = getTests(method);
+    const tests = getTests(method);
 
     const meta = tests.filter(test => "meta" in test).map(test => test.meta);
     const metaKeys: Map<string, boolean> = meta.reduce((metaKeys: Map<string, boolean>, meta) => {
@@ -378,24 +384,23 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
         return metaKeys;
     }, new Map())
 
-
-    let schema: OpenAPI.Schema = {
+    const schema: OpenAPI.Schema = {
         oneOf: [{
-            "type": "object",
-            "properties": {
-                "status": version === "3.1" ? {
+            type: "object",
+            properties: {
+                status: version === "3.1.0" ? {
                     type: "string",
                     const: "ok"
                 } : {
                     type: "string",
                     enum: ["ok"]
                 },
-                "meta": {
+                meta: {
                     type: "object",
                     properties: Object.fromEntries([...metaKeys.entries()].map(([key, nullable]) => {
                         const schema: OpenAPI.Schema = { type: "integer" };
 
-                        return [key, nullable ? version === "3.1" ? { oneOf: [schema, { type: "null" }] } : { ...schema, nullable } : schema]
+                        return [key, nullable ? version === "3.1.0" ? { oneOf: [schema, { type: "null" }] } : { ...schema, nullable } : schema]
                     })),
                     required: metaKeys.size > 0 ? [...metaKeys.keys()] : undefined
                 },
@@ -406,9 +411,9 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
             },
             required: ["status", "meta", "data"]
         }, {
-            "type": "object",
-            "properties": {
-                "status": version === "3.1" ? {
+            type: "object",
+            properties: {
+                "status": version === "3.1.0" ? {
                     type: "string",
                     const: "error"
                 } : {
@@ -439,11 +444,10 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
         }
     }
 
-    let pathItem: OpenAPI.PathItem = {
-    };
+    const pathItem: OpenAPI.PathItem = {};
 
-    let methodKey = method.method_key.split("_");
-    let [game, category, key] = methodKey;
+    const methodKey = method.method_key.split("_");
+    const [game, category, key] = methodKey;
 
     if (method.allowed_http_methods.includes("GET")) {
         pathItem.get = {

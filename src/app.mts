@@ -1,8 +1,6 @@
 import type * as API from "./api.mjs";
 import type * as OpenAPI from "./openapi.mjs";
-
 import * as Converter from "./converter.mjs";
-
 import fs from "fs";
 import path from "path";
 
