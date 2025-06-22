@@ -16,7 +16,7 @@ const version: "3.1.0" | "3.0.0" = "3.0.0";
  * @returns An OpenAPI schema object representing the parameter field.
  */
 function convertParameter({ doc_type, help_text, required }: Parameter): OpenAPI.Schema {
-    const schema: OpenAPI.Schema = { };
+    let schema: OpenAPI.Schema = { };
 
     const validValuesMatch = help_text.match(/Valid values:\n\n(.*)$/s);
     const validValues: string[] = [];
@@ -87,15 +87,12 @@ function convertParameter({ doc_type, help_text, required }: Parameter): OpenAPI
                 schema.maxItems = parseInt(maxMatch[1])
                 help_text = help_text.replace(maxMatch[0], "");
             }
-
-            return schema;
         }
         else {
-            return type;
+            schema = type;
         }
     }
-
-    if (doc_type.startsWith("string")) {
+    else if (doc_type.startsWith("string")) {
         const type: OpenAPI.Schema = { type: "string" };
 
         if (validValues.length > 0) type.enum = validValues.map(value => value.replace(/\"/g, "").trim());
@@ -119,8 +116,6 @@ function convertParameter({ doc_type, help_text, required }: Parameter): OpenAPI
                 schema.maxItems = parseInt(maxMatch[1])
                 help_text = help_text.replace(maxMatch[0], "");
             }
-
-            return schema;
         }
         else {
             if (defaultMatch?.length === 2) {
@@ -128,11 +123,10 @@ function convertParameter({ doc_type, help_text, required }: Parameter): OpenAPI
                 help_text = help_text.replace(defaultMatch[0], "");
             }
 
-            return type;
+            schema = type;
         }
     }
-
-    if (doc_type === "timestamp/date") {
+    else if (doc_type === "timestamp/date") {
         schema.oneOf = [{
             type: "integer"
         }, {
