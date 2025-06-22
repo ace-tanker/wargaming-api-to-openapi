@@ -3,7 +3,12 @@ Converts a Wargaming.net Public API specification to OpenAPI 3.0.
 ## Installation
 Clone the project: `git clone git@github.com:ace-tanker/wargaming-api-to-openapi.git`
 ## Usage
+This project requires NPM, Typescript and Node.js installed.
+```sh
+npm install
+tsc
 node ./src/app.mjs
+```
 ## Project Structure
 - `reference/` contains the original Wargaming API specification files for each game.
 - `src/` contains the source files used to convert the specification to OpenAPI.
