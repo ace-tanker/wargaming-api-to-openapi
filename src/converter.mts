@@ -1,22 +1,9 @@
 import type * as OpenAPI from "./openapi.mjs"
 import type { Primitive, Group, Field, Parameter, Method, Game } from "./api.mjs"
-import { JSONNull, JSONObject, JSONArray, JSON, inferJSON } from "./inference.mjs"
+import { inferJSON } from "./inference.mjs"
 import * as Types from "./api-types.mjs"
 
-import * as fs from "fs";
-import * as path from "path";
-
-import { JSONSchema7 } from "json-schema"
-
-type APINull = null
-type APIArray = APIGroup[]
-type APIObject = { [key: string]: APIField }
-type APIRecord = { [key: string]: APIGroup }
-type APIGroup = APIObject | APIArray | APIRecord | APINull
-type APIAssociativeArray = { [key: string]: APIPrimitive }
-type APIList = APIPrimitive[]
-type APIPrimitive = string | number | boolean | APINull | APIAssociativeArray | APIList
-type APIField = APIGroup | APIPrimitive
+const version: "3.1" | "3.0" = "3.0";
 
 /**
  * Converts a Wargaming API parameter definition into an OpenAPI schema object.
@@ -53,7 +40,7 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
     }
 
     if (doc_type.startsWith("numeric")) {
-        let type: OpenAPI.Schema & { "x-enumDescriptions"?: string[] } = { type: "integer" };
+        let type: OpenAPI.Schema = { type: "integer" };
 
         if (validValues.length > 0) type.enum = validValues.map(value => parseInt(value));
         if (validValuesDescription.length > 0) type["x-enumDescriptions"] = validValuesDescription.map(description => description.trim());
@@ -103,7 +90,7 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
         }
     }
     if (doc_type.startsWith("string")) {
-        let type: OpenAPI.Schema & { "x-enumDescriptions"?: string[] } = { type: "string" };
+        let type: OpenAPI.Schema = { type: "string" };
 
         if (validValues.length > 0) type.enum = validValues.map(value => value.replace(/\"/g, "").trim());
         if (validValuesDescription.length > 0) type["x-enumDescriptions"] = validValuesDescription.map(description => description.trim());
@@ -160,7 +147,7 @@ function convertParameter({ name, doc_type, help_text, required }: Parameter): O
  * @param tests An array of test values used to infer additional schema properties.
  * @returns An OpenAPI schema object representing the primitive field.
  */
-export function convertPrimitive(doc_type: Primitive["doc_type"], tests: APIPrimitive[]): OpenAPI.Schema {
+export function convertPrimitive(doc_type: Primitive["doc_type"], tests: Types.Primitive[]): OpenAPI.Schema {
     const schema: OpenAPI.Schema = {};
     const testsNotNull = tests.filter(test => test !== null);
 
@@ -173,7 +160,7 @@ export function convertPrimitive(doc_type: Primitive["doc_type"], tests: APIPrim
     else if (doc_type === "boolean") schema.type = "boolean";
     else if (doc_type === "associative array") {
         schema.type = "object";
-        schema.additionalProperties = inferJSON(testsNotNull.reduce((tests: APIAssociativeArray[], test) => [...Object.values(test), ...tests], []));
+        schema.additionalProperties = inferJSON(testsNotNull.reduce((tests: Types.AssociativeArray[], test) => [...Object.values(test), ...tests], []));
     }
     else if (doc_type === "object") schema.type = "object";
     else if (doc_type === "list of booleans" || doc_type === "list of floats" || doc_type === "list of integers" || doc_type === "list of strings" || doc_type === "list of timestamps") {
@@ -187,16 +174,19 @@ export function convertPrimitive(doc_type: Primitive["doc_type"], tests: APIPrim
 
         let doc_type2 = types[doc_type] as Primitive["doc_type"];
 
-        let extendedTests = (testsNotNull as APIList[]).reduce((tests: APIPrimitive[], test) => [...test, ...tests], []);
+        let extendedTests = (testsNotNull as Types.List[]).reduce((tests: Types.Primitive[], test) => [...test, ...tests], []);
 
         schema.type = "array";
         schema.items = convertPrimitive(doc_type2, extendedTests);
     }
 
-    return testsNotNull.length < tests.length ? {
+    return testsNotNull.length < tests.length ? version === "3.1" ? {
         oneOf: [schema, {
             type: "null"
         }]
+    } : {
+        nullable: true,
+        ...schema
     } : schema;
 }
 
@@ -207,10 +197,10 @@ export function convertPrimitive(doc_type: Primitive["doc_type"], tests: APIPrim
  * @param tests An array of example values used to refine the schema.
  * @returns An OpenAPI schema object representing the group structure.
  */
-export function convertRecord(group: Group, tests: APIRecord[]): OpenAPI.Schema {
+export function convertRecord(group: Group, tests: Types.Record[]): OpenAPI.Schema {
     return {
         type: "object",
-        additionalProperties: convertGroup(group, tests.reduce((tests: APIGroup[], test) => [...Object.values(test), ...tests], []))
+        additionalProperties: convertGroup(group, tests.reduce((tests: Types.Group[], test) => [...Object.values(test), ...tests], []))
     }
 }
 
@@ -221,7 +211,7 @@ export function convertRecord(group: Group, tests: APIRecord[]): OpenAPI.Schema 
  * @param tests An array of example values used to refine the schema.
  * @returns An OpenAPI schema object representing the group structure.
  */
-export function convertArray(group: Group, tests: APIArray[]): OpenAPI.Schema {
+export function convertArray(group: Group, tests: Types.Array[]): OpenAPI.Schema {
     return {
         type: "array",
         items: convertGroup(group, tests.reduce((tests, test) => [...test, ...tests], []))
@@ -235,7 +225,7 @@ export function convertArray(group: Group, tests: APIArray[]): OpenAPI.Schema {
  * @param tests An array of example values used to refine the schema.
  * @returns An OpenAPI schema object representing the group structure.
  */
-export function convertObject({ fields }: Group, tests: APIObject[]): OpenAPI.Schema {
+export function convertObject({ fields }: Group, tests: Types.Object[]): OpenAPI.Schema {
     return {
         type: "object",
         properties: Object.fromEntries(fields.map(field => convertField(field, tests.filter(test => test[field.name] !== undefined).map(test => test[field.name])))),
@@ -250,12 +240,12 @@ export function convertObject({ fields }: Group, tests: APIObject[]): OpenAPI.Sc
  * @param tests An array of example values used to refine the schema.
  * @returns An OpenAPI schema object representing the group structure.
  */
-export function convertGroup(group: Group, tests: APIGroup[]): OpenAPI.Schema {
+export function convertGroup(group: Group, tests: Types.Group[]): OpenAPI.Schema {
     const arrayValues: Types.Array[] = [];
     const recordValues: Types.Record[] = [];
     const objectValues: Types.Object[] = [];
     const nullValues: null[] = [];
-    const unexpectedValues: APIField[] = [];
+    const unexpectedValues: Types.Field[] = [];
 
     for (const test of tests) {
         if (test === null) nullValues.push(test);
@@ -283,9 +273,10 @@ export function convertGroup(group: Group, tests: APIGroup[]): OpenAPI.Schema {
     if (unexpectedValues.length > 1)
         console.warn(`Got unexpected values from tests.`);
 
-    if (nullValues.length > 0) oneOf.push({ type: "null" });
+    if (version === "3.1" && nullValues.length > 0) oneOf.push({ type: "null" });
 
-    return oneOf.length === 0 ? {} : oneOf.length === 1 ? oneOf[0] : { oneOf };
+    return version === "3.1" ? oneOf.length === 0 ? {} : oneOf.length === 1 ? oneOf[0] : { oneOf }
+        : oneOf.length === 0 ? {} : oneOf.length === 1 ? { ...oneOf[0], nullable: true } : { oneOf, nullable: true };
 }
 
 /**
@@ -295,8 +286,8 @@ export function convertGroup(group: Group, tests: APIGroup[]): OpenAPI.Schema {
  * @param tests An array of example values used to infer schema characteristics.
  * @returns A tuple containing the field name and the corresponding OpenAPI schema object.
  */
-export function convertField(field: Field, tests: APIField[]): [string, OpenAPI.Schema] {
-    let schema = "fields" in field ? convertGroup(field, tests as APIGroup[]) : convertPrimitive(field.doc_type, tests as APIPrimitive[]);
+export function convertField(field: Field, tests: Types.Field[]): [string, OpenAPI.Schema] {
+    let schema = "fields" in field ? convertGroup(field, tests as Types.Group[]) : convertPrimitive(field.doc_type, tests as Types.Primitive[]);
 
     if (field.help_text) schema.description = field.help_text.replace("**An extra field.**", "").trim();
 
@@ -360,17 +351,6 @@ export function convertPOSTParameters(parameters: Parameter[]): OpenAPI.RequestB
     }
 }
 
-
-
-function getJsonFilesSync(folderPath: string): any[] {
-    const jsonFiles = fs.readdirSync(folderPath).filter(file => file.endsWith(".json"));
-
-    return jsonFiles.map(file => {
-        const content = fs.readFileSync(path.join(folderPath, file), "utf-8");
-        return JSON.parse(content);
-    });
-}
-
 function sortParameters(a: Parameter, b: Parameter) {
     if (a.name === "application_id" || (a.required && !b.required)) return -1;
     else if (b.name === "application_id" || (b.required && !a.required)) return 1;
@@ -384,8 +364,8 @@ function sortParameters(a: Parameter, b: Parameter) {
  * @param parameters A list of parameter names to reference or include.
  * @returns A tuple containing the API path and the corresponding PathItem object.
  */
-export function convertMethod(method: Method, parameters: string[]): [string, OpenAPI.PathItem] {
-    let tests = getJsonFilesSync(`tests/${method.method_key.split("_").join("/")}`);
+export function convertMethod(method: Method, parameters: string[], getTests: (method: Method) => any[]): [string, OpenAPI.PathItem] {
+    let tests = getTests(method);
 
     const meta = tests.filter(test => "meta" in test).map(test => test.meta);
     const metaKeys: Map<string, boolean> = meta.reduce((metaKeys: Map<string, boolean>, meta) => {
@@ -403,18 +383,21 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
         oneOf: [{
             "type": "object",
             "properties": {
-                "status": {
+                "status": version === "3.1" ? {
                     type: "string",
                     const: "ok"
+                } : {
+                    type: "string",
+                    enum: ["ok"]
                 },
                 "meta": {
                     type: "object",
                     properties: Object.fromEntries([...metaKeys.entries()].map(([key, nullable]) => {
-                        const schema: JSONSchema7 = { type: "integer" };
+                        const schema: OpenAPI.Schema = { type: "integer" };
 
-                        return [key, nullable ? { oneOf: [schema, { type: "null" }] } : schema]
+                        return [key, nullable ? version === "3.1" ? { oneOf: [schema, { type: "null" }] } : { ...schema, nullable } : schema]
                     })),
-                    required: [...metaKeys.keys()]
+                    required: metaKeys.size > 0 ? [...metaKeys.keys()] : undefined
                 },
                 data: method.output_form_info ? convertGroup(method.output_form_info, tests.map(test => test.data)) : {
                     type: "object",
@@ -425,9 +408,12 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
         }, {
             "type": "object",
             "properties": {
-                "status": {
+                "status": version === "3.1" ? {
                     type: "string",
                     const: "error"
+                } : {
+                    type: "string",
+                    enum: ["error"]
                 },
                 error: {
                     type: "object",
@@ -501,9 +487,9 @@ export function convertMethod(method: Method, parameters: string[]): [string, Op
  * @param parameters Global OpenAPI parameters to apply across operations.
  * @returns A fully constructed OpenAPI specification object.
  */
-export function convertGame(game: Game, servers: OpenAPI.Server[], parameters: Record<string, OpenAPI.Parameter>): OpenAPI.OpenAPI {
+export function convertGame(game: Game, { servers, parameters, filterMethod, getTests }: { servers: OpenAPI.Server[], parameters: Record<string, OpenAPI.Parameter>, filterMethod: (method: Method) => boolean, getTests: (method: Method) => any[] } = { servers: [], parameters: {}, filterMethod: method => false, getTests: method => [] }): OpenAPI.OpenAPI {
     return {
-        openapi: "3.1.0",
+        openapi: version,
         info: {
             title: game.long_name ?? game.name,
             description: "OpenAPI specification for the Wargaming.net Public API.\nThe official Wargaming.net Public API documentation can be found at the Wargaming [Developer's room](https://developers.wargaming.net/).",
@@ -534,19 +520,6 @@ export function convertGame(game: Game, servers: OpenAPI.Server[], parameters: R
         security: [{
             application_id: []
         }],
-        paths: Object.fromEntries(game.methods.filter(method => {
-            if (method.deprecated) {
-                console.warn(`Method deprecated ignored: ${method.method_key}.`);
-
-                return false;
-            }
-
-            if (fs.existsSync(`tests/${method.method_key.split("_").join("/")}`)) return true;
-            else {
-                console.warn(`Tests not found, method ignored: ${method.method_key}.`);
-
-                return false;
-            }
-        }).map(method => convertMethod(method, Object.keys(parameters))))
+        paths: Object.fromEntries(game.methods.filter(filterMethod).map(method => convertMethod(method, Object.keys(parameters), getTests)))
     }
 }

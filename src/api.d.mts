@@ -14,9 +14,38 @@ export type CategoryID = string
 export type MethodID = string
 
 /**
+ * Represents a base interface for Primitive, Group and Parameter.
+ */
+export interface Base {
+    /** Name of the field. */
+    name: string
+    /** Description of the field. */
+    help_text: string
+    /** Indicates if the field is deprecated. */
+    deprecated: boolean
+    /** Description of deprecation, if applicable. */
+    deprecated_text: string
+}
+
+/**
+ * Represents a parameter for a method.
+ */
+export interface Parameter extends Base {
+    /** Indicates if the parameter is required. */
+    required: boolean
+    /** Data type of the parameter. */
+    doc_type: "numeric" | "numeric, list" | "string" | "string, list" | "timestamp/date"
+}
+
+export interface InputFormInfo extends Base {
+    /** List of parameters in the input form. */
+    fields: Parameter[]
+}
+
+/**
  * Represents a primitive field in a response.
  */
-export type Primitive = {
+export interface Primitive extends Base {
     /** Data type of the field. */
     doc_type: "numeric" | "float" | "string" | "boolean" | "timestamp" | "associative array" | "object" | "list of integers" | "list of floats" | "list of strings" | "list of booleans" | "list of timestamps"
     /** Indicates if the field is required. */
@@ -26,7 +55,7 @@ export type Primitive = {
 /**
  * Represents a group of fields, which can include primitives or other groups.
  */
-export type Group = {
+export interface Group extends Base {
     /** List of fields in the group. */
     fields: Field[]
 }
@@ -34,33 +63,11 @@ export type Group = {
 /**
  * Represents a field, which can be either a Primitive or a Group.
  */
-export type Field = {
-    /** Name of the field. */
-    name: string
-    /** Description of the field. */
-    help_text: string
-    /** Indicates if the field is deprecated. */
-    deprecated: boolean
-    /** Description of deprecation, if applicable. */
-    deprecated_text: string
-} & (Primitive | Group)
+export type Field = Primitive | Group
 
-/**
- * Represents a parameter for a method.
- */
-export type Parameter = {
-    /** Name of the parameter. */
-    name: string
-    /** Description of the parameter. */
-    help_text: string
-    /** Indicates if the parameter is required. */
-    required: boolean
-    /** Data type of the parameter. */
-    doc_type: "numeric" | "numeric, list" | "string" | "string, list" | "timestamp/date"
-    /** Indicates if the parameter is deprecated. */
-    deprecated: boolean
-    /** Description of deprecation, if applicable. */
-    deprecated_text: string
+export interface OutputFormInfo extends Base {
+    /** List of fields in the output form. */
+    fields: Field[]
 }
 
 /**
@@ -99,31 +106,9 @@ export type Method = {
     /** List of allowed HTTP methods for this method. */
     allowed_http_methods: HTTPMethod[]
     /** Parameters. */
-    input_form_info: {
-        /** @deprecated */
-        name: ""
-        /** @deprecated */
-        help_text: ""
-        /** @deprecated */
-        deprecated: false
-        /** @deprecated */
-        deprecated_text: ""
-        /** List of parameters in the input form. */
-        fields: Parameter[]
-    }
+    input_form_info: InputFormInfo
     /** Response. */
-    output_form_info: {
-        /** @deprecated */
-        name: ""
-        /** @deprecated */
-        help_text: ""
-        /** @deprecated */
-        deprecated: false
-        /** @deprecated */
-        deprecated_text: ""
-        /** List of fields in the output form. */
-        fields: Field[]
-    } | null
+    output_form_info: OutputFormInfo | null
     /** Errors. */
     errors: Error[]
 };
@@ -135,7 +120,7 @@ export type Game = {
     /** Game identifier. */
     name: GameID
     /** Full name of the game. */
-    long_name: string
+    long_name: string | null
     /** Mapping of category IDs to category names. */
     category_names: { [category: CategoryID]: string }
     /** List of methods available for the game. */
