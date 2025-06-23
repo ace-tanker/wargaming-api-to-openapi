@@ -112,7 +112,7 @@ export interface Operation {
     description?: string;
     security?: Record<string, string[]>[]
     parameters?: (Parameter | Reference)[];
-    responses: Record<string, Response>;
+    responses: Record<string, Response | Reference>;
     tags: string[]
     requestBody?: RequestBody
     externalDocs?: ExternalDocumentation;
@@ -126,7 +126,7 @@ export interface RequestBody {
 
 export interface Response {
     description: string;
-    content?: Record<string, MediaType>;
+    content?: Record<string, MediaType | Reference>;
 }
 
 export interface MediaType {
