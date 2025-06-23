@@ -368,93 +368,17 @@ function sortParameters(a: Parameter, b: Parameter) {
  * @param parameters A list of parameter names to reference or include.
  * @returns A tuple containing the API path and the corresponding PathItem object.
  */
-export function convertMethod(method: Method, parameters: string[], getTests: (method: Method) => any[]): [string, OpenAPI.PathItem] {
-    const tests = getTests(method);
-
-    const meta = tests.filter(test => "meta" in test).map(test => test.meta);
-    const metaKeys: Map<string, boolean> = meta.reduce((metaKeys: Map<string, boolean>, meta) => {
-        for (const [key, value] of Object.entries(meta)) {
-            if (!metaKeys.has(key)) metaKeys.set(key, false);
-
-            if (value === null) metaKeys.set(key, true);
-        }
-
-        return metaKeys;
-    }, new Map())
-
-    const schema: OpenAPI.Schema = {
-        discriminator: {
-            propertyName: "status"
-        },
-        oneOf: [{
-            type: "object",
-            properties: {
-                status: version === "3.1.0" ? {
-                    type: "string",
-                    const: "ok"
-                } : {
-                    type: "string",
-                    enum: ["ok"]
-                },
-                meta: {
-                    type: "object",
-                    properties: Object.fromEntries([...metaKeys.entries()].map(([key, nullable]) => {
-                        const schema: OpenAPI.Schema = { type: "integer" };
-
-                        return [key, nullable ? version === "3.1.0" ? { oneOf: [schema, { type: "null" }] } : { ...schema, nullable } : schema]
-                    })),
-                    required: metaKeys.size > 0 ? [...metaKeys.keys()] : undefined,
-                    additionalProperties: false
-                },
-                data: method.output_form_info ? convertGroup(method.output_form_info, tests.map(test => test.data)) : {
-                    type: "object",
-                    properties: {},
-                    additionalProperties: false
-                }
-            },
-            required: ["status", "meta", "data"],
-            additionalProperties: false
-        }, {
-            type: "object",
-            properties: {
-                "status": version === "3.1.0" ? {
-                    type: "string",
-                    const: "error"
-                } : {
-                    type: "string",
-                    enum: ["error"]
-                },
-                error: {
-                    type: "object",
-                    properties: {
-                        code: { type: "number" },
-                        message: { type: "string" },
-                        field: { type: "string" },
-                        value: { type: "string" }
-                    },
-                    required: ["code", "message", "field", "value"]
-                }
-            },
-            required: ["status", "error"],
-            additionalProperties: false
-        }]
-    }
+export function convertMethod(method: Method, parameters: string[]): [string, OpenAPI.PathItem] {
+    const methodKey = method.method_key.split("_");
+    const [game, category, key] = methodKey;
 
     const responses = {
         200: {
-            description: "OK",
-            content: {
-                "application/json": {
-                    schema
-                }
-            }
+            "$ref": `#/components/responses/${category}_${key}_response`
         }
     }
 
     const pathItem: OpenAPI.PathItem = {};
-
-    const methodKey = method.method_key.split("_");
-    const [game, category, key] = methodKey;
 
     if (method.allowed_http_methods.includes("GET")) {
         pathItem.get = {
@@ -491,6 +415,158 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
 }
 
 /**
+ * Generates an OpenAPI Meta Schema for a given method definition.
+ *
+ * @param method The Wargaming.net method definition to convert.
+ * @param tests An array of example values used to infer schema characteristics.
+ * @returns A tuple containing the Schema name and the corresponding Schema object.
+ */
+export function convertMethodMeta(method: Method, tests: any[]): [string, OpenAPI.Schema] {
+    const meta = tests.filter(test => "meta" in test).map(test => test.meta);
+    const metaKeys: Map<string, boolean> = meta.reduce((metaKeys: Map<string, boolean>, meta) => {
+        for (const [key, value] of Object.entries(meta)) {
+            if (!metaKeys.has(key)) metaKeys.set(key, false);
+
+            if (value === null) metaKeys.set(key, true);
+        }
+
+        return metaKeys;
+    }, new Map())
+
+    const methodKey = method.method_key.split("_");
+    const [game, category, key] = methodKey;
+
+    return [`${category}_${key}_meta`, {
+        type: "object",
+        properties: Object.fromEntries([...metaKeys.entries()].map(([key, nullable]) => {
+            const schema: OpenAPI.Schema = { type: "integer" };
+
+            return [key, nullable ? version === "3.1.0" ? { oneOf: [schema, { type: "null" }] } : { ...schema, nullable } : schema]
+        })),
+        required: metaKeys.size > 0 ? [...metaKeys.keys()] : undefined,
+        additionalProperties: false
+    }];
+}
+
+/**
+ * Generates an OpenAPI Data Schema for a given method definition.
+ *
+ * @param method The Wargaming.net method definition to convert.
+ * @param tests An array of example values used to infer schema characteristics.
+ * @returns A tuple containing the Schema name and the corresponding Schema object.
+ */
+export function convertMethodData(method: Method, tests: any[]): [string, OpenAPI.Schema] {
+    const methodKey = method.method_key.split("_");
+    const [game, category, key] = methodKey;
+
+    return [`${category}_${key}_data`, method.output_form_info ? convertGroup(method.output_form_info, tests.map(test => test.data)) : {
+        type: "object",
+        properties: {},
+        additionalProperties: false
+    }];
+}
+
+/**
+ * Generates an OpenAPI Ok Schema for a given method definition.
+ *
+ * @param method The Wargaming.net method definition to convert.
+ * @returns A tuple containing the Schema name and the corresponding Schema object.
+ */
+export function convertMethodOk(method: Method): [string, OpenAPI.Schema] {
+    const methodKey = method.method_key.split("_");
+    const [game, category, key] = methodKey;
+
+    return [`${category}_${key}_ok`, {
+        type: "object",
+        properties: {
+            status: version === "3.1.0" ? {
+                type: "string",
+                const: "ok"
+            } : {
+                type: "string",
+                enum: ["ok"]
+            },
+            meta: {
+                "$ref": `#/components/schemas/${category}_${key}_meta`
+            },
+            data: {
+                "$ref": `#/components/schemas/${category}_${key}_data`
+            }
+        },
+        required: ["status", "meta", "data"],
+        additionalProperties: false
+    }];
+}
+
+/**
+ * Generates an OpenAPI Error Schema for a given method definition.
+ *
+ * @param method The Wargaming.net method definition to convert.
+ * @returns A tuple containing the Schema name and the corresponding Schema object.
+ */
+export function convertMethodError(method: Method): [string, OpenAPI.Schema] {
+    const methodKey = method.method_key.split("_");
+    const [game, category, key] = methodKey;
+
+    return [`${category}_${key}_error`, {
+        type: "object",
+        properties: {
+            "status": version === "3.1.0" ? {
+                type: "string",
+                const: "error"
+            } : {
+                type: "string",
+                enum: ["error"]
+            },
+            error: {
+                oneOf: method.errors.map(([code, message, description]) => ({
+                    description,
+                    type: "object",
+                    properties: {
+                        code: { type: "number", "enum": [code] },
+                        message: { type: "string", "enum": [message] },
+                        field: { type: "string", nullable: true },
+                        value: { type: "string", nullable: true }
+                    },
+                    required: ["code", "message", "field", "value"]
+                }))
+            }
+        },
+        required: ["status", "error"],
+        additionalProperties: false
+    }];
+}
+
+/**
+ * Generates an OpenAPI Response for a given method definition.
+ *
+ * @param method The Wargaming.net method definition to convert.
+ * @returns A tuple containing the Response name and the corresponding Response object.
+ */
+export function convertMethodResponse(method: Method): [string, OpenAPI.Response] {
+    const methodKey = method.method_key.split("_");
+    const [game, category, key] = methodKey;
+
+    return [`${category}_${key}_response`, {
+        description: "OK",
+        content: {
+            "application/json": {
+                schema: {
+                    discriminator: {
+                        propertyName: "status"
+                    },
+                    oneOf: [{
+                        "$ref": `#/components/schemas/${category}_${key}_ok`
+                    }, {
+                        "$ref": `#/components/schemas/${category}_${key}_error`
+                    }]
+                }
+            }
+        }
+    }];
+}
+
+/**
  * Generates a complete OpenAPI specification from a Wargaming.net API specification.
  *
  * @param game The Wargaming.net game API specification to convert.
@@ -499,6 +575,8 @@ export function convertMethod(method: Method, parameters: string[], getTests: (m
  * @returns A fully constructed OpenAPI specification object.
  */
 export function convertGame(game: Game, { servers, parameters, filterMethod, getTests }: { servers: OpenAPI.Server[], parameters: Record<string, OpenAPI.Parameter>, filterMethod: (method: Method) => boolean, getTests: (method: Method) => any[] } = { servers: [], parameters: {}, filterMethod: method => false, getTests: method => [] }): OpenAPI.OpenAPI {
+    const methods = game.methods.filter(filterMethod);
+
     return {
         openapi: version,
         info: {
@@ -518,7 +596,13 @@ export function convertGame(game: Game, { servers, parameters, filterMethod, get
         },
         servers,
         components: {
+            schemas: Object.fromEntries(methods.reduce((schemas: [string, OpenAPI.Schema][], method) => {
+                const tests = getTests(method);
+
+                return [...schemas, convertMethodMeta(method, tests), convertMethodData(method, tests), convertMethodOk(method), convertMethodError(method)]
+            }, [])),
             parameters,
+            responses: Object.fromEntries(methods.map(method => convertMethodResponse(method))),
             securitySchemes: {
                 application_id: {
                     name: "application_id",
@@ -531,6 +615,6 @@ export function convertGame(game: Game, { servers, parameters, filterMethod, get
         security: [{
             application_id: []
         }],
-        paths: Object.fromEntries(game.methods.filter(filterMethod).map(method => convertMethod(method, Object.keys(parameters), getTests)))
+        paths: Object.fromEntries(methods.map(method => convertMethod(method, Object.keys(parameters))))
     }
 }
